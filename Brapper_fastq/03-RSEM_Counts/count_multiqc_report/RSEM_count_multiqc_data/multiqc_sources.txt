@@ -1,0 +1,9 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR4417237.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417237.raw_fastqc.zip
+FastQC	all_sections	SRR4417238.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417238.raw_fastqc.zip
+FastQC	all_sections	SRR4417239.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417239.raw_fastqc.zip
+FastQC	all_sections	SRR4417240.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417240.raw_fastqc.zip
+FastQC	all_sections	SRR4417241.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417241.raw_fastqc.zip
+FastQC	all_sections	SRR4417242.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417242.raw_fastqc.zip
+FastQC	all_sections	SRR4417243.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417243.raw_fastqc.zip
+FastQC	all_sections	SRR4417244.raw	/workspace/GeneLab-Training/BRappa_fastq/00-RawData/FastQC_Reports/SRR4417244.raw_fastqc.zip
