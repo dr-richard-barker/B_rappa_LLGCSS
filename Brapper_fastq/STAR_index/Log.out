@@ -1,0 +1,2332 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-11-25T09:14:51+0000 :/opt/conda/conda-bld/star_1732525954305/work/source
+##### Command Line:
+/home/gitpod/miniconda3/envs/gl4u_rnaseq_2024/bin/STAR-avx2 --runThreadN 16 --runMode genomeGenerate --limitGenomeGenerateRAM 70000000000 --genomeDir /workspace/GeneLab-Training/BRappa_fastq/STAR_index --genomeFastaFiles /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna --sjdbGTFfile /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.gtf --sjdbOverhang 99
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    16     ~RE-DEFINED
+runMode                       genomeGenerate        ~RE-DEFINED
+limitGenomeGenerateRAM        70000000000     ~RE-DEFINED
+genomeDir                     /workspace/GeneLab-Training/BRappa_fastq/STAR_index     ~RE-DEFINED
+genomeFastaFiles              /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna        ~RE-DEFINED
+sjdbGTFfile                   /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.gtf     ~RE-DEFINED
+sjdbOverhang                  99     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        16
+genomeDir                         /workspace/GeneLab-Training/BRappa_fastq/STAR_index
+genomeFastaFiles                  /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna   
+limitGenomeGenerateRAM            70000000000
+sjdbGTFfile                       /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.gtf
+sjdbOverhang                      99
+
+-------------------------------
+##### Final effective command line:
+/home/gitpod/miniconda3/envs/gl4u_rnaseq_2024/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 16   --genomeDir /workspace/GeneLab-Training/BRappa_fastq/STAR_index   --genomeFastaFiles /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna      --limitGenomeGenerateRAM 70000000000   --sjdbGTFfile /workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.gtf   --sjdbOverhang 99
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory exists and will be overwritten: /workspace/GeneLab-Training/BRappa_fastq/STAR_index/
+Feb 13 09:06:11 ... starting to generate Genome files
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 0  "NC_024804.2" chrStart: 0
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1  "NC_024795.2" chrStart: 20971520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 2  "NC_024796.2" chrStart: 50593792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 3  "NC_024797.2" chrStart: 82051072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 4  "NC_024798.2" chrStart: 120324096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 5  "NC_024799.2" chrStart: 142344192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 6  "NC_024800.2" chrStart: 170917888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 7  "NC_024801.2" chrStart: 200278016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 8  "NC_024802.2" chrStart: 229376000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 9  "NC_024803.2" chrStart: 252444672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 10  "NW_022609948.1" chrStart: 297795584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 11  "NW_022609949.1" chrStart: 298057728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 12  "NW_022609950.1" chrStart: 298319872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 13  "NW_022609951.1" chrStart: 298582016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 14  "NW_022609952.1" chrStart: 298844160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 15  "NW_022609953.1" chrStart: 299106304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 16  "NW_022609954.1" chrStart: 299368448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 17  "NW_022609955.1" chrStart: 299630592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 18  "NW_022609956.1" chrStart: 299892736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 19  "NW_022609957.1" chrStart: 300154880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 20  "NW_022609958.1" chrStart: 300417024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 21  "NW_022609959.1" chrStart: 300679168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 22  "NW_022609960.1" chrStart: 300941312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 23  "NW_022609961.1" chrStart: 301203456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 24  "NW_022609962.1" chrStart: 301465600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 25  "NW_022609963.1" chrStart: 301727744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 26  "NW_022609964.1" chrStart: 301989888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 27  "NW_022609965.1" chrStart: 302252032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 28  "NW_022609966.1" chrStart: 302514176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 29  "NW_022609967.1" chrStart: 302776320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 30  "NW_022609968.1" chrStart: 303038464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 31  "NW_022609969.1" chrStart: 303300608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 32  "NW_022609970.1" chrStart: 303562752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 33  "NW_022609971.1" chrStart: 303824896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 34  "NW_022609972.1" chrStart: 304087040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 35  "NW_022609973.1" chrStart: 304349184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 36  "NW_022609974.1" chrStart: 304611328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 37  "NW_022609975.1" chrStart: 304873472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 38  "NW_022609976.1" chrStart: 305135616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 39  "NW_022609977.1" chrStart: 305397760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 40  "NW_022609978.1" chrStart: 305659904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 41  "NW_022609979.1" chrStart: 305922048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 42  "NW_022609980.1" chrStart: 306184192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 43  "NW_022609981.1" chrStart: 306446336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 44  "NW_022609982.1" chrStart: 306708480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 45  "NW_022609983.1" chrStart: 306970624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 46  "NW_022609984.1" chrStart: 307232768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 47  "NW_022609985.1" chrStart: 307494912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 48  "NW_022609986.1" chrStart: 307757056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 49  "NW_022609987.1" chrStart: 308019200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 50  "NW_022609988.1" chrStart: 308281344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 51  "NW_022609989.1" chrStart: 308543488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 52  "NW_022609990.1" chrStart: 308805632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 53  "NW_022609991.1" chrStart: 309067776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 54  "NW_022609992.1" chrStart: 309329920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 55  "NW_022609993.1" chrStart: 309592064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 56  "NW_022609994.1" chrStart: 309854208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 57  "NW_022609995.1" chrStart: 310116352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 58  "NW_022609996.1" chrStart: 310378496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 59  "NW_022609997.1" chrStart: 310640640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 60  "NW_022609998.1" chrStart: 310902784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 61  "NW_022609999.1" chrStart: 311164928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 62  "NW_022610000.1" chrStart: 311427072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 63  "NW_022610001.1" chrStart: 311689216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 64  "NW_022610002.1" chrStart: 311951360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 65  "NW_022610003.1" chrStart: 312213504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 66  "NW_022610004.1" chrStart: 312475648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 67  "NW_022610005.1" chrStart: 312737792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 68  "NW_022610006.1" chrStart: 312999936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 69  "NW_022610007.1" chrStart: 313262080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 70  "NW_022610008.1" chrStart: 313524224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 71  "NW_022610009.1" chrStart: 313786368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 72  "NW_022610010.1" chrStart: 314048512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 73  "NW_022610011.1" chrStart: 314310656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 74  "NW_022610012.1" chrStart: 314572800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 75  "NW_022610013.1" chrStart: 314834944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 76  "NW_022610014.1" chrStart: 315097088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 77  "NW_022610015.1" chrStart: 315359232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 78  "NW_022610016.1" chrStart: 315621376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 79  "NW_022610017.1" chrStart: 315883520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 80  "NW_022610018.1" chrStart: 316145664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 81  "NW_022610019.1" chrStart: 316407808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 82  "NW_022610020.1" chrStart: 316669952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 83  "NW_022610021.1" chrStart: 316932096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 84  "NW_022610022.1" chrStart: 317194240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 85  "NW_022610023.1" chrStart: 317456384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 86  "NW_022610024.1" chrStart: 317718528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 87  "NW_022610025.1" chrStart: 317980672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 88  "NW_022610026.1" chrStart: 318242816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 89  "NW_022610027.1" chrStart: 318504960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 90  "NW_022610028.1" chrStart: 318767104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 91  "NW_022610029.1" chrStart: 319029248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 92  "NW_022610030.1" chrStart: 319291392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 93  "NW_022610031.1" chrStart: 319553536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 94  "NW_022610032.1" chrStart: 319815680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 95  "NW_022610033.1" chrStart: 320077824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 96  "NW_022610034.1" chrStart: 320339968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 97  "NW_022610035.1" chrStart: 320602112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 98  "NW_022610036.1" chrStart: 320864256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 99  "NW_022610037.1" chrStart: 321126400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 100  "NW_022610038.1" chrStart: 321388544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 101  "NW_022610039.1" chrStart: 321650688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 102  "NW_022610040.1" chrStart: 321912832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 103  "NW_022610041.1" chrStart: 322174976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 104  "NW_022610042.1" chrStart: 322437120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 105  "NW_022610043.1" chrStart: 322699264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 106  "NW_022610044.1" chrStart: 322961408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 107  "NW_022610045.1" chrStart: 323223552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 108  "NW_022610046.1" chrStart: 323485696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 109  "NW_022610047.1" chrStart: 323747840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 110  "NW_022610048.1" chrStart: 324009984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 111  "NW_022610049.1" chrStart: 324272128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 112  "NW_022610050.1" chrStart: 324534272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 113  "NW_022610051.1" chrStart: 324796416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 114  "NW_022610052.1" chrStart: 325058560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 115  "NW_022610053.1" chrStart: 325320704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 116  "NW_022610054.1" chrStart: 325582848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 117  "NW_022610055.1" chrStart: 325844992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 118  "NW_022610056.1" chrStart: 326107136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 119  "NW_022610057.1" chrStart: 326369280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 120  "NW_022610058.1" chrStart: 326631424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 121  "NW_022610059.1" chrStart: 326893568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 122  "NW_022610060.1" chrStart: 327155712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 123  "NW_022610061.1" chrStart: 327417856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 124  "NW_022610062.1" chrStart: 327680000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 125  "NW_022610063.1" chrStart: 327942144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 126  "NW_022610064.1" chrStart: 328204288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 127  "NW_022610065.1" chrStart: 328466432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 128  "NW_022610066.1" chrStart: 328728576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 129  "NW_022610067.1" chrStart: 328990720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 130  "NW_022610068.1" chrStart: 329252864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 131  "NW_022610069.1" chrStart: 329515008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 132  "NW_022610070.1" chrStart: 329777152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 133  "NW_022610071.1" chrStart: 330039296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 134  "NW_022610072.1" chrStart: 330301440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 135  "NW_022610073.1" chrStart: 330563584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 136  "NW_022610074.1" chrStart: 330825728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 137  "NW_022610075.1" chrStart: 331087872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 138  "NW_022610076.1" chrStart: 331350016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 139  "NW_022610077.1" chrStart: 331612160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 140  "NW_022610078.1" chrStart: 331874304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 141  "NW_022610079.1" chrStart: 332136448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 142  "NW_022610080.1" chrStart: 332398592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 143  "NW_022610081.1" chrStart: 332660736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 144  "NW_022610082.1" chrStart: 332922880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 145  "NW_022610083.1" chrStart: 333185024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 146  "NW_022610084.1" chrStart: 333447168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 147  "NW_022610085.1" chrStart: 333709312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 148  "NW_022610086.1" chrStart: 333971456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 149  "NW_022610087.1" chrStart: 334233600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 150  "NW_022610088.1" chrStart: 334495744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 151  "NW_022610089.1" chrStart: 334757888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 152  "NW_022610090.1" chrStart: 335020032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 153  "NW_022610091.1" chrStart: 335282176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 154  "NW_022610092.1" chrStart: 335544320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 155  "NW_022610093.1" chrStart: 335806464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 156  "NW_022610094.1" chrStart: 336068608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 157  "NW_022610095.1" chrStart: 336330752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 158  "NW_022610096.1" chrStart: 336592896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 159  "NW_022610097.1" chrStart: 336855040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 160  "NW_022610098.1" chrStart: 337117184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 161  "NW_022610099.1" chrStart: 337379328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 162  "NW_022610100.1" chrStart: 337641472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 163  "NW_022610101.1" chrStart: 337903616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 164  "NW_022610102.1" chrStart: 338165760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 165  "NW_022610103.1" chrStart: 338427904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 166  "NW_022610104.1" chrStart: 338690048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 167  "NW_022610105.1" chrStart: 338952192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 168  "NW_022610106.1" chrStart: 339214336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 169  "NW_022610107.1" chrStart: 339476480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 170  "NW_022610108.1" chrStart: 339738624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 171  "NW_022610109.1" chrStart: 340000768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 172  "NW_022610110.1" chrStart: 340262912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 173  "NW_022610111.1" chrStart: 340525056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 174  "NW_022610112.1" chrStart: 340787200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 175  "NW_022610113.1" chrStart: 341049344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 176  "NW_022610114.1" chrStart: 341311488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 177  "NW_022610115.1" chrStart: 341573632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 178  "NW_022610116.1" chrStart: 341835776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 179  "NW_022610117.1" chrStart: 342097920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 180  "NW_022610118.1" chrStart: 342360064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 181  "NW_022610119.1" chrStart: 342622208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 182  "NW_022610120.1" chrStart: 342884352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 183  "NW_022610121.1" chrStart: 343146496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 184  "NW_022610122.1" chrStart: 343408640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 185  "NW_022610123.1" chrStart: 343670784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 186  "NW_022610124.1" chrStart: 343932928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 187  "NW_022610125.1" chrStart: 344195072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 188  "NW_022610126.1" chrStart: 344457216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 189  "NW_022610127.1" chrStart: 344719360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 190  "NW_022610128.1" chrStart: 344981504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 191  "NW_022610129.1" chrStart: 345243648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 192  "NW_022610130.1" chrStart: 345505792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 193  "NW_022610131.1" chrStart: 345767936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 194  "NW_022610132.1" chrStart: 346030080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 195  "NW_022610133.1" chrStart: 346292224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 196  "NW_022610134.1" chrStart: 346554368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 197  "NW_022610135.1" chrStart: 346816512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 198  "NW_022610136.1" chrStart: 347078656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 199  "NW_022610137.1" chrStart: 347340800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 200  "NW_022610138.1" chrStart: 347602944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 201  "NW_022610139.1" chrStart: 347865088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 202  "NW_022610140.1" chrStart: 348127232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 203  "NW_022610141.1" chrStart: 348389376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 204  "NW_022610142.1" chrStart: 348651520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 205  "NW_022610143.1" chrStart: 348913664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 206  "NW_022610144.1" chrStart: 349175808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 207  "NW_022610145.1" chrStart: 349437952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 208  "NW_022610146.1" chrStart: 349700096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 209  "NW_022610147.1" chrStart: 349962240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 210  "NW_022610148.1" chrStart: 350224384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 211  "NW_022610149.1" chrStart: 350486528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 212  "NW_022610150.1" chrStart: 350748672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 213  "NW_022610151.1" chrStart: 351010816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 214  "NW_022610152.1" chrStart: 351272960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 215  "NW_022610153.1" chrStart: 351535104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 216  "NW_022610154.1" chrStart: 351797248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 217  "NW_022610155.1" chrStart: 352059392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 218  "NW_022610156.1" chrStart: 352321536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 219  "NW_022610157.1" chrStart: 352583680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 220  "NW_022610158.1" chrStart: 352845824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 221  "NW_022610159.1" chrStart: 353107968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 222  "NW_022610160.1" chrStart: 353370112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 223  "NW_022610161.1" chrStart: 353632256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 224  "NW_022610162.1" chrStart: 353894400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 225  "NW_022610163.1" chrStart: 354156544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 226  "NW_022610164.1" chrStart: 354418688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 227  "NW_022610165.1" chrStart: 354680832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 228  "NW_022610166.1" chrStart: 354942976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 229  "NW_022610167.1" chrStart: 355205120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 230  "NW_022610168.1" chrStart: 355467264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 231  "NW_022610169.1" chrStart: 355729408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 232  "NW_022610170.1" chrStart: 355991552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 233  "NW_022610171.1" chrStart: 356253696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 234  "NW_022610172.1" chrStart: 356515840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 235  "NW_022610173.1" chrStart: 356777984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 236  "NW_022610174.1" chrStart: 357040128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 237  "NW_022610175.1" chrStart: 357302272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 238  "NW_022610176.1" chrStart: 357564416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 239  "NW_022610177.1" chrStart: 357826560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 240  "NW_022610178.1" chrStart: 358088704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 241  "NW_022610179.1" chrStart: 358350848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 242  "NW_022610180.1" chrStart: 358612992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 243  "NW_022610181.1" chrStart: 358875136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 244  "NW_022610182.1" chrStart: 359137280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 245  "NW_022610183.1" chrStart: 359399424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 246  "NW_022610184.1" chrStart: 359661568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 247  "NW_022610185.1" chrStart: 360185856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 248  "NW_022610186.1" chrStart: 360448000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 249  "NW_022610187.1" chrStart: 360710144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 250  "NW_022610188.1" chrStart: 360972288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 251  "NW_022610189.1" chrStart: 361234432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 252  "NW_022610190.1" chrStart: 361496576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 253  "NW_022610191.1" chrStart: 362020864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 254  "NW_022610192.1" chrStart: 362283008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 255  "NW_022610193.1" chrStart: 362545152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 256  "NW_022610194.1" chrStart: 362807296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 257  "NW_022610195.1" chrStart: 363069440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 258  "NW_022610196.1" chrStart: 363331584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 259  "NW_022610197.1" chrStart: 363593728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 260  "NW_022610198.1" chrStart: 363855872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 261  "NW_022610199.1" chrStart: 364118016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 262  "NW_022610200.1" chrStart: 364380160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 263  "NW_022610201.1" chrStart: 364642304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 264  "NW_022610202.1" chrStart: 364904448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 265  "NW_022610203.1" chrStart: 365166592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 266  "NW_022610204.1" chrStart: 365428736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 267  "NW_022610205.1" chrStart: 365690880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 268  "NW_022610206.1" chrStart: 365953024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 269  "NW_022610207.1" chrStart: 366215168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 270  "NW_022610208.1" chrStart: 366477312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 271  "NW_022610209.1" chrStart: 366739456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 272  "NW_022610210.1" chrStart: 367001600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 273  "NW_022610211.1" chrStart: 367263744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 274  "NW_022610212.1" chrStart: 367525888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 275  "NW_022610213.1" chrStart: 367788032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 276  "NW_022610214.1" chrStart: 368050176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 277  "NW_022610215.1" chrStart: 368312320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 278  "NW_022610216.1" chrStart: 368574464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 279  "NW_022610217.1" chrStart: 368836608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 280  "NW_022610218.1" chrStart: 369098752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 281  "NW_022610219.1" chrStart: 369360896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 282  "NW_022610220.1" chrStart: 369623040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 283  "NW_022610221.1" chrStart: 369885184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 284  "NW_022610222.1" chrStart: 370147328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 285  "NW_022610223.1" chrStart: 370409472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 286  "NW_022610224.1" chrStart: 370671616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 287  "NW_022610225.1" chrStart: 370933760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 288  "NW_022610226.1" chrStart: 371195904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 289  "NW_022610227.1" chrStart: 371458048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 290  "NW_022610228.1" chrStart: 371720192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 291  "NW_022610229.1" chrStart: 371982336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 292  "NW_022610230.1" chrStart: 372244480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 293  "NW_022610231.1" chrStart: 372506624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 294  "NW_022610232.1" chrStart: 372768768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 295  "NW_022610233.1" chrStart: 373030912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 296  "NW_022610234.1" chrStart: 373293056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 297  "NW_022610235.1" chrStart: 373555200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 298  "NW_022610236.1" chrStart: 373817344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 299  "NW_022610237.1" chrStart: 374079488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 300  "NW_022610238.1" chrStart: 374341632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 301  "NW_022610239.1" chrStart: 374603776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 302  "NW_022610240.1" chrStart: 374865920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 303  "NW_022610241.1" chrStart: 375128064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 304  "NW_022610242.1" chrStart: 375390208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 305  "NW_022610243.1" chrStart: 375652352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 306  "NW_022610244.1" chrStart: 375914496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 307  "NW_022610245.1" chrStart: 376176640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 308  "NW_022610246.1" chrStart: 376438784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 309  "NW_022610247.1" chrStart: 376700928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 310  "NW_022610248.1" chrStart: 376963072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 311  "NW_022610249.1" chrStart: 377225216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 312  "NW_022610250.1" chrStart: 377487360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 313  "NW_022610251.1" chrStart: 377749504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 314  "NW_022610252.1" chrStart: 378011648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 315  "NW_022610253.1" chrStart: 378273792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 316  "NW_022610254.1" chrStart: 378535936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 317  "NW_022610255.1" chrStart: 378798080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 318  "NW_022610256.1" chrStart: 379060224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 319  "NW_022610257.1" chrStart: 379322368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 320  "NW_022610258.1" chrStart: 379584512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 321  "NW_022610259.1" chrStart: 379846656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 322  "NW_022610260.1" chrStart: 380108800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 323  "NW_022610261.1" chrStart: 380370944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 324  "NW_022610262.1" chrStart: 380633088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 325  "NW_022610263.1" chrStart: 380895232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 326  "NW_022610264.1" chrStart: 381157376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 327  "NW_022610265.1" chrStart: 381419520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 328  "NW_022610266.1" chrStart: 381681664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 329  "NW_022610267.1" chrStart: 381943808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 330  "NW_022610268.1" chrStart: 382205952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 331  "NW_022610269.1" chrStart: 382468096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 332  "NW_022610270.1" chrStart: 382730240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 333  "NW_022610271.1" chrStart: 382992384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 334  "NW_022610272.1" chrStart: 383254528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 335  "NW_022610273.1" chrStart: 383516672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 336  "NW_022610274.1" chrStart: 383778816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 337  "NW_022610275.1" chrStart: 384040960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 338  "NW_022610276.1" chrStart: 384303104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 339  "NW_022610277.1" chrStart: 384565248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 340  "NW_022610278.1" chrStart: 384827392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 341  "NW_022610279.1" chrStart: 385089536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 342  "NW_022610280.1" chrStart: 385351680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 343  "NW_022610281.1" chrStart: 385613824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 344  "NW_022610282.1" chrStart: 385875968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 345  "NW_022610283.1" chrStart: 386138112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 346  "NW_022610284.1" chrStart: 386400256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 347  "NW_022610285.1" chrStart: 386662400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 348  "NW_022610286.1" chrStart: 386924544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 349  "NW_022610287.1" chrStart: 387186688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 350  "NW_022610288.1" chrStart: 387448832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 351  "NW_022610289.1" chrStart: 387710976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 352  "NW_022610290.1" chrStart: 387973120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 353  "NW_022610291.1" chrStart: 388235264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 354  "NW_022610292.1" chrStart: 388497408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 355  "NW_022610293.1" chrStart: 388759552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 356  "NW_022610294.1" chrStart: 389021696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 357  "NW_022610295.1" chrStart: 389283840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 358  "NW_022610296.1" chrStart: 389545984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 359  "NW_022610297.1" chrStart: 389808128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 360  "NW_022610298.1" chrStart: 390070272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 361  "NW_022610299.1" chrStart: 390332416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 362  "NW_022610300.1" chrStart: 390594560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 363  "NW_022610301.1" chrStart: 390856704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 364  "NW_022610302.1" chrStart: 391118848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 365  "NW_022610303.1" chrStart: 391380992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 366  "NW_022610304.1" chrStart: 391643136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 367  "NW_022610305.1" chrStart: 391905280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 368  "NW_022610306.1" chrStart: 392167424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 369  "NW_022610307.1" chrStart: 392429568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 370  "NW_022610308.1" chrStart: 392691712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 371  "NW_022610309.1" chrStart: 392953856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 372  "NW_022610310.1" chrStart: 393216000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 373  "NW_022610311.1" chrStart: 393478144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 374  "NW_022610312.1" chrStart: 393740288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 375  "NW_022610313.1" chrStart: 394002432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 376  "NW_022610314.1" chrStart: 394264576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 377  "NW_022610315.1" chrStart: 394526720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 378  "NW_022610316.1" chrStart: 394788864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 379  "NW_022610317.1" chrStart: 395051008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 380  "NW_022610318.1" chrStart: 395313152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 381  "NW_022610319.1" chrStart: 395575296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 382  "NW_022610320.1" chrStart: 395837440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 383  "NW_022610321.1" chrStart: 396099584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 384  "NW_022610322.1" chrStart: 396361728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 385  "NW_022610323.1" chrStart: 396623872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 386  "NW_022610324.1" chrStart: 396886016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 387  "NW_022610325.1" chrStart: 397148160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 388  "NW_022610326.1" chrStart: 397410304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 389  "NW_022610327.1" chrStart: 397672448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 390  "NW_022610328.1" chrStart: 397934592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 391  "NW_022610329.1" chrStart: 398196736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 392  "NW_022610330.1" chrStart: 398458880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 393  "NW_022610331.1" chrStart: 398721024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 394  "NW_022610332.1" chrStart: 398983168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 395  "NW_022610333.1" chrStart: 399245312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 396  "NW_022610334.1" chrStart: 399507456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 397  "NW_022610335.1" chrStart: 399769600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 398  "NW_022610336.1" chrStart: 400031744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 399  "NW_022610337.1" chrStart: 400293888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 400  "NW_022610338.1" chrStart: 400556032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 401  "NW_022610339.1" chrStart: 400818176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 402  "NW_022610340.1" chrStart: 401080320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 403  "NW_022610341.1" chrStart: 401342464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 404  "NW_022610342.1" chrStart: 401604608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 405  "NW_022610343.1" chrStart: 401866752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 406  "NW_022610344.1" chrStart: 402128896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 407  "NW_022610345.1" chrStart: 402391040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 408  "NW_022610346.1" chrStart: 402653184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 409  "NW_022610347.1" chrStart: 402915328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 410  "NW_022610348.1" chrStart: 403177472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 411  "NW_022610349.1" chrStart: 403439616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 412  "NW_022610350.1" chrStart: 403701760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 413  "NW_022610351.1" chrStart: 403963904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 414  "NW_022610352.1" chrStart: 404226048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 415  "NW_022610353.1" chrStart: 404488192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 416  "NW_022610354.1" chrStart: 404750336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 417  "NW_022610355.1" chrStart: 405012480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 418  "NW_022610356.1" chrStart: 405274624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 419  "NW_022610357.1" chrStart: 405536768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 420  "NW_022610358.1" chrStart: 405798912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 421  "NW_022610359.1" chrStart: 406061056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 422  "NW_022610360.1" chrStart: 406323200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 423  "NW_022610361.1" chrStart: 406585344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 424  "NW_022610362.1" chrStart: 406847488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 425  "NW_022610363.1" chrStart: 407109632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 426  "NW_022610364.1" chrStart: 407371776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 427  "NW_022610365.1" chrStart: 407633920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 428  "NW_022610366.1" chrStart: 407896064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 429  "NW_022610367.1" chrStart: 408158208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 430  "NW_022610368.1" chrStart: 408420352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 431  "NW_022610369.1" chrStart: 408682496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 432  "NW_022610370.1" chrStart: 408944640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 433  "NW_022610371.1" chrStart: 409206784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 434  "NW_022610372.1" chrStart: 409468928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 435  "NW_022610373.1" chrStart: 409731072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 436  "NW_022610374.1" chrStart: 409993216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 437  "NW_022610375.1" chrStart: 410255360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 438  "NW_022610376.1" chrStart: 410517504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 439  "NW_022610377.1" chrStart: 410779648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 440  "NW_022610378.1" chrStart: 411041792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 441  "NW_022610379.1" chrStart: 411303936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 442  "NW_022610380.1" chrStart: 411566080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 443  "NW_022610381.1" chrStart: 411828224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 444  "NW_022610382.1" chrStart: 412090368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 445  "NW_022610383.1" chrStart: 412352512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 446  "NW_022610384.1" chrStart: 412614656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 447  "NW_022610385.1" chrStart: 412876800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 448  "NW_022610386.1" chrStart: 413138944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 449  "NW_022610387.1" chrStart: 413401088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 450  "NW_022610388.1" chrStart: 413663232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 451  "NW_022610389.1" chrStart: 413925376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 452  "NW_022610390.1" chrStart: 414187520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 453  "NW_022610391.1" chrStart: 414449664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 454  "NW_022610392.1" chrStart: 414711808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 455  "NW_022610393.1" chrStart: 414973952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 456  "NW_022610394.1" chrStart: 415236096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 457  "NW_022610395.1" chrStart: 415498240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 458  "NW_022610396.1" chrStart: 415760384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 459  "NW_022610397.1" chrStart: 416022528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 460  "NW_022610398.1" chrStart: 416284672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 461  "NW_022610399.1" chrStart: 416546816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 462  "NW_022610400.1" chrStart: 416808960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 463  "NW_022610401.1" chrStart: 417071104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 464  "NW_022610402.1" chrStart: 417333248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 465  "NW_022610403.1" chrStart: 417595392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 466  "NW_022610404.1" chrStart: 417857536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 467  "NW_022610405.1" chrStart: 418119680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 468  "NW_022610406.1" chrStart: 418381824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 469  "NW_022610407.1" chrStart: 418643968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 470  "NW_022610408.1" chrStart: 418906112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 471  "NW_022610409.1" chrStart: 419168256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 472  "NW_022610410.1" chrStart: 419430400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 473  "NW_022610411.1" chrStart: 419692544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 474  "NW_022610412.1" chrStart: 419954688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 475  "NW_022610413.1" chrStart: 420216832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 476  "NW_022610414.1" chrStart: 420478976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 477  "NW_022610415.1" chrStart: 420741120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 478  "NW_022610416.1" chrStart: 421003264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 479  "NW_022610417.1" chrStart: 421265408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 480  "NW_022610418.1" chrStart: 421527552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 481  "NW_022610419.1" chrStart: 421789696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 482  "NW_022610420.1" chrStart: 422051840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 483  "NW_022610421.1" chrStart: 422313984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 484  "NW_022610422.1" chrStart: 422576128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 485  "NW_022610423.1" chrStart: 422838272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 486  "NW_022610424.1" chrStart: 423100416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 487  "NW_022610425.1" chrStart: 423362560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 488  "NW_022610426.1" chrStart: 423624704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 489  "NW_022610427.1" chrStart: 423886848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 490  "NW_022610428.1" chrStart: 424148992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 491  "NW_022610429.1" chrStart: 424411136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 492  "NW_022610430.1" chrStart: 424673280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 493  "NW_022610431.1" chrStart: 424935424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 494  "NW_022610432.1" chrStart: 425197568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 495  "NW_022610433.1" chrStart: 425459712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 496  "NW_022610434.1" chrStart: 425721856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 497  "NW_022610435.1" chrStart: 425984000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 498  "NW_022610436.1" chrStart: 426246144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 499  "NW_022610437.1" chrStart: 426508288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 500  "NW_022610438.1" chrStart: 426770432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 501  "NW_022610439.1" chrStart: 427032576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 502  "NW_022610440.1" chrStart: 427294720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 503  "NW_022610441.1" chrStart: 427556864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 504  "NW_022610442.1" chrStart: 427819008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 505  "NW_022610443.1" chrStart: 428081152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 506  "NW_022610444.1" chrStart: 428343296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 507  "NW_022610445.1" chrStart: 428605440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 508  "NW_022610446.1" chrStart: 428867584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 509  "NW_022610447.1" chrStart: 429129728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 510  "NW_022610448.1" chrStart: 429391872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 511  "NW_022610449.1" chrStart: 429654016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 512  "NW_022610450.1" chrStart: 429916160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 513  "NW_022610451.1" chrStart: 430178304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 514  "NW_022610452.1" chrStart: 430440448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 515  "NW_022610453.1" chrStart: 430702592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 516  "NW_022610454.1" chrStart: 430964736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 517  "NW_022610455.1" chrStart: 431226880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 518  "NW_022610456.1" chrStart: 431489024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 519  "NW_022610457.1" chrStart: 431751168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 520  "NW_022610458.1" chrStart: 432013312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 521  "NW_022610459.1" chrStart: 432275456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 522  "NW_022610460.1" chrStart: 432537600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 523  "NW_022610461.1" chrStart: 432799744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 524  "NW_022610462.1" chrStart: 433061888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 525  "NW_022610463.1" chrStart: 433324032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 526  "NW_022610464.1" chrStart: 433586176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 527  "NW_022610465.1" chrStart: 433848320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 528  "NW_022610466.1" chrStart: 434110464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 529  "NW_022610467.1" chrStart: 434372608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 530  "NW_022610468.1" chrStart: 434634752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 531  "NW_022610469.1" chrStart: 434896896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 532  "NW_022610470.1" chrStart: 435159040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 533  "NW_022610471.1" chrStart: 435421184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 534  "NW_022610472.1" chrStart: 435683328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 535  "NW_022610473.1" chrStart: 435945472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 536  "NW_022610474.1" chrStart: 436207616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 537  "NW_022610475.1" chrStart: 436469760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 538  "NW_022610476.1" chrStart: 436731904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 539  "NW_022610477.1" chrStart: 436994048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 540  "NW_022610478.1" chrStart: 437256192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 541  "NW_022610479.1" chrStart: 437518336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 542  "NW_022610480.1" chrStart: 437780480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 543  "NW_022610481.1" chrStart: 438042624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 544  "NW_022610482.1" chrStart: 438304768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 545  "NW_022610483.1" chrStart: 438566912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 546  "NW_022610484.1" chrStart: 438829056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 547  "NW_022610485.1" chrStart: 439091200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 548  "NW_022610486.1" chrStart: 439353344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 549  "NW_022610487.1" chrStart: 439615488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 550  "NW_022610488.1" chrStart: 439877632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 551  "NW_022610489.1" chrStart: 440139776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 552  "NW_022610490.1" chrStart: 440401920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 553  "NW_022610491.1" chrStart: 440664064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 554  "NW_022610492.1" chrStart: 440926208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 555  "NW_022610493.1" chrStart: 441188352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 556  "NW_022610494.1" chrStart: 441450496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 557  "NW_022610495.1" chrStart: 441712640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 558  "NW_022610496.1" chrStart: 441974784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 559  "NW_022610497.1" chrStart: 442236928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 560  "NW_022610498.1" chrStart: 442499072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 561  "NW_022610499.1" chrStart: 442761216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 562  "NW_022610500.1" chrStart: 443023360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 563  "NW_022610501.1" chrStart: 443285504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 564  "NW_022610502.1" chrStart: 443547648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 565  "NW_022610503.1" chrStart: 443809792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 566  "NW_022610504.1" chrStart: 444071936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 567  "NW_022610505.1" chrStart: 444334080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 568  "NW_022610506.1" chrStart: 444596224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 569  "NW_022610507.1" chrStart: 444858368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 570  "NW_022610508.1" chrStart: 445120512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 571  "NW_022610509.1" chrStart: 445382656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 572  "NW_022610510.1" chrStart: 445644800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 573  "NW_022610511.1" chrStart: 445906944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 574  "NW_022610512.1" chrStart: 446169088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 575  "NW_022610513.1" chrStart: 446431232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 576  "NW_022610514.1" chrStart: 446693376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 577  "NW_022610515.1" chrStart: 446955520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 578  "NW_022610516.1" chrStart: 447217664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 579  "NW_022610517.1" chrStart: 447479808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 580  "NW_022610518.1" chrStart: 447741952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 581  "NW_022610519.1" chrStart: 448004096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 582  "NW_022610520.1" chrStart: 448266240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 583  "NW_022610521.1" chrStart: 448528384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 584  "NW_022610522.1" chrStart: 448790528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 585  "NW_022610523.1" chrStart: 449052672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 586  "NW_022610524.1" chrStart: 449314816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 587  "NW_022610525.1" chrStart: 449576960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 588  "NW_022610526.1" chrStart: 449839104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 589  "NW_022610527.1" chrStart: 450101248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 590  "NW_022610528.1" chrStart: 450363392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 591  "NW_022610529.1" chrStart: 450625536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 592  "NW_022610530.1" chrStart: 450887680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 593  "NW_022610531.1" chrStart: 451149824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 594  "NW_022610532.1" chrStart: 451411968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 595  "NW_022610533.1" chrStart: 451674112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 596  "NW_022610534.1" chrStart: 451936256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 597  "NW_022610535.1" chrStart: 452198400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 598  "NW_022610536.1" chrStart: 452460544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 599  "NW_022610537.1" chrStart: 452722688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 600  "NW_022610538.1" chrStart: 452984832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 601  "NW_022610539.1" chrStart: 453246976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 602  "NW_022610540.1" chrStart: 453509120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 603  "NW_022610541.1" chrStart: 453771264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 604  "NW_022610542.1" chrStart: 454033408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 605  "NW_022610543.1" chrStart: 454295552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 606  "NW_022610544.1" chrStart: 454557696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 607  "NW_022610545.1" chrStart: 454819840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 608  "NW_022610546.1" chrStart: 455081984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 609  "NW_022610547.1" chrStart: 455344128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 610  "NW_022610548.1" chrStart: 455606272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 611  "NW_022610549.1" chrStart: 455868416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 612  "NW_022610550.1" chrStart: 456130560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 613  "NW_022610551.1" chrStart: 456392704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 614  "NW_022610552.1" chrStart: 456654848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 615  "NW_022610553.1" chrStart: 456916992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 616  "NW_022610554.1" chrStart: 457179136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 617  "NW_022610555.1" chrStart: 457441280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 618  "NW_022610556.1" chrStart: 457703424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 619  "NW_022610557.1" chrStart: 457965568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 620  "NW_022610558.1" chrStart: 458227712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 621  "NW_022610559.1" chrStart: 458489856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 622  "NW_022610560.1" chrStart: 458752000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 623  "NW_022610561.1" chrStart: 459014144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 624  "NW_022610562.1" chrStart: 459276288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 625  "NW_022610563.1" chrStart: 459538432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 626  "NW_022610564.1" chrStart: 459800576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 627  "NW_022610565.1" chrStart: 460062720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 628  "NW_022610566.1" chrStart: 460324864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 629  "NW_022610567.1" chrStart: 460587008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 630  "NW_022610568.1" chrStart: 460849152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 631  "NW_022610569.1" chrStart: 461111296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 632  "NW_022610570.1" chrStart: 461373440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 633  "NW_022610571.1" chrStart: 461635584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 634  "NW_022610572.1" chrStart: 461897728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 635  "NW_022610573.1" chrStart: 462159872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 636  "NW_022610574.1" chrStart: 462422016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 637  "NW_022610575.1" chrStart: 462684160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 638  "NW_022610576.1" chrStart: 462946304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 639  "NW_022610577.1" chrStart: 463208448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 640  "NW_022610578.1" chrStart: 463470592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 641  "NW_022610579.1" chrStart: 463732736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 642  "NW_022610580.1" chrStart: 463994880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 643  "NW_022610581.1" chrStart: 464257024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 644  "NW_022610582.1" chrStart: 464519168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 645  "NW_022610583.1" chrStart: 464781312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 646  "NW_022610584.1" chrStart: 465043456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 647  "NW_022610585.1" chrStart: 465305600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 648  "NW_022610586.1" chrStart: 465567744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 649  "NW_022610587.1" chrStart: 465829888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 650  "NW_022610588.1" chrStart: 466092032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 651  "NW_022610589.1" chrStart: 466354176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 652  "NW_022610590.1" chrStart: 466616320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 653  "NW_022610591.1" chrStart: 466878464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 654  "NW_022610592.1" chrStart: 467140608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 655  "NW_022610593.1" chrStart: 467402752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 656  "NW_022610594.1" chrStart: 467664896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 657  "NW_022610595.1" chrStart: 467927040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 658  "NW_022610596.1" chrStart: 468189184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 659  "NW_022610597.1" chrStart: 468451328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 660  "NW_022610598.1" chrStart: 468713472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 661  "NW_022610599.1" chrStart: 468975616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 662  "NW_022610600.1" chrStart: 469237760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 663  "NW_022610601.1" chrStart: 469499904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 664  "NW_022610602.1" chrStart: 469762048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 665  "NW_022610603.1" chrStart: 470024192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 666  "NW_022610604.1" chrStart: 470286336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 667  "NW_022610605.1" chrStart: 470548480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 668  "NW_022610606.1" chrStart: 470810624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 669  "NW_022610607.1" chrStart: 471072768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 670  "NW_022610608.1" chrStart: 471334912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 671  "NW_022610609.1" chrStart: 471597056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 672  "NW_022610610.1" chrStart: 471859200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 673  "NW_022610611.1" chrStart: 472121344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 674  "NW_022610612.1" chrStart: 472383488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 675  "NW_022610613.1" chrStart: 472645632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 676  "NW_022610614.1" chrStart: 472907776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 677  "NW_022610615.1" chrStart: 473169920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 678  "NW_022610616.1" chrStart: 473432064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 679  "NW_022610617.1" chrStart: 473694208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 680  "NW_022610618.1" chrStart: 473956352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 681  "NW_022610619.1" chrStart: 474218496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 682  "NW_022610620.1" chrStart: 474480640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 683  "NW_022610621.1" chrStart: 474742784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 684  "NW_022610622.1" chrStart: 475004928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 685  "NW_022610623.1" chrStart: 475267072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 686  "NW_022610624.1" chrStart: 475529216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 687  "NW_022610625.1" chrStart: 475791360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 688  "NW_022610626.1" chrStart: 476053504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 689  "NW_022610627.1" chrStart: 476315648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 690  "NW_022610628.1" chrStart: 476577792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 691  "NW_022610629.1" chrStart: 476839936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 692  "NW_022610630.1" chrStart: 477102080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 693  "NW_022610631.1" chrStart: 477364224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 694  "NW_022610632.1" chrStart: 477626368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 695  "NW_022610633.1" chrStart: 477888512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 696  "NW_022610634.1" chrStart: 478150656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 697  "NW_022610635.1" chrStart: 478412800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 698  "NW_022610636.1" chrStart: 478674944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 699  "NW_022610637.1" chrStart: 478937088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 700  "NW_022610638.1" chrStart: 479199232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 701  "NW_022610639.1" chrStart: 479461376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 702  "NW_022610640.1" chrStart: 479723520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 703  "NW_022610641.1" chrStart: 479985664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 704  "NW_022610642.1" chrStart: 480247808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 705  "NW_022610643.1" chrStart: 480509952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 706  "NW_022610644.1" chrStart: 480772096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 707  "NW_022610645.1" chrStart: 481034240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 708  "NW_022610646.1" chrStart: 481296384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 709  "NW_022610647.1" chrStart: 481558528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 710  "NW_022610648.1" chrStart: 481820672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 711  "NW_022610649.1" chrStart: 482082816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 712  "NW_022610650.1" chrStart: 482344960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 713  "NW_022610651.1" chrStart: 482607104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 714  "NW_022610652.1" chrStart: 482869248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 715  "NW_022610653.1" chrStart: 483131392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 716  "NW_022610654.1" chrStart: 483393536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 717  "NW_022610655.1" chrStart: 483655680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 718  "NW_022610656.1" chrStart: 483917824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 719  "NW_022610657.1" chrStart: 484179968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 720  "NW_022610658.1" chrStart: 484442112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 721  "NW_022610659.1" chrStart: 484704256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 722  "NW_022610660.1" chrStart: 484966400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 723  "NW_022610661.1" chrStart: 485228544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 724  "NW_022610662.1" chrStart: 485490688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 725  "NW_022610663.1" chrStart: 485752832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 726  "NW_022610664.1" chrStart: 486014976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 727  "NW_022610665.1" chrStart: 486277120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 728  "NW_022610666.1" chrStart: 486539264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 729  "NW_022610667.1" chrStart: 486801408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 730  "NW_022610668.1" chrStart: 487063552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 731  "NW_022610669.1" chrStart: 487325696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 732  "NW_022610670.1" chrStart: 487587840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 733  "NW_022610671.1" chrStart: 487849984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 734  "NW_022610672.1" chrStart: 488112128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 735  "NW_022610673.1" chrStart: 488374272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 736  "NW_022610674.1" chrStart: 488636416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 737  "NW_022610675.1" chrStart: 489160704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 738  "NW_022610676.1" chrStart: 489422848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 739  "NW_022610677.1" chrStart: 489684992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 740  "NW_022610678.1" chrStart: 489947136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 741  "NW_022610679.1" chrStart: 490209280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 742  "NW_022610680.1" chrStart: 490471424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 743  "NW_022610681.1" chrStart: 490733568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 744  "NW_022610682.1" chrStart: 490995712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 745  "NW_022610683.1" chrStart: 491257856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 746  "NW_022610684.1" chrStart: 491520000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 747  "NW_022610685.1" chrStart: 491782144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 748  "NW_022610686.1" chrStart: 492044288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 749  "NW_022610687.1" chrStart: 492306432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 750  "NW_022610688.1" chrStart: 492568576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 751  "NW_022610689.1" chrStart: 492830720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 752  "NW_022610690.1" chrStart: 493092864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 753  "NW_022610691.1" chrStart: 493355008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 754  "NW_022610692.1" chrStart: 493617152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 755  "NW_022610693.1" chrStart: 494141440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 756  "NW_022610694.1" chrStart: 494403584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 757  "NW_022610695.1" chrStart: 494665728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 758  "NW_022610696.1" chrStart: 494927872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 759  "NW_022610697.1" chrStart: 495190016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 760  "NW_022610698.1" chrStart: 495452160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 761  "NW_022610699.1" chrStart: 495714304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 762  "NW_022610700.1" chrStart: 495976448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 763  "NW_022610701.1" chrStart: 496238592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 764  "NW_022610702.1" chrStart: 496500736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 765  "NW_022610703.1" chrStart: 496762880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 766  "NW_022610704.1" chrStart: 497025024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 767  "NW_022610705.1" chrStart: 497287168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 768  "NW_022610706.1" chrStart: 497549312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 769  "NW_022610707.1" chrStart: 497811456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 770  "NW_022610708.1" chrStart: 498073600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 771  "NW_022610709.1" chrStart: 498335744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 772  "NW_022610710.1" chrStart: 498597888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 773  "NW_022610711.1" chrStart: 498860032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 774  "NW_022610712.1" chrStart: 499122176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 775  "NW_022610713.1" chrStart: 499384320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 776  "NW_022610714.1" chrStart: 499646464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 777  "NW_022610715.1" chrStart: 499908608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 778  "NW_022610716.1" chrStart: 500170752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 779  "NW_022610717.1" chrStart: 500432896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 780  "NW_022610718.1" chrStart: 500695040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 781  "NW_022610719.1" chrStart: 500957184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 782  "NW_022610720.1" chrStart: 501219328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 783  "NW_022610721.1" chrStart: 501481472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 784  "NW_022610722.1" chrStart: 501743616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 785  "NW_022610723.1" chrStart: 502005760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 786  "NW_022610724.1" chrStart: 502267904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 787  "NW_022610725.1" chrStart: 502530048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 788  "NW_022610726.1" chrStart: 502792192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 789  "NW_022610727.1" chrStart: 503054336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 790  "NW_022610728.1" chrStart: 503316480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 791  "NW_022610729.1" chrStart: 503578624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 792  "NW_022610730.1" chrStart: 503840768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 793  "NW_022610731.1" chrStart: 504102912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 794  "NW_022610732.1" chrStart: 504365056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 795  "NW_022610733.1" chrStart: 504627200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 796  "NW_022610734.1" chrStart: 504889344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 797  "NW_022610735.1" chrStart: 505151488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 798  "NW_022610736.1" chrStart: 505413632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 799  "NW_022610737.1" chrStart: 505675776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 800  "NW_022610738.1" chrStart: 505937920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 801  "NW_022610739.1" chrStart: 506200064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 802  "NW_022610740.1" chrStart: 506462208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 803  "NW_022610741.1" chrStart: 506724352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 804  "NW_022610742.1" chrStart: 506986496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 805  "NW_022610743.1" chrStart: 507248640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 806  "NW_022610744.1" chrStart: 507510784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 807  "NW_022610745.1" chrStart: 507772928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 808  "NW_022610746.1" chrStart: 508035072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 809  "NW_022610747.1" chrStart: 508297216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 810  "NW_022610748.1" chrStart: 508559360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 811  "NW_022610749.1" chrStart: 508821504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 812  "NW_022610750.1" chrStart: 509083648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 813  "NW_022610751.1" chrStart: 509345792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 814  "NW_022610752.1" chrStart: 509607936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 815  "NW_022610753.1" chrStart: 509870080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 816  "NW_022610754.1" chrStart: 510132224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 817  "NW_022610755.1" chrStart: 510394368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 818  "NW_022610756.1" chrStart: 510656512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 819  "NW_022610757.1" chrStart: 510918656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 820  "NW_022610758.1" chrStart: 511180800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 821  "NW_022610759.1" chrStart: 511442944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 822  "NW_022610760.1" chrStart: 511705088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 823  "NW_022610761.1" chrStart: 511967232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 824  "NW_022610762.1" chrStart: 512229376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 825  "NW_022610763.1" chrStart: 512491520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 826  "NW_022610764.1" chrStart: 512753664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 827  "NW_022610765.1" chrStart: 513015808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 828  "NW_022610766.1" chrStart: 513277952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 829  "NW_022610767.1" chrStart: 513540096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 830  "NW_022610768.1" chrStart: 513802240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 831  "NW_022610769.1" chrStart: 514064384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 832  "NW_022610770.1" chrStart: 514326528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 833  "NW_022610771.1" chrStart: 514588672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 834  "NW_022610772.1" chrStart: 514850816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 835  "NW_022610773.1" chrStart: 515112960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 836  "NW_022610774.1" chrStart: 515375104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 837  "NW_022610775.1" chrStart: 515637248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 838  "NW_022610776.1" chrStart: 515899392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 839  "NW_022610777.1" chrStart: 516161536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 840  "NW_022610778.1" chrStart: 516423680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 841  "NW_022610779.1" chrStart: 516685824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 842  "NW_022610780.1" chrStart: 516947968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 843  "NW_022610781.1" chrStart: 517210112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 844  "NW_022610782.1" chrStart: 517472256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 845  "NW_022610783.1" chrStart: 517734400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 846  "NW_022610784.1" chrStart: 517996544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 847  "NW_022610785.1" chrStart: 518258688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 848  "NW_022610786.1" chrStart: 518520832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 849  "NW_022610787.1" chrStart: 518782976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 850  "NW_022610788.1" chrStart: 519045120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 851  "NW_022610789.1" chrStart: 519307264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 852  "NW_022610790.1" chrStart: 519569408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 853  "NW_022610791.1" chrStart: 519831552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 854  "NW_022610792.1" chrStart: 520093696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 855  "NW_022610793.1" chrStart: 520355840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 856  "NW_022610794.1" chrStart: 520617984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 857  "NW_022610795.1" chrStart: 520880128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 858  "NW_022610796.1" chrStart: 521142272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 859  "NW_022610797.1" chrStart: 521404416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 860  "NW_022610798.1" chrStart: 521666560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 861  "NW_022610799.1" chrStart: 521928704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 862  "NW_022610800.1" chrStart: 522190848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 863  "NW_022610801.1" chrStart: 522452992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 864  "NW_022610802.1" chrStart: 522715136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 865  "NW_022610803.1" chrStart: 522977280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 866  "NW_022610804.1" chrStart: 523239424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 867  "NW_022610805.1" chrStart: 523501568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 868  "NW_022610806.1" chrStart: 523763712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 869  "NW_022610807.1" chrStart: 524025856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 870  "NW_022610808.1" chrStart: 524288000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 871  "NW_022610809.1" chrStart: 524550144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 872  "NW_022610810.1" chrStart: 524812288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 873  "NW_022610811.1" chrStart: 525074432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 874  "NW_022610812.1" chrStart: 525336576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 875  "NW_022610813.1" chrStart: 525598720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 876  "NW_022610814.1" chrStart: 525860864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 877  "NW_022610815.1" chrStart: 526123008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 878  "NW_022610816.1" chrStart: 526385152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 879  "NW_022610817.1" chrStart: 526647296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 880  "NW_022610818.1" chrStart: 526909440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 881  "NW_022610819.1" chrStart: 527171584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 882  "NW_022610820.1" chrStart: 527433728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 883  "NW_022610821.1" chrStart: 527695872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 884  "NW_022610822.1" chrStart: 527958016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 885  "NW_022610823.1" chrStart: 528220160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 886  "NW_022610824.1" chrStart: 528482304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 887  "NW_022610825.1" chrStart: 528744448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 888  "NW_022610826.1" chrStart: 529006592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 889  "NW_022610827.1" chrStart: 529268736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 890  "NW_022610828.1" chrStart: 529530880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 891  "NW_022610829.1" chrStart: 529793024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 892  "NW_022610830.1" chrStart: 530055168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 893  "NW_022610831.1" chrStart: 530317312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 894  "NW_022610832.1" chrStart: 530579456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 895  "NW_022610833.1" chrStart: 530841600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 896  "NW_022610834.1" chrStart: 531103744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 897  "NW_022610835.1" chrStart: 531365888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 898  "NW_022610836.1" chrStart: 531628032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 899  "NW_022610837.1" chrStart: 531890176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 900  "NW_022610838.1" chrStart: 532152320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 901  "NW_022610839.1" chrStart: 532414464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 902  "NW_022610840.1" chrStart: 532676608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 903  "NW_022610841.1" chrStart: 532938752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 904  "NW_022610842.1" chrStart: 533200896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 905  "NW_022610843.1" chrStart: 533463040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 906  "NW_022610844.1" chrStart: 533725184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 907  "NW_022610845.1" chrStart: 533987328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 908  "NW_022610846.1" chrStart: 534249472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 909  "NW_022610847.1" chrStart: 534511616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 910  "NW_022610848.1" chrStart: 534773760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 911  "NW_022610849.1" chrStart: 535035904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 912  "NW_022610850.1" chrStart: 535298048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 913  "NW_022610851.1" chrStart: 535560192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 914  "NW_022610852.1" chrStart: 535822336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 915  "NW_022610853.1" chrStart: 536084480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 916  "NW_022610854.1" chrStart: 536346624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 917  "NW_022610855.1" chrStart: 536608768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 918  "NW_022610856.1" chrStart: 536870912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 919  "NW_022610857.1" chrStart: 537133056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 920  "NW_022610858.1" chrStart: 537395200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 921  "NW_022610859.1" chrStart: 537657344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 922  "NW_022610860.1" chrStart: 537919488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 923  "NW_022610861.1" chrStart: 538181632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 924  "NW_022610862.1" chrStart: 538443776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 925  "NW_022610863.1" chrStart: 538705920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 926  "NW_022610864.1" chrStart: 538968064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 927  "NW_022610865.1" chrStart: 539230208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 928  "NW_022610866.1" chrStart: 539492352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 929  "NW_022610867.1" chrStart: 539754496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 930  "NW_022610868.1" chrStart: 540016640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 931  "NW_022610869.1" chrStart: 540278784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 932  "NW_022610870.1" chrStart: 540540928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 933  "NW_022610871.1" chrStart: 540803072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 934  "NW_022610872.1" chrStart: 541065216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 935  "NW_022610873.1" chrStart: 541327360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 936  "NW_022610874.1" chrStart: 541589504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 937  "NW_022610875.1" chrStart: 541851648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 938  "NW_022610876.1" chrStart: 542113792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 939  "NW_022610877.1" chrStart: 542375936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 940  "NW_022610878.1" chrStart: 542638080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 941  "NW_022610879.1" chrStart: 542900224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 942  "NW_022610880.1" chrStart: 543162368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 943  "NW_022610881.1" chrStart: 543424512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 944  "NW_022610882.1" chrStart: 543686656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 945  "NW_022610883.1" chrStart: 543948800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 946  "NW_022610884.1" chrStart: 544210944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 947  "NW_022610885.1" chrStart: 544473088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 948  "NW_022610886.1" chrStart: 544735232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 949  "NW_022610887.1" chrStart: 544997376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 950  "NW_022610888.1" chrStart: 545259520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 951  "NW_022610889.1" chrStart: 545521664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 952  "NW_022610890.1" chrStart: 545783808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 953  "NW_022610891.1" chrStart: 546045952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 954  "NW_022610892.1" chrStart: 546308096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 955  "NW_022610893.1" chrStart: 546570240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 956  "NW_022610894.1" chrStart: 546832384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 957  "NW_022610895.1" chrStart: 547094528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 958  "NW_022610896.1" chrStart: 547356672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 959  "NW_022610897.1" chrStart: 547618816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 960  "NW_022610898.1" chrStart: 547880960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 961  "NW_022610899.1" chrStart: 548143104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 962  "NW_022610900.1" chrStart: 548405248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 963  "NW_022610901.1" chrStart: 548667392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 964  "NW_022610902.1" chrStart: 548929536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 965  "NW_022610903.1" chrStart: 549191680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 966  "NW_022610904.1" chrStart: 549453824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 967  "NW_022610905.1" chrStart: 549715968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 968  "NW_022610906.1" chrStart: 549978112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 969  "NW_022610907.1" chrStart: 550240256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 970  "NW_022610908.1" chrStart: 550502400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 971  "NW_022610909.1" chrStart: 550764544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 972  "NW_022610910.1" chrStart: 551026688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 973  "NW_022610911.1" chrStart: 551288832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 974  "NW_022610912.1" chrStart: 551550976
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 975  "NW_022610913.1" chrStart: 551813120
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 976  "NW_022610914.1" chrStart: 552075264
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 977  "NW_022610915.1" chrStart: 552337408
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 978  "NW_022610916.1" chrStart: 552599552
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 979  "NW_022610917.1" chrStart: 552861696
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 980  "NW_022610918.1" chrStart: 553123840
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 981  "NW_022610919.1" chrStart: 553385984
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 982  "NW_022610920.1" chrStart: 553648128
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 983  "NW_022610921.1" chrStart: 553910272
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 984  "NW_022610922.1" chrStart: 554172416
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 985  "NW_022610923.1" chrStart: 554434560
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 986  "NW_022610924.1" chrStart: 554696704
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 987  "NW_022610925.1" chrStart: 554958848
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 988  "NW_022610926.1" chrStart: 555220992
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 989  "NW_022610927.1" chrStart: 555483136
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 990  "NW_022610928.1" chrStart: 555745280
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 991  "NW_022610929.1" chrStart: 556007424
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 992  "NW_022610930.1" chrStart: 556269568
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 993  "NW_022610931.1" chrStart: 556531712
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 994  "NW_022610932.1" chrStart: 556793856
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 995  "NW_022610933.1" chrStart: 557056000
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 996  "NW_022610934.1" chrStart: 557318144
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 997  "NW_022610935.1" chrStart: 557580288
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 998  "NW_022610936.1" chrStart: 557842432
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 999  "NW_022610937.1" chrStart: 558104576
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1000  "NW_022610938.1" chrStart: 558366720
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1001  "NW_022610939.1" chrStart: 558628864
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1002  "NW_022610940.1" chrStart: 558891008
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1003  "NW_022610941.1" chrStart: 559153152
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1004  "NW_022610942.1" chrStart: 559415296
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1005  "NW_022610943.1" chrStart: 559677440
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1006  "NW_022610944.1" chrStart: 559939584
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1007  "NW_022610945.1" chrStart: 560201728
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1008  "NW_022610946.1" chrStart: 560463872
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1009  "NW_022610947.1" chrStart: 560726016
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1010  "NW_022610948.1" chrStart: 560988160
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1011  "NW_022610949.1" chrStart: 561250304
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1012  "NW_022610950.1" chrStart: 561512448
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1013  "NW_022610951.1" chrStart: 561774592
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1014  "NW_022610952.1" chrStart: 562036736
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1015  "NW_022610953.1" chrStart: 562298880
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1016  "NW_022610954.1" chrStart: 562561024
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1017  "NW_022610955.1" chrStart: 562823168
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1018  "NW_022610956.1" chrStart: 563085312
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1019  "NW_022610957.1" chrStart: 563347456
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1020  "NW_022610958.1" chrStart: 563609600
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1021  "NW_022610959.1" chrStart: 563871744
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1022  "NW_022610960.1" chrStart: 564133888
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1023  "NW_022610961.1" chrStart: 564396032
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1024  "NW_022610962.1" chrStart: 564658176
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1025  "NW_022610963.1" chrStart: 564920320
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1026  "NW_022610964.1" chrStart: 565182464
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1027  "NW_022610965.1" chrStart: 565444608
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1028  "NW_022610966.1" chrStart: 565706752
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1029  "NW_022610967.1" chrStart: 565968896
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1030  "NW_022610968.1" chrStart: 566231040
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1031  "NW_022610969.1" chrStart: 566493184
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1032  "NW_022610970.1" chrStart: 566755328
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1033  "NW_022610971.1" chrStart: 567017472
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1034  "NW_022610972.1" chrStart: 567279616
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1035  "NW_022610973.1" chrStart: 567541760
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1036  "NW_022610974.1" chrStart: 567803904
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1037  "NW_022610975.1" chrStart: 568066048
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1038  "NW_022610976.1" chrStart: 568328192
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1039  "NW_022610977.1" chrStart: 568590336
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1040  "NW_022610978.1" chrStart: 568852480
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1041  "NW_022610979.1" chrStart: 569114624
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1042  "NW_022610980.1" chrStart: 569376768
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1043  "NW_022610981.1" chrStart: 569638912
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1044  "NW_022610982.1" chrStart: 569901056
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1045  "NW_022610983.1" chrStart: 570163200
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1046  "NW_022610984.1" chrStart: 570425344
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1047  "NW_022610985.1" chrStart: 570687488
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1048  "NW_022610986.1" chrStart: 570949632
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1049  "NW_022610987.1" chrStart: 571211776
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1050  "NW_022610988.1" chrStart: 571473920
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1051  "NW_022610989.1" chrStart: 571736064
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1052  "NW_022610990.1" chrStart: 571998208
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1053  "NW_022610991.1" chrStart: 572260352
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1054  "NW_022610992.1" chrStart: 572522496
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1055  "NW_022610993.1" chrStart: 572784640
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1056  "NW_022610994.1" chrStart: 573046784
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1057  "NW_022610995.1" chrStart: 573308928
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1058  "NW_022610996.1" chrStart: 573571072
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1059  "NW_022610997.1" chrStart: 573833216
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1060  "NW_022610998.1" chrStart: 574095360
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1061  "NW_022610999.1" chrStart: 574357504
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1062  "NW_022611000.1" chrStart: 574619648
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1063  "NW_022611001.1" chrStart: 574881792
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1064  "NW_022611002.1" chrStart: 575143936
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1065  "NW_022611003.1" chrStart: 575406080
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1066  "NW_022611004.1" chrStart: 575668224
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1067  "NW_022611005.1" chrStart: 575930368
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1068  "NW_022611006.1" chrStart: 576192512
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1069  "NW_022611007.1" chrStart: 576454656
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1070  "NW_022611008.1" chrStart: 576716800
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1071  "NW_022611009.1" chrStart: 576978944
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1072  "NW_022611010.1" chrStart: 577241088
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1073  "NW_022611011.1" chrStart: 577503232
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1074  "NW_022611012.1" chrStart: 577765376
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1075  "NW_022611013.1" chrStart: 578027520
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1076  "NW_022611014.1" chrStart: 578289664
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1077  "NW_022611015.1" chrStart: 578551808
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1078  "NW_022611016.1" chrStart: 578813952
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1079  "NW_022611017.1" chrStart: 579076096
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1080  "NW_022611018.1" chrStart: 579338240
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1081  "NW_022611019.1" chrStart: 579600384
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1082  "NW_022611020.1" chrStart: 579862528
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1083  "NW_022611021.1" chrStart: 580124672
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1084  "NW_022611022.1" chrStart: 580386816
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1085  "NW_022611023.1" chrStart: 580648960
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1086  "NW_022611024.1" chrStart: 580911104
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1087  "NW_022611025.1" chrStart: 581173248
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1088  "NW_022611026.1" chrStart: 581435392
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1089  "NW_022611027.1" chrStart: 581697536
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1090  "NW_022611028.1" chrStart: 581959680
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1091  "NW_022611029.1" chrStart: 582221824
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1092  "NW_022611030.1" chrStart: 582483968
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1093  "NW_022611031.1" chrStart: 582746112
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1094  "NW_022611032.1" chrStart: 583008256
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1095  "NW_022611033.1" chrStart: 583270400
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1096  "NW_022611034.1" chrStart: 583532544
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1097  "NW_022611035.1" chrStart: 583794688
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1098  "NW_022611036.1" chrStart: 584056832
+/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna : chr # 1099  "NC_015139.1" chrStart: 584318976
+Chromosome sequence lengths: 
+NC_024804.2	20725698
+NC_024795.2	29595527
+NC_024796.2	31442979
+NC_024797.2	38154160
+NC_024798.2	21928416
+NC_024799.2	28493056
+NC_024800.2	29167992
+NC_024801.2	28928902
+NC_024802.2	22981702
+NC_024803.2	45156810
+NW_022609948.1	119456
+NW_022609949.1	62454
+NW_022609950.1	66647
+NW_022609951.1	41183
+NW_022609952.1	62066
+NW_022609953.1	43788
+NW_022609954.1	66455
+NW_022609955.1	85348
+NW_022609956.1	39477
+NW_022609957.1	61717
+NW_022609958.1	42650
+NW_022609959.1	127407
+NW_022609960.1	44055
+NW_022609961.1	195652
+NW_022609962.1	71851
+NW_022609963.1	36091
+NW_022609964.1	67083
+NW_022609965.1	41771
+NW_022609966.1	108496
+NW_022609967.1	27137
+NW_022609968.1	76316
+NW_022609969.1	20691
+NW_022609970.1	30622
+NW_022609971.1	20207
+NW_022609972.1	29501
+NW_022609973.1	60744
+NW_022609974.1	24183
+NW_022609975.1	3445
+NW_022609976.1	40096
+NW_022609977.1	22782
+NW_022609978.1	36517
+NW_022609979.1	32628
+NW_022609980.1	38153
+NW_022609981.1	84735
+NW_022609982.1	37781
+NW_022609983.1	60036
+NW_022609984.1	32327
+NW_022609985.1	60632
+NW_022609986.1	66362
+NW_022609987.1	70539
+NW_022609988.1	35308
+NW_022609989.1	22230
+NW_022609990.1	29187
+NW_022609991.1	31586
+NW_022609992.1	43532
+NW_022609993.1	29942
+NW_022609994.1	27368
+NW_022609995.1	88293
+NW_022609996.1	43961
+NW_022609997.1	60370
+NW_022609998.1	27729
+NW_022609999.1	60257
+NW_022610000.1	73393
+NW_022610001.1	33530
+NW_022610002.1	28105
+NW_022610003.1	24956
+NW_022610004.1	118624
+NW_022610005.1	23525
+NW_022610006.1	76420
+NW_022610007.1	74537
+NW_022610008.1	5377
+NW_022610009.1	42615
+NW_022610010.1	66878
+NW_022610011.1	75772
+NW_022610012.1	39857
+NW_022610013.1	170302
+NW_022610014.1	31292
+NW_022610015.1	23245
+NW_022610016.1	38205
+NW_022610017.1	22188
+NW_022610018.1	71076
+NW_022610019.1	9678
+NW_022610020.1	30366
+NW_022610021.1	52669
+NW_022610022.1	62957
+NW_022610023.1	53901
+NW_022610024.1	34745
+NW_022610025.1	65985
+NW_022610026.1	58329
+NW_022610027.1	132596
+NW_022610028.1	37068
+NW_022610029.1	46398
+NW_022610030.1	34867
+NW_022610031.1	55703
+NW_022610032.1	18099
+NW_022610033.1	31206
+NW_022610034.1	18437
+NW_022610035.1	18387
+NW_022610036.1	18340
+NW_022610037.1	25838
+NW_022610038.1	16763
+NW_022610039.1	38866
+NW_022610040.1	41381
+NW_022610041.1	23245
+NW_022610042.1	55431
+NW_022610043.1	19263
+NW_022610044.1	58349
+NW_022610045.1	35506
+NW_022610046.1	28180
+NW_022610047.1	29335
+NW_022610048.1	82074
+NW_022610049.1	24004
+NW_022610050.1	90099
+NW_022610051.1	45732
+NW_022610052.1	35649
+NW_022610053.1	59953
+NW_022610054.1	38634
+NW_022610055.1	62464
+NW_022610056.1	47101
+NW_022610057.1	188545
+NW_022610058.1	57449
+NW_022610059.1	30810
+NW_022610060.1	170637
+NW_022610061.1	25112
+NW_022610062.1	31533
+NW_022610063.1	83127
+NW_022610064.1	55251
+NW_022610065.1	28991
+NW_022610066.1	66470
+NW_022610067.1	27232
+NW_022610068.1	34548
+NW_022610069.1	37832
+NW_022610070.1	43853
+NW_022610071.1	55607
+NW_022610072.1	25578
+NW_022610073.1	36346
+NW_022610074.1	42900
+NW_022610075.1	25850
+NW_022610076.1	22582
+NW_022610077.1	31648
+NW_022610078.1	52271
+NW_022610079.1	40938
+NW_022610080.1	41243
+NW_022610081.1	51790
+NW_022610082.1	27121
+NW_022610083.1	20152
+NW_022610084.1	13432
+NW_022610085.1	16328
+NW_022610086.1	63466
+NW_022610087.1	65288
+NW_022610088.1	24815
+NW_022610089.1	73244
+NW_022610090.1	23580
+NW_022610091.1	35078
+NW_022610092.1	38711
+NW_022610093.1	41376
+NW_022610094.1	62642
+NW_022610095.1	73215
+NW_022610096.1	70435
+NW_022610097.1	23062
+NW_022610098.1	16820
+NW_022610099.1	32167
+NW_022610100.1	111421
+NW_022610101.1	34669
+NW_022610102.1	70493
+NW_022610103.1	80530
+NW_022610104.1	36970
+NW_022610105.1	61506
+NW_022610106.1	53838
+NW_022610107.1	138016
+NW_022610108.1	48384
+NW_022610109.1	60560
+NW_022610110.1	59238
+NW_022610111.1	52968
+NW_022610112.1	88535
+NW_022610113.1	58176
+NW_022610114.1	24507
+NW_022610115.1	61437
+NW_022610116.1	30653
+NW_022610117.1	28372
+NW_022610118.1	170330
+NW_022610119.1	39556
+NW_022610120.1	57154
+NW_022610121.1	18028
+NW_022610122.1	51431
+NW_022610123.1	64977
+NW_022610124.1	22141
+NW_022610125.1	14027
+NW_022610126.1	33981
+NW_022610127.1	39265
+NW_022610128.1	76153
+NW_022610129.1	34504
+NW_022610130.1	34786
+NW_022610131.1	52169
+NW_022610132.1	38113
+NW_022610133.1	111854
+NW_022610134.1	28070
+NW_022610135.1	34168
+NW_022610136.1	93043
+NW_022610137.1	32017
+NW_022610138.1	77595
+NW_022610139.1	33954
+NW_022610140.1	25810
+NW_022610141.1	37234
+NW_022610142.1	45737
+NW_022610143.1	53124
+NW_022610144.1	50497
+NW_022610145.1	32496
+NW_022610146.1	110859
+NW_022610147.1	48618
+NW_022610148.1	54734
+NW_022610149.1	85564
+NW_022610150.1	62766
+NW_022610151.1	237289
+NW_022610152.1	48035
+NW_022610153.1	140970
+NW_022610154.1	33601
+NW_022610155.1	12940
+NW_022610156.1	78789
+NW_022610157.1	83028
+NW_022610158.1	16793
+NW_022610159.1	57011
+NW_022610160.1	54068
+NW_022610161.1	208237
+NW_022610162.1	21012
+NW_022610163.1	32219
+NW_022610164.1	51868
+NW_022610165.1	45071
+NW_022610166.1	34097
+NW_022610167.1	23506
+NW_022610168.1	24421
+NW_022610169.1	29750
+NW_022610170.1	18252
+NW_022610171.1	36990
+NW_022610172.1	40496
+NW_022610173.1	57514
+NW_022610174.1	51419
+NW_022610175.1	41426
+NW_022610176.1	28645
+NW_022610177.1	45882
+NW_022610178.1	38486
+NW_022610179.1	49275
+NW_022610180.1	61922
+NW_022610181.1	33977
+NW_022610182.1	67146
+NW_022610183.1	24651
+NW_022610184.1	363590
+NW_022610185.1	18452
+NW_022610186.1	43718
+NW_022610187.1	26559
+NW_022610188.1	134575
+NW_022610189.1	17750
+NW_022610190.1	282056
+NW_022610191.1	31279
+NW_022610192.1	14953
+NW_022610193.1	39786
+NW_022610194.1	41999
+NW_022610195.1	77224
+NW_022610196.1	27018
+NW_022610197.1	26515
+NW_022610198.1	32097
+NW_022610199.1	7315
+NW_022610200.1	10311
+NW_022610201.1	11980
+NW_022610202.1	34310
+NW_022610203.1	186248
+NW_022610204.1	57680
+NW_022610205.1	73276
+NW_022610206.1	74159
+NW_022610207.1	51652
+NW_022610208.1	74572
+NW_022610209.1	27646
+NW_022610210.1	36323
+NW_022610211.1	21498
+NW_022610212.1	6686
+NW_022610213.1	44312
+NW_022610214.1	24723
+NW_022610215.1	16004
+NW_022610216.1	27897
+NW_022610217.1	30879
+NW_022610218.1	31138
+NW_022610219.1	28568
+NW_022610220.1	18313
+NW_022610221.1	36715
+NW_022610222.1	76044
+NW_022610223.1	36402
+NW_022610224.1	63948
+NW_022610225.1	38394
+NW_022610226.1	23154
+NW_022610227.1	37897
+NW_022610228.1	85678
+NW_022610229.1	19217
+NW_022610230.1	134977
+NW_022610231.1	36201
+NW_022610232.1	24036
+NW_022610233.1	18222
+NW_022610234.1	51548
+NW_022610235.1	22861
+NW_022610236.1	43136
+NW_022610237.1	33341
+NW_022610238.1	34354
+NW_022610239.1	49407
+NW_022610240.1	40792
+NW_022610241.1	33492
+NW_022610242.1	149194
+NW_022610243.1	46205
+NW_022610244.1	12023
+NW_022610245.1	106635
+NW_022610246.1	53599
+NW_022610247.1	114425
+NW_022610248.1	91228
+NW_022610249.1	43779
+NW_022610250.1	88437
+NW_022610251.1	22741
+NW_022610252.1	63706
+NW_022610253.1	15809
+NW_022610254.1	45852
+NW_022610255.1	44830
+NW_022610256.1	93542
+NW_022610257.1	37009
+NW_022610258.1	37845
+NW_022610259.1	62316
+NW_022610260.1	37536
+NW_022610261.1	225605
+NW_022610262.1	162030
+NW_022610263.1	24072
+NW_022610264.1	22509
+NW_022610265.1	64587
+NW_022610266.1	168212
+NW_022610267.1	36710
+NW_022610268.1	60740
+NW_022610269.1	178498
+NW_022610270.1	217397
+NW_022610271.1	31400
+NW_022610272.1	35924
+NW_022610273.1	46924
+NW_022610274.1	29126
+NW_022610275.1	30350
+NW_022610276.1	21120
+NW_022610277.1	30746
+NW_022610278.1	102550
+NW_022610279.1	119375
+NW_022610280.1	39875
+NW_022610281.1	43672
+NW_022610282.1	100731
+NW_022610283.1	68846
+NW_022610284.1	69701
+NW_022610285.1	26326
+NW_022610286.1	86368
+NW_022610287.1	48622
+NW_022610288.1	21484
+NW_022610289.1	55165
+NW_022610290.1	17459
+NW_022610291.1	78891
+NW_022610292.1	45689
+NW_022610293.1	109809
+NW_022610294.1	33012
+NW_022610295.1	27774
+NW_022610296.1	79552
+NW_022610297.1	62561
+NW_022610298.1	92902
+NW_022610299.1	24131
+NW_022610300.1	46900
+NW_022610301.1	91957
+NW_022610302.1	34169
+NW_022610303.1	38876
+NW_022610304.1	23449
+NW_022610305.1	57206
+NW_022610306.1	61986
+NW_022610307.1	42835
+NW_022610308.1	71591
+NW_022610309.1	37777
+NW_022610310.1	52315
+NW_022610311.1	18529
+NW_022610312.1	20963
+NW_022610313.1	14768
+NW_022610314.1	26994
+NW_022610315.1	43356
+NW_022610316.1	72386
+NW_022610317.1	24358
+NW_022610318.1	60969
+NW_022610319.1	39472
+NW_022610320.1	72988
+NW_022610321.1	51464
+NW_022610322.1	40988
+NW_022610323.1	30477
+NW_022610324.1	19636
+NW_022610325.1	67737
+NW_022610326.1	89278
+NW_022610327.1	78900
+NW_022610328.1	60567
+NW_022610329.1	34359
+NW_022610330.1	53108
+NW_022610331.1	62899
+NW_022610332.1	75568
+NW_022610333.1	34770
+NW_022610334.1	13123
+NW_022610335.1	24617
+NW_022610336.1	34344
+NW_022610337.1	17178
+NW_022610338.1	23181
+NW_022610339.1	66113
+NW_022610340.1	16636
+NW_022610341.1	44022
+NW_022610342.1	9784
+NW_022610343.1	98049
+NW_022610344.1	58509
+NW_022610345.1	62147
+NW_022610346.1	125117
+NW_022610347.1	78967
+NW_022610348.1	30170
+NW_022610349.1	34887
+NW_022610350.1	26263
+NW_022610351.1	26078
+NW_022610352.1	35088
+NW_022610353.1	22565
+NW_022610354.1	38046
+NW_022610355.1	66991
+NW_022610356.1	36926
+NW_022610357.1	64328
+NW_022610358.1	39728
+NW_022610359.1	17604
+NW_022610360.1	21884
+NW_022610361.1	49410
+NW_022610362.1	59113
+NW_022610363.1	31459
+NW_022610364.1	15936
+NW_022610365.1	70374
+NW_022610366.1	25029
+NW_022610367.1	51832
+NW_022610368.1	21145
+NW_022610369.1	16720
+NW_022610370.1	52693
+NW_022610371.1	23203
+NW_022610372.1	88115
+NW_022610373.1	35742
+NW_022610374.1	45739
+NW_022610375.1	23299
+NW_022610376.1	46149
+NW_022610377.1	31302
+NW_022610378.1	37962
+NW_022610379.1	24442
+NW_022610380.1	57618
+NW_022610381.1	107273
+NW_022610382.1	22396
+NW_022610383.1	48813
+NW_022610384.1	79270
+NW_022610385.1	50234
+NW_022610386.1	93138
+NW_022610387.1	54304
+NW_022610388.1	36889
+NW_022610389.1	26308
+NW_022610390.1	33625
+NW_022610391.1	29925
+NW_022610392.1	34968
+NW_022610393.1	40781
+NW_022610394.1	31589
+NW_022610395.1	79021
+NW_022610396.1	99964
+NW_022610397.1	92866
+NW_022610398.1	34951
+NW_022610399.1	32488
+NW_022610400.1	25463
+NW_022610401.1	23175
+NW_022610402.1	33364
+NW_022610403.1	20198
+NW_022610404.1	33288
+NW_022610405.1	37861
+NW_022610406.1	121500
+NW_022610407.1	76784
+NW_022610408.1	25625
+NW_022610409.1	42433
+NW_022610410.1	19025
+NW_022610411.1	89046
+NW_022610412.1	72679
+NW_022610413.1	131655
+NW_022610414.1	28789
+NW_022610415.1	41740
+NW_022610416.1	23532
+NW_022610417.1	82965
+NW_022610418.1	37208
+NW_022610419.1	67804
+NW_022610420.1	28106
+NW_022610421.1	15799
+NW_022610422.1	68442
+NW_022610423.1	84534
+NW_022610424.1	58094
+NW_022610425.1	67595
+NW_022610426.1	60485
+NW_022610427.1	2324
+NW_022610428.1	44362
+NW_022610429.1	7581
+NW_022610430.1	88985
+NW_022610431.1	49423
+NW_022610432.1	41536
+NW_022610433.1	32351
+NW_022610434.1	63224
+NW_022610435.1	41379
+NW_022610436.1	27713
+NW_022610437.1	46966
+NW_022610438.1	36904
+NW_022610439.1	37169
+NW_022610440.1	18492
+NW_022610441.1	32649
+NW_022610442.1	52015
+NW_022610443.1	40884
+NW_022610444.1	28430
+NW_022610445.1	20121
+NW_022610446.1	69744
+NW_022610447.1	41020
+NW_022610448.1	38691
+NW_022610449.1	65202
+NW_022610450.1	40761
+NW_022610451.1	41755
+NW_022610452.1	41717
+NW_022610453.1	18666
+NW_022610454.1	38367
+NW_022610455.1	34842
+NW_022610456.1	98477
+NW_022610457.1	45263
+NW_022610458.1	49774
+NW_022610459.1	31990
+NW_022610460.1	56063
+NW_022610461.1	88250
+NW_022610462.1	68309
+NW_022610463.1	38643
+NW_022610464.1	68502
+NW_022610465.1	33800
+NW_022610466.1	38351
+NW_022610467.1	141740
+NW_022610468.1	58405
+NW_022610469.1	20477
+NW_022610470.1	32171
+NW_022610471.1	18016
+NW_022610472.1	62563
+NW_022610473.1	129829
+NW_022610474.1	20414
+NW_022610475.1	30577
+NW_022610476.1	86681
+NW_022610477.1	41039
+NW_022610478.1	60355
+NW_022610479.1	29839
+NW_022610480.1	31282
+NW_022610481.1	56310
+NW_022610482.1	31270
+NW_022610483.1	48206
+NW_022610484.1	36050
+NW_022610485.1	245999
+NW_022610486.1	38703
+NW_022610487.1	98327
+NW_022610488.1	26414
+NW_022610489.1	25909
+NW_022610490.1	39217
+NW_022610491.1	32682
+NW_022610492.1	27192
+NW_022610493.1	127246
+NW_022610494.1	9459
+NW_022610495.1	9050
+NW_022610496.1	55984
+NW_022610497.1	58669
+NW_022610498.1	26919
+NW_022610499.1	40493
+NW_022610500.1	220460
+NW_022610501.1	73610
+NW_022610502.1	137721
+NW_022610503.1	38387
+NW_022610504.1	111518
+NW_022610505.1	21449
+NW_022610506.1	24875
+NW_022610507.1	38714
+NW_022610508.1	48629
+NW_022610509.1	24174
+NW_022610510.1	40480
+NW_022610511.1	94483
+NW_022610512.1	133622
+NW_022610513.1	22191
+NW_022610514.1	87446
+NW_022610515.1	30892
+NW_022610516.1	30398
+NW_022610517.1	13440
+NW_022610518.1	26402
+NW_022610519.1	55833
+NW_022610520.1	37970
+NW_022610521.1	35170
+NW_022610522.1	53390
+NW_022610523.1	23941
+NW_022610524.1	55066
+NW_022610525.1	25789
+NW_022610526.1	111261
+NW_022610527.1	39342
+NW_022610528.1	35025
+NW_022610529.1	19231
+NW_022610530.1	29559
+NW_022610531.1	21943
+NW_022610532.1	12199
+NW_022610533.1	45372
+NW_022610534.1	42857
+NW_022610535.1	40316
+NW_022610536.1	70600
+NW_022610537.1	52994
+NW_022610538.1	57491
+NW_022610539.1	59779
+NW_022610540.1	28277
+NW_022610541.1	85349
+NW_022610542.1	2349
+NW_022610543.1	26293
+NW_022610544.1	37808
+NW_022610545.1	26890
+NW_022610546.1	56761
+NW_022610547.1	71633
+NW_022610548.1	28061
+NW_022610549.1	67721
+NW_022610550.1	89036
+NW_022610551.1	34649
+NW_022610552.1	39266
+NW_022610553.1	110727
+NW_022610554.1	27019
+NW_022610555.1	57434
+NW_022610556.1	141392
+NW_022610557.1	12331
+NW_022610558.1	55021
+NW_022610559.1	198929
+NW_022610560.1	6487
+NW_022610561.1	43630
+NW_022610562.1	183183
+NW_022610563.1	53247
+NW_022610564.1	41258
+NW_022610565.1	21728
+NW_022610566.1	33584
+NW_022610567.1	35203
+NW_022610568.1	65144
+NW_022610569.1	29185
+NW_022610570.1	35737
+NW_022610571.1	126443
+NW_022610572.1	43582
+NW_022610573.1	10664
+NW_022610574.1	49656
+NW_022610575.1	85345
+NW_022610576.1	41850
+NW_022610577.1	15451
+NW_022610578.1	91544
+NW_022610579.1	11981
+NW_022610580.1	94049
+NW_022610581.1	27855
+NW_022610582.1	28111
+NW_022610583.1	45385
+NW_022610584.1	55960
+NW_022610585.1	39145
+NW_022610586.1	23288
+NW_022610587.1	31180
+NW_022610588.1	36567
+NW_022610589.1	38724
+NW_022610590.1	28457
+NW_022610591.1	24714
+NW_022610592.1	57482
+NW_022610593.1	21821
+NW_022610594.1	24587
+NW_022610595.1	15681
+NW_022610596.1	103392
+NW_022610597.1	86836
+NW_022610598.1	31336
+NW_022610599.1	50979
+NW_022610600.1	59967
+NW_022610601.1	37124
+NW_022610602.1	18549
+NW_022610603.1	18856
+NW_022610604.1	102862
+NW_022610605.1	8116
+NW_022610606.1	35633
+NW_022610607.1	59804
+NW_022610608.1	38050
+NW_022610609.1	29740
+NW_022610610.1	62194
+NW_022610611.1	31177
+NW_022610612.1	31398
+NW_022610613.1	33054
+NW_022610614.1	103492
+NW_022610615.1	35349
+NW_022610616.1	36240
+NW_022610617.1	68361
+NW_022610618.1	57058
+NW_022610619.1	48714
+NW_022610620.1	24874
+NW_022610621.1	81728
+NW_022610622.1	199682
+NW_022610623.1	86455
+NW_022610624.1	16363
+NW_022610625.1	73403
+NW_022610626.1	25907
+NW_022610627.1	37978
+NW_022610628.1	15655
+NW_022610629.1	11612
+NW_022610630.1	55399
+NW_022610631.1	32618
+NW_022610632.1	46246
+NW_022610633.1	19752
+NW_022610634.1	68133
+NW_022610635.1	26140
+NW_022610636.1	33826
+NW_022610637.1	46131
+NW_022610638.1	36684
+NW_022610639.1	22289
+NW_022610640.1	34229
+NW_022610641.1	42143
+NW_022610642.1	20809
+NW_022610643.1	43569
+NW_022610644.1	36022
+NW_022610645.1	37745
+NW_022610646.1	51277
+NW_022610647.1	18396
+NW_022610648.1	28196
+NW_022610649.1	73077
+NW_022610650.1	27266
+NW_022610651.1	27456
+NW_022610652.1	44055
+NW_022610653.1	29565
+NW_022610654.1	42743
+NW_022610655.1	35312
+NW_022610656.1	98149
+NW_022610657.1	16346
+NW_022610658.1	41805
+NW_022610659.1	33999
+NW_022610660.1	258916
+NW_022610661.1	14985
+NW_022610662.1	63981
+NW_022610663.1	26999
+NW_022610664.1	48348
+NW_022610665.1	45199
+NW_022610666.1	118687
+NW_022610667.1	44692
+NW_022610668.1	18995
+NW_022610669.1	24869
+NW_022610670.1	83882
+NW_022610671.1	18784
+NW_022610672.1	27158
+NW_022610673.1	61139
+NW_022610674.1	283936
+NW_022610675.1	51627
+NW_022610676.1	14208
+NW_022610677.1	21951
+NW_022610678.1	39484
+NW_022610679.1	64072
+NW_022610680.1	176077
+NW_022610681.1	98431
+NW_022610682.1	59357
+NW_022610683.1	23946
+NW_022610684.1	23644
+NW_022610685.1	36198
+NW_022610686.1	26966
+NW_022610687.1	51950
+NW_022610688.1	42567
+NW_022610689.1	233106
+NW_022610690.1	30715
+NW_022610691.1	102894
+NW_022610692.1	360233
+NW_022610693.1	61169
+NW_022610694.1	50315
+NW_022610695.1	34121
+NW_022610696.1	51411
+NW_022610697.1	93856
+NW_022610698.1	59009
+NW_022610699.1	22652
+NW_022610700.1	41253
+NW_022610701.1	16159
+NW_022610702.1	50492
+NW_022610703.1	14488
+NW_022610704.1	70990
+NW_022610705.1	37785
+NW_022610706.1	215289
+NW_022610707.1	22836
+NW_022610708.1	26596
+NW_022610709.1	30151
+NW_022610710.1	31417
+NW_022610711.1	31434
+NW_022610712.1	71911
+NW_022610713.1	49704
+NW_022610714.1	37473
+NW_022610715.1	35415
+NW_022610716.1	63050
+NW_022610717.1	25665
+NW_022610718.1	40986
+NW_022610719.1	107719
+NW_022610720.1	35516
+NW_022610721.1	5068
+NW_022610722.1	84255
+NW_022610723.1	42644
+NW_022610724.1	39320
+NW_022610725.1	31241
+NW_022610726.1	34858
+NW_022610727.1	34293
+NW_022610728.1	36261
+NW_022610729.1	65944
+NW_022610730.1	54245
+NW_022610731.1	80790
+NW_022610732.1	53533
+NW_022610733.1	17661
+NW_022610734.1	40053
+NW_022610735.1	39728
+NW_022610736.1	125602
+NW_022610737.1	30701
+NW_022610738.1	34451
+NW_022610739.1	34245
+NW_022610740.1	45568
+NW_022610741.1	35773
+NW_022610742.1	46003
+NW_022610743.1	38008
+NW_022610744.1	43803
+NW_022610745.1	29893
+NW_022610746.1	36979
+NW_022610747.1	37156
+NW_022610748.1	17533
+NW_022610749.1	33972
+NW_022610750.1	69896
+NW_022610751.1	29101
+NW_022610752.1	41938
+NW_022610753.1	29092
+NW_022610754.1	26255
+NW_022610755.1	29762
+NW_022610756.1	19212
+NW_022610757.1	55604
+NW_022610758.1	26127
+NW_022610759.1	81745
+NW_022610760.1	55962
+NW_022610761.1	20788
+NW_022610762.1	15821
+NW_022610763.1	34083
+NW_022610764.1	16907
+NW_022610765.1	30933
+NW_022610766.1	37399
+NW_022610767.1	28485
+NW_022610768.1	33581
+NW_022610769.1	38621
+NW_022610770.1	72869
+NW_022610771.1	22744
+NW_022610772.1	40955
+NW_022610773.1	51230
+NW_022610774.1	51548
+NW_022610775.1	23974
+NW_022610776.1	40590
+NW_022610777.1	179647
+NW_022610778.1	35245
+NW_022610779.1	67871
+NW_022610780.1	17162
+NW_022610781.1	11886
+NW_022610782.1	94981
+NW_022610783.1	52951
+NW_022610784.1	28646
+NW_022610785.1	50506
+NW_022610786.1	20219
+NW_022610787.1	26389
+NW_022610788.1	81325
+NW_022610789.1	18524
+NW_022610790.1	12637
+NW_022610791.1	34790
+NW_022610792.1	132803
+NW_022610793.1	40158
+NW_022610794.1	42385
+NW_022610795.1	24697
+NW_022610796.1	54679
+NW_022610797.1	52846
+NW_022610798.1	64742
+NW_022610799.1	101678
+NW_022610800.1	36643
+NW_022610801.1	43837
+NW_022610802.1	30049
+NW_022610803.1	39436
+NW_022610804.1	104230
+NW_022610805.1	34059
+NW_022610806.1	19006
+NW_022610807.1	112428
+NW_022610808.1	64730
+NW_022610809.1	16683
+NW_022610810.1	37737
+NW_022610811.1	28254
+NW_022610812.1	46239
+NW_022610813.1	25352
+NW_022610814.1	34731
+NW_022610815.1	43579
+NW_022610816.1	34837
+NW_022610817.1	34038
+NW_022610818.1	29032
+NW_022610819.1	45308
+NW_022610820.1	30826
+NW_022610821.1	93990
+NW_022610822.1	82845
+NW_022610823.1	27460
+NW_022610824.1	78303
+NW_022610825.1	23852
+NW_022610826.1	36735
+NW_022610827.1	30803
+NW_022610828.1	38261
+NW_022610829.1	17029
+NW_022610830.1	43663
+NW_022610831.1	44788
+NW_022610832.1	20301
+NW_022610833.1	166998
+NW_022610834.1	37904
+NW_022610835.1	60929
+NW_022610836.1	49877
+NW_022610837.1	48773
+NW_022610838.1	193519
+NW_022610839.1	66267
+NW_022610840.1	61976
+NW_022610841.1	10977
+NW_022610842.1	58252
+NW_022610843.1	27503
+NW_022610844.1	67797
+NW_022610845.1	35443
+NW_022610846.1	26150
+NW_022610847.1	43718
+NW_022610848.1	35839
+NW_022610849.1	47714
+NW_022610850.1	34067
+NW_022610851.1	44609
+NW_022610852.1	52986
+NW_022610853.1	36417
+NW_022610854.1	52838
+NW_022610855.1	59559
+NW_022610856.1	154395
+NW_022610857.1	44568
+NW_022610858.1	82423
+NW_022610859.1	80446
+NW_022610860.1	20198
+NW_022610861.1	55593
+NW_022610862.1	16276
+NW_022610863.1	14792
+NW_022610864.1	15279
+NW_022610865.1	146384
+NW_022610866.1	20270
+NW_022610867.1	26175
+NW_022610868.1	32394
+NW_022610869.1	50993
+NW_022610870.1	38291
+NW_022610871.1	22914
+NW_022610872.1	40269
+NW_022610873.1	50525
+NW_022610874.1	36359
+NW_022610875.1	33687
+NW_022610876.1	54007
+NW_022610877.1	52010
+NW_022610878.1	43302
+NW_022610879.1	34732
+NW_022610880.1	54265
+NW_022610881.1	46157
+NW_022610882.1	28234
+NW_022610883.1	38895
+NW_022610884.1	38404
+NW_022610885.1	22219
+NW_022610886.1	41903
+NW_022610887.1	40035
+NW_022610888.1	49124
+NW_022610889.1	26475
+NW_022610890.1	55845
+NW_022610891.1	32332
+NW_022610892.1	73722
+NW_022610893.1	162319
+NW_022610894.1	57052
+NW_022610895.1	91398
+NW_022610896.1	20414
+NW_022610897.1	32725
+NW_022610898.1	18703
+NW_022610899.1	54141
+NW_022610900.1	61685
+NW_022610901.1	21236
+NW_022610902.1	33281
+NW_022610903.1	11114
+NW_022610904.1	79767
+NW_022610905.1	22604
+NW_022610906.1	47927
+NW_022610907.1	97134
+NW_022610908.1	26420
+NW_022610909.1	82464
+NW_022610910.1	25884
+NW_022610911.1	39885
+NW_022610912.1	49730
+NW_022610913.1	54671
+NW_022610914.1	44940
+NW_022610915.1	49927
+NW_022610916.1	12585
+NW_022610917.1	53437
+NW_022610918.1	28810
+NW_022610919.1	40333
+NW_022610920.1	67996
+NW_022610921.1	72791
+NW_022610922.1	14866
+NW_022610923.1	57380
+NW_022610924.1	145599
+NW_022610925.1	53462
+NW_022610926.1	55070
+NW_022610927.1	66111
+NW_022610928.1	145314
+NW_022610929.1	60711
+NW_022610930.1	54474
+NW_022610931.1	19169
+NW_022610932.1	30542
+NW_022610933.1	28453
+NW_022610934.1	23139
+NW_022610935.1	36887
+NW_022610936.1	47342
+NW_022610937.1	20502
+NW_022610938.1	134464
+NW_022610939.1	126841
+NW_022610940.1	97836
+NW_022610941.1	60394
+NW_022610942.1	21401
+NW_022610943.1	43002
+NW_022610944.1	24700
+NW_022610945.1	45539
+NW_022610946.1	29618
+NW_022610947.1	126842
+NW_022610948.1	40646
+NW_022610949.1	20859
+NW_022610950.1	23469
+NW_022610951.1	40430
+NW_022610952.1	38261
+NW_022610953.1	26686
+NW_022610954.1	17713
+NW_022610955.1	42424
+NW_022610956.1	66579
+NW_022610957.1	49834
+NW_022610958.1	46748
+NW_022610959.1	31226
+NW_022610960.1	45756
+NW_022610961.1	52868
+NW_022610962.1	27952
+NW_022610963.1	17680
+NW_022610964.1	151200
+NW_022610965.1	69186
+NW_022610966.1	34975
+NW_022610967.1	145798
+NW_022610968.1	144646
+NW_022610969.1	39480
+NW_022610970.1	69699
+NW_022610971.1	46412
+NW_022610972.1	41665
+NW_022610973.1	37180
+NW_022610974.1	41371
+NW_022610975.1	29439
+NW_022610976.1	39120
+NW_022610977.1	37530
+NW_022610978.1	27695
+NW_022610979.1	57015
+NW_022610980.1	32274
+NW_022610981.1	59574
+NW_022610982.1	77023
+NW_022610983.1	22512
+NW_022610984.1	71039
+NW_022610985.1	74260
+NW_022610986.1	38109
+NW_022610987.1	63724
+NW_022610988.1	34415
+NW_022610989.1	63313
+NW_022610990.1	70610
+NW_022610991.1	39097
+NW_022610992.1	53930
+NW_022610993.1	62030
+NW_022610994.1	34556
+NW_022610995.1	38756
+NW_022610996.1	86596
+NW_022610997.1	52539
+NW_022610998.1	35038
+NW_022610999.1	36875
+NW_022611000.1	35224
+NW_022611001.1	33495
+NW_022611002.1	73674
+NW_022611003.1	38112
+NW_022611004.1	40202
+NW_022611005.1	51479
+NW_022611006.1	38843
+NW_022611007.1	84937
+NW_022611008.1	46473
+NW_022611009.1	43214
+NW_022611010.1	44141
+NW_022611011.1	29521
+NW_022611012.1	93288
+NW_022611013.1	24333
+NW_022611014.1	35007
+NW_022611015.1	42152
+NW_022611016.1	26162
+NW_022611017.1	30621
+NW_022611018.1	83983
+NW_022611019.1	24857
+NW_022611020.1	201060
+NW_022611021.1	30044
+NW_022611022.1	29144
+NW_022611023.1	34377
+NW_022611024.1	14315
+NW_022611025.1	131709
+NW_022611026.1	56591
+NW_022611027.1	45337
+NW_022611028.1	38582
+NW_022611029.1	29223
+NW_022611030.1	34228
+NW_022611031.1	56618
+NW_022611032.1	32974
+NW_022611033.1	35066
+NW_022611034.1	42017
+NW_022611035.1	140651
+NW_022611036.1	125530
+NC_015139.1	153482
+Genome sequence total length = 352983092
+Genome size with padding = 584581120
+Feb 13 09:06:16 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=/workspace/GeneLab-Training/BRappa_fastq/References/GCF_000309985.2_CAAS_Brap_v3.01_genomic.gtf, found:
+		74688 transcripts
+		429768 exons (non-collapsed)
+		208740 collapsed junctions
+Total junctions: 208740
+Feb 13 09:06:20 ..... finished GTF processing
+
+!!!!! WARNING: --genomeSAindexNbases 14 is too large for the genome size=352983092, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 13
+Estimated genome size with padding and SJs: total=genome+SJ=783581120 = 584581120 + 199000000
+GstrandBit=32
+Number of SA indices: 701687480
+Feb 13 09:06:21 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 16;   chunks size limit: 374233320 bytes
+Feb 13 09:06:24 ... sorting Suffix Array chunks and saving them to disk...
+Writing 349470144 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_0 ; empty space on disk = 1210904997888 bytes ... done
+Writing 355846504 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_1 ; empty space on disk = 1210555465728 bytes ... done
+Writing 371710792 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_2 ; empty space on disk = 1210199666688 bytes ... done
+Writing 366953592 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_3 ; empty space on disk = 1209827999744 bytes ... done
+Writing 329179832 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_4 ; empty space on disk = 1209461096448 bytes ... done
+Writing 351401056 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_5 ; empty space on disk = 1209131909120 bytes ... done
+Writing 354243280 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_6 ; empty space on disk = 1208780443648 bytes ... done
+Writing 369632040 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_7 ; empty space on disk = 1208426225664 bytes ... done
+Writing 365735944 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_8 ; empty space on disk = 1208056619008 bytes ... done
+Writing 362841008 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_9 ; empty space on disk = 1207690878976 bytes ... done
+Writing 366854352 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_10 ; empty space on disk = 1207327350784 bytes ... done
+Writing 336511264 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_11 ; empty space on disk = 1206959165440 bytes ... done
+Writing 352821736 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_12 ; empty space on disk = 1206622765056 bytes ... done
+Writing 351401056 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_13 ; empty space on disk = 1206269808640 bytes ... done
+Writing 348087504 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_14 ; empty space on disk = 1205919834112 bytes ... done
+Writing 280809736 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA_15 ; empty space on disk = 1205570330624 bytes ... done
+Feb 13 09:14:46 ... loading chunks from disk, packing SA...
+Feb 13 09:15:07 ... finished generating suffix array
+Feb 13 09:15:07 ... generating Suffix Array index
+Feb 13 09:16:38 ... completed Suffix Array index
+WARNING: long repeat for junction # 20130 : NC_024795.2 3972892 3976257; left shift = 255; right shift = 59
+WARNING: long repeat for junction # 20131 : NC_024795.2 3972931 3976296; left shift = 255; right shift = 20
+WARNING: long repeat for junction # 22627 : NC_024795.2 6859319 6860916; left shift = 5; right shift = 255
+WARNING: long repeat for junction # 38584 : NC_024796.2 2015889 2022036; left shift = 255; right shift = 8
+WARNING: long repeat for junction # 40222 : NC_024796.2 3375378 3380425; left shift = 255; right shift = 7
+WARNING: long repeat for junction # 52817 : NC_024796.2 26450950 26455969; left shift = 255; right shift = 28
+WARNING: long repeat for junction # 53183 : NC_024796.2 27054167 27058857; left shift = 255; right shift = 2
+WARNING: long repeat for junction # 61758 : NC_024797.2 4582693 4595912; left shift = 15; right shift = 255
+WARNING: long repeat for junction # 61921 : NC_024797.2 4798287 4801601; left shift = 8; right shift = 255
+WARNING: long repeat for junction # 71376 : NC_024797.2 15453710 15459491; left shift = 255; right shift = 9
+WARNING: long repeat for junction # 84964 : NC_024797.2 31994006 31998547; left shift = 5; right shift = 255
+WARNING: long repeat for junction # 88189 : NC_024798.2 3051049 3061821; left shift = 2; right shift = 255
+WARNING: long repeat for junction # 91516 : NC_024798.2 10320369 10320663; left shift = 12; right shift = 255
+WARNING: long repeat for junction # 95783 : NC_024798.2 17101375 17102724; left shift = 255; right shift = 17
+WARNING: long repeat for junction # 97941 : NC_024798.2 19875109 19882347; left shift = 8; right shift = 255
+WARNING: long repeat for junction # 130951 : NC_024800.2 16731296 16742026; left shift = 255; right shift = 112
+WARNING: long repeat for junction # 133794 : NC_024800.2 20923371 20934942; left shift = 9; right shift = 255
+WARNING: long repeat for junction # 138651 : NC_024800.2 26562191 26572435; left shift = 255; right shift = 19
+WARNING: long repeat for junction # 138652 : NC_024800.2 26562197 26572441; left shift = 255; right shift = 13
+WARNING: long repeat for junction # 143901 : NC_024801.2 5645454 5649586; left shift = 255; right shift = 4
+WARNING: long repeat for junction # 145814 : NC_024801.2 10894814 10895924; left shift = 255; right shift = 16
+WARNING: long repeat for junction # 148816 : NC_024801.2 15450724 15451352; left shift = 255; right shift = 4
+WARNING: long repeat for junction # 149864 : NC_024801.2 16925163 16926075; left shift = 255; right shift = 15
+WARNING: long repeat for junction # 155225 : NC_024801.2 22798578 22798956; left shift = 255; right shift = 1
+WARNING: long repeat for junction # 157722 : NC_024801.2 25677966 25698106; left shift = 6; right shift = 255
+WARNING: long repeat for junction # 161133 : NC_024802.2 182583 200590; left shift = 255; right shift = 87
+WARNING: long repeat for junction # 161134 : NC_024802.2 182653 200660; left shift = 255; right shift = 17
+WARNING: long repeat for junction # 172794 : NC_024802.2 19066147 19068170; left shift = 255; right shift = 0
+WARNING: long repeat for junction # 177508 : NC_024803.2 88016 93907; left shift = 255; right shift = 18
+WARNING: long repeat for junction # 182561 : NC_024803.2 6213041 6214757; left shift = 255; right shift = 18
+WARNING: long repeat for junction # 191726 : NC_024803.2 25945813 25949748; left shift = 255; right shift = 37
+WARNING: long repeat for junction # 199772 : NC_024803.2 38036571 38042940; left shift = 2; right shift = 255
+WARNING: long repeat for junction # 199773 : NC_024803.2 38036602 38042971; left shift = 33; right shift = 255
+WARNING: long repeat for junction # 207218 : NW_022610065.1 13214 20662; left shift = 255; right shift = 45
+WARNING: long repeat for junction # 207277 : NW_022610102.1 53039 59142; left shift = 8; right shift = 255
+WARNING: long repeat for junction # 207528 : NW_022610241.1 6656 8662; left shift = 255; right shift = 3
+WARNING: long repeat for junction # 207558 : NW_022610282.1 60505 61505; left shift = 34; right shift = 255
+WARNING: long repeat for junction # 207891 : NW_022610527.1 4305 15801; left shift = 16; right shift = 255
+WARNING: long repeat for junction # 208100 : NW_022610619.1 17768 18895; left shift = 4; right shift = 255
+WARNING: long repeat for junction # 208328 : NW_022610833.1 15553 19306; left shift = 255; right shift = 6
+Feb 13 09:16:38   Finished preparing junctions
+Feb 13 09:16:38 ..... inserting junctions into the genome indices
+Feb 13 09:21:52   Finished SA search: number of new junctions=208602, old junctions=0
+Feb 13 09:22:14   Finished sorting SA indicesL nInd=82605164
+Genome size with junctions=626092918  584581120   41511798
+GstrandBit1=32   GstrandBit=32
+Feb 13 09:22:23   Finished inserting junction indices
+Feb 13 09:22:47   Finished SAi
+Feb 13 09:22:47 ..... finished inserting junctions into genome
+Feb 13 09:22:47 ... writing Genome to disk ...
+Writing 626092918 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//Genome ; empty space on disk = 1210890915840 bytes ... done
+SA size in bytes: 3235207160
+Feb 13 09:22:47 ... writing Suffix Array to disk ...
+Writing 3235207160 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SA ; empty space on disk = 1210262302720 bytes ... done
+Feb 13 09:22:57 ... writing SAindex to disk
+Writing 8 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SAindex ; empty space on disk = 1207027359744 bytes ... done
+Writing 120 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SAindex ; empty space on disk = 1207027359744 bytes ... done
+Writing 1565873491 bytes into /workspace/GeneLab-Training/BRappa_fastq/STAR_index//SAindex ; empty space on disk = 1207027359744 bytes ... done
+Feb 13 09:23:03 ..... finished successfully
+DONE: Genome generation, EXITING
