@@ -1,0 +1,9 @@
+Sample name         ,Run Accession ,ID ,Group ,Rep
+SRR4417242.fastq.gz ,SRR4417242    ,l2 ,Low   ,  2
+SRR4417238.fastq.gz ,SRR4417238    ,h2 ,High  ,  2
+SRR4417240.fastq.gz ,SRR4417240    ,h4 ,High  ,  4
+SRR4417241.fastq.gz ,SRR4417241    ,l1 ,Low   ,  1
+SRR4417237.fastq.gz ,SRR4417237    ,h1 ,High  ,  1
+SRR4417239.fastq.gz ,SRR4417239    ,h3 ,High  ,  3
+SRR4417243.fastq.gz ,SRR4417243    ,l3 ,Low   ,  3
+SRR4417244.fastq.gz ,SRR4417244    ,l4 ,Low   ,  4
