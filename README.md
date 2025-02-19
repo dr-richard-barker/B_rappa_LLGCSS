@@ -47,10 +47,6 @@ When you open the project in Gitpod:
 
 ## Contents
 
-### The GL4U RNAseq JNs are the original source 
-1. [RNAseq Data Processing](GL4U_RNAseq_JNs/01-RNAseq_processing.ipynb)
-2. [RNAseq Data Analysis](GL4U_RNAseq_JNs/02-RNAseq_analysis.ipynb)
-
 ### Brappa adpation 
 1. 01-RNAseq_Brappa_preprocessing
 
