@@ -2,7 +2,7 @@
 
 
 Fix this bit... 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/dr-richard-barker/B_rappa_LLGCSS))  
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/dr-richard-barker/B_rappa_LLGCSS)
 *Click the button above to launch an interactive Gitpod workspace.*
 
 <details id="understanding-gitpod-session-timeouts">
@@ -49,7 +49,7 @@ When you open the project in Gitpod:
 
 ### Brappa adpation 
 1. 01-RNAseq_Brappa_preprocessing
-
+2. 02-RNAseq_differential expression_work_in_progress
 
 ### Lunar LEAF planning 
 
