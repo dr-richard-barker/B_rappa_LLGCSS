@@ -1,4 +1,4 @@
-# GL4U RNAseq
+# GeneLab RNAseq pipeline for Brassica Rappa, Wsiconsin Fast Plant, base line tests for Lunar LEAF RNAseq analysis
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nasa/GeneLab-Training/tree/GL4U_RNAseq_2024)  
 *Click the button above to launch an interactive Gitpod workspace.*
@@ -45,22 +45,24 @@ When you open the project in Gitpod:
 
 ## Contents
 
-### GL4U RNAseq JNs
+### The GL4U RNAseq JNs are the original source 
 1. [RNAseq Data Processing](GL4U_RNAseq_JNs/01-RNAseq_processing.ipynb)
 2. [RNAseq Data Analysis](GL4U_RNAseq_JNs/02-RNAseq_analysis.ipynb)
 
-### OSD-104
-* [OSD-104](OSD-104)
-  - Directory holding the input files we will use in the GL4U RNAseq JNs to process RNAseq data from [OSD-104](https://osdr.nasa.gov/bio/repo/data/studies/OSD-104).
+### Brappa adpation 
+1. 01-RNAseq_Brappa_preprocessing
 
-### GL4U Intro Lectures
-1. [RNAseq Overview](GL4U_RNAseq_Lectures/RNAseq_Overview_2024_compressed.pdf) 
+
+### Lunar LEAF planning 
+
+
 
 <br>
 
 ## Troubleshooting Gitpod Time Out 
 
-While completing the JNs in the Jupyter Lab environment, your GitPod session my timeout. If this happens, when you try to run a code cell in your JN you may get an error indicating that a folder or file is not found, as shown below:
+While completing the JNs in the Jupyter Lab environment, your GitPod session my timeout. 
+If this happens, when you try to run a code cell in your JN you may get an error indicating that a folder or file is not found, as shown below:
 
 ![GitPot_TimeOut_JN_identified](https://github.com/user-attachments/assets/9a72cba3-64c6-4b54-bc9a-f9b5e635ecf7)
 
