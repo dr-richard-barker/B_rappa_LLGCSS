@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Install sra-tools using conda
+conda install -c bioconda sra-tools
+
+# Replace SRR1234567 with your actual SRA accession number
+SRA_ACCESSION="SRR1234567"
+
+# Download the data
+fastq-dump --split-files $SRA_ACCESSION
