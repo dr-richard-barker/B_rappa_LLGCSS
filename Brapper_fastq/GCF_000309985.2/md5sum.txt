@@ -1,0 +1,3 @@
+c6a1478683d6407ce65ead8b510f0741  ncbi_dataset/data/assembly_data_report.jsonl
+54dafc895de6df2a0ad9eefe130ef950  ncbi_dataset/data/GCF_000309985.2/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna
+dcc2b6f868648aa42f769c0574b55dfc  ncbi_dataset/data/dataset_catalog.json
