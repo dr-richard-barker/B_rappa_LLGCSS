@@ -1,0 +1,158 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /workspace/GeneLab-Training/BRappa_fastq/00-RawData/Fastq/SRR4417243.raw.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.9
+Python version: could not detect
+Number of cores used for trimming: 2
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Illumina adapter for trimming (count: 13224). Second best hit was Nextera (count: 5)
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 4.9 with Python 3.10.0
+Command line parameters: -j 2 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC /workspace/GeneLab-Training/BRappa_fastq/00-RawData/Fastq/SRR4417243.raw.fastq.gz
+Processing single-end reads on 2 cores ...
+Finished in 648.176 s (14.184 µs/read; 4.23 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              45,697,648
+Reads with adapters:                15,694,009 (34.3%)
+Reads written (passing filters):    45,697,648 (100.0%)
+
+Total basepairs processed: 4,615,462,448 bp
+Quality-trimmed:             101,247,184 bp (2.2%)
+Total written (filtered):  4,478,578,549 bp (97.0%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 15694009 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 33.4%
+  C: 27.7%
+  G: 22.7%
+  T: 16.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	9965615	11424412.0	0	9965615
+2	3397189	2856103.0	0	3397189
+3	1019968	714025.8	0	1019968
+4	281190	178506.4	0	281190
+5	140587	44626.6	0	140587
+6	93413	11156.7	0	93413
+7	81000	2789.2	0	81000
+8	60558	697.3	0	60558
+9	68036	174.3	0	66016 2020
+10	52491	43.6	1	49784 2707
+11	41206	10.9	1	39423 1783
+12	49436	2.7	1	48682 754
+13	35518	0.7	1	34996 522
+14	37763	0.7	1	37230 533
+15	33014	0.7	1	32514 500
+16	33931	0.7	1	33350 581
+17	32317	0.7	1	31762 555
+18	36084	0.7	1	35536 548
+19	8294	0.7	1	8080 214
+20	19661	0.7	1	19289 372
+21	17395	0.7	1	17033 362
+22	15907	0.7	1	15601 306
+23	15018	0.7	1	14704 314
+24	15794	0.7	1	15460 334
+25	13657	0.7	1	13377 280
+26	10277	0.7	1	10041 236
+27	11364	0.7	1	11076 288
+28	11475	0.7	1	11215 260
+29	9104	0.7	1	8858 246
+30	9341	0.7	1	9080 261
+31	4795	0.7	1	4636 159
+32	6967	0.7	1	6772 195
+33	4280	0.7	1	4125 155
+34	5890	0.7	1	5689 201
+35	4852	0.7	1	4689 163
+36	5100	0.7	1	4904 196
+37	4278	0.7	1	4110 168
+38	3717	0.7	1	3580 137
+39	4629	0.7	1	4484 145
+40	2493	0.7	1	2402 91
+41	2882	0.7	1	2724 158
+42	1966	0.7	1	1847 119
+43	2189	0.7	1	2107 82
+44	1742	0.7	1	1651 91
+45	2759	0.7	1	2642 117
+46	1985	0.7	1	1891 94
+47	1240	0.7	1	1169 71
+48	1145	0.7	1	1055 90
+49	1668	0.7	1	1492 176
+50	987	0.7	1	923 64
+51	1090	0.7	1	994 96
+52	1696	0.7	1	1579 117
+53	1250	0.7	1	1138 112
+54	284	0.7	1	176 108
+55	576	0.7	1	530 46
+56	527	0.7	1	460 67
+57	940	0.7	1	844 96
+58	470	0.7	1	408 62
+59	657	0.7	1	597 60
+60	228	0.7	1	158 70
+61	281	0.7	1	229 52
+62	315	0.7	1	222 93
+63	484	0.7	1	387 97
+64	227	0.7	1	132 95
+65	89	0.7	1	31 58
+66	184	0.7	1	74 110
+67	215	0.7	1	81 134
+68	313	0.7	1	133 180
+69	299	0.7	1	129 170
+70	223	0.7	1	140 83
+71	104	0.7	1	41 63
+72	67	0.7	1	13 54
+73	83	0.7	1	7 76
+74	48	0.7	1	0 48
+75	45	0.7	1	2 43
+76	42	0.7	1	2 40
+77	80	0.7	1	0 80
+78	37	0.7	1	0 37
+79	60	0.7	1	0 60
+80	44	0.7	1	0 44
+81	50	0.7	1	0 50
+82	47	0.7	1	0 47
+83	43	0.7	1	1 42
+84	38	0.7	1	0 38
+85	32	0.7	1	0 32
+86	50	0.7	1	0 50
+87	36	0.7	1	0 36
+88	37	0.7	1	0 37
+89	67	0.7	1	0 67
+90	53	0.7	1	0 53
+91	47	0.7	1	0 47
+92	45	0.7	1	0 45
+93	47	0.7	1	1 46
+94	53	0.7	1	1 52
+95	34	0.7	1	1 33
+96	59	0.7	1	1 58
+97	36	0.7	1	1 35
+98	62	0.7	1	1 61
+99	23	0.7	1	0 23
+100	13	0.7	1	1 12
+101	12	0.7	1	0 12
+
+RUN STATISTICS FOR INPUT FILE: /workspace/GeneLab-Training/BRappa_fastq/00-RawData/Fastq/SRR4417243.raw.fastq.gz
+=============================================
+45697648 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	12012 (0.0%)
+
