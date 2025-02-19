@@ -2,7 +2,7 @@
 
 
 Fix this bit... 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#[[https://github.com/nasa/GeneLab-Training/tree/GL4U_RNAseq_2024](https://github.com/dr-richard-barker/B_rappa_LLGCSS)](https://github.com/dr-richard-barker/B_rappa_LLGCSS))  
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#[(https://github.com/dr-richard-barker/B_rappa_LLGCSS)](https://github.com/dr-richard-barker/B_rappa_LLGCSS))  
 *Click the button above to launch an interactive Gitpod workspace.*
 
 <details id="understanding-gitpod-session-timeouts">
