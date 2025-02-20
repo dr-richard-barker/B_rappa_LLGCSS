@@ -1,7 +1,14 @@
 # GeneLab RNAseq pipeline for Brassica Rappa, Wsiconsin Fast Plant, base line tests for Lunar LEAF RNAseq analysis
 
+## Contents
 
-Fix this bit... 
+### Brappa adpation 
+1. 01-RNAseq_Brappa_preprocessing
+2. 02-RNAseq_differential expression_work_in_progress
+
+### Lunar LEAF planning 
+
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/dr-richard-barker/B_rappa_LLGCSS)
 *Click the button above to launch an interactive Gitpod workspace.*
 
@@ -44,15 +51,6 @@ When you open the project in Gitpod:
 4. All notebooks and data files will be available in the JupyterLab interface.
 
 <br>
-
-## Contents
-
-### Brappa adpation 
-1. 01-RNAseq_Brappa_preprocessing
-2. 02-RNAseq_differential expression_work_in_progress
-
-### Lunar LEAF planning 
-
 
 
 <br>
