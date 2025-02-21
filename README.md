@@ -66,3 +66,6 @@ If this happens, look at the tab containing your GitPod terminal (the one that c
 > _Note: Once you restart your workspace, make sure you re-run all the code blocks to ensure all variables are re-set and output files are generated._
 
 ![GitPot_TimeOut_Terminal_identified](https://github.com/user-attachments/assets/91b2d26c-582c-415c-8e86-e52c2681f594)
+
+![NASA_lunar_logo](https://github.com/user-attachments/assets/302cd2a6-24b4-44db-a52d-c5051227e3ae)
+
