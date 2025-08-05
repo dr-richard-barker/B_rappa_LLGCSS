@@ -1,0 +1,138 @@
+bra01100	Metabolic pathways
+bra01110	Biosynthesis of secondary metabolites
+bra01120	Microbial metabolism in diverse environments
+bra01200	Carbon metabolism
+bra01210	2-Oxocarboxylic acid metabolism
+bra01212	Fatty acid metabolism
+bra01230	Biosynthesis of amino acids
+bra01232	Nucleotide metabolism
+bra01250	Biosynthesis of nucleotide sugars
+bra01240	Biosynthesis of cofactors
+bra01220	Degradation of aromatic compounds
+bra01310	Nitrogen cycle
+bra01320	Sulfur cycle
+bra00010	Glycolysis / Gluconeogenesis
+bra00020	Citrate cycle (TCA cycle)
+bra00030	Pentose phosphate pathway
+bra00040	Pentose and glucuronate interconversions
+bra00051	Fructose and mannose metabolism
+bra00052	Galactose metabolism
+bra00053	Ascorbate and aldarate metabolism
+bra00500	Starch and sucrose metabolism
+bra00620	Pyruvate metabolism
+bra00630	Glyoxylate and dicarboxylate metabolism
+bra00640	Propanoate metabolism
+bra00650	Butanoate metabolism
+bra00660	C5-Branched dibasic acid metabolism
+bra00562	Inositol phosphate metabolism
+bra00190	Oxidative phosphorylation
+bra00710	Carbon fixation by Calvin cycle
+bra00720	Other carbon fixation pathways
+bra00680	Methane metabolism
+bra00910	Nitrogen metabolism
+bra00920	Sulfur metabolism
+bra00061	Fatty acid biosynthesis
+bra00071	Fatty acid degradation
+bra00074	Mycolic acid biosynthesis
+bra00121	Secondary bile acid biosynthesis
+bra00561	Glycerolipid metabolism
+bra00564	Glycerophospholipid metabolism
+bra00592	alpha-Linolenic acid metabolism
+bra01040	Biosynthesis of unsaturated fatty acids
+bra00230	Purine metabolism
+bra00240	Pyrimidine metabolism
+bra00250	Alanine, aspartate and glutamate metabolism
+bra00260	Glycine, serine and threonine metabolism
+bra00270	Cysteine and methionine metabolism
+bra00280	Valine, leucine and isoleucine degradation
+bra00290	Valine, leucine and isoleucine biosynthesis
+bra00300	Lysine biosynthesis
+bra00310	Lysine degradation
+bra00220	Arginine biosynthesis
+bra00330	Arginine and proline metabolism
+bra00340	Histidine metabolism
+bra00350	Tyrosine metabolism
+bra00360	Phenylalanine metabolism
+bra00380	Tryptophan metabolism
+bra00400	Phenylalanine, tyrosine and tryptophan biosynthesis
+bra00410	beta-Alanine metabolism
+bra00430	Taurine and hypotaurine metabolism
+bra00440	Phosphonate and phosphinate metabolism
+bra00450	Selenocompound metabolism
+bra00460	Cyanoamino acid metabolism
+bra00470	D-Amino acid metabolism
+bra00480	Glutathione metabolism
+bra00520	Amino sugar and nucleotide sugar metabolism
+bra00541	Biosynthesis of various nucleotide sugars
+bra00515	Mannose type O-glycan biosynthesis
+bra00514	Other types of O-glycan biosynthesis
+bra00540	Lipopolysaccharide biosynthesis
+bra00550	Peptidoglycan biosynthesis
+bra00552	Teichoic acid biosynthesis
+bra00543	Exopolysaccharide biosynthesis
+bra00730	Thiamine metabolism
+bra00740	Riboflavin metabolism
+bra00750	Vitamin B6 metabolism
+bra00760	Nicotinate and nicotinamide metabolism
+bra00770	Pantothenate and CoA biosynthesis
+bra00780	Biotin metabolism
+bra00785	Lipoic acid metabolism
+bra00790	Folate biosynthesis
+bra00670	One carbon pool by folate
+bra00860	Porphyrin metabolism
+bra00130	Ubiquinone and other terpenoid-quinone biosynthesis
+bra00900	Terpenoid backbone biosynthesis
+bra00909	Sesquiterpenoid and triterpenoid biosynthesis
+bra00906	Carotenoid biosynthesis
+bra00903	Limonene degradation
+bra00907	Pinene, camphor and geraniol degradation
+bra00523	Polyketide sugar unit biosynthesis
+bra00946	Degradation of flavonoids
+bra00332	Carbapenem biosynthesis
+bra00261	Monobactam biosynthesis
+bra00521	Streptomycin biosynthesis
+bra00525	Acarbose and validamycin biosynthesis
+bra00401	Novobiocin biosynthesis
+bra00405	Phenazine biosynthesis
+bra00999	Biosynthesis of various plant secondary metabolites
+bra00362	Benzoate degradation
+bra00627	Aminobenzoate degradation
+bra00364	Fluorobenzoate degradation
+bra00625	Chloroalkane and chloroalkene degradation
+bra00361	Chlorocyclohexane and chlorobenzene degradation
+bra00623	Toluene degradation
+bra00622	Xylene degradation
+bra00633	Nitrotoluene degradation
+bra00643	Styrene degradation
+bra00791	Atrazine degradation
+bra00930	Caprolactam degradation
+bra00621	Dioxin degradation
+bra00626	Naphthalene degradation
+bra00984	Steroid degradation
+bra03020	RNA polymerase
+bra03010	Ribosome
+bra00970	Aminoacyl-tRNA biosynthesis
+bra03060	Protein export
+bra04141	Protein processing in endoplasmic reticulum
+bra04122	Sulfur relay system
+bra03018	RNA degradation
+bra03030	DNA replication
+bra03410	Base excision repair
+bra03420	Nucleotide excision repair
+bra03430	Mismatch repair
+bra03440	Homologous recombination
+bra03450	Non-homologous end-joining
+bra02010	ABC transporters
+bra02060	Phosphotransferase system (PTS)
+bra03070	Bacterial secretion system
+bra02020	Two-component system
+bra04146	Peroxisome
+bra04148	Efferocytosis
+bra02024	Quorum sensing
+bra02030	Bacterial chemotaxis
+bra02040	Flagellar assembly
+bra04981	Folate transport and metabolism
+bra04980	Cobalamin transport and metabolism
+bra01501	beta-Lactam resistance
+bra01502	Vancomycin resistance
+bra01503	Cationic antimicrobial peptide (CAMP) resistance
