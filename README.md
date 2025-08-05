@@ -2,7 +2,7 @@
 
 ## Contents
 
-### Brappa adpation 
+### B.rapa adpatation to Galactic Cosmic Ray simulation 
 1. 01-RNAseq_Brappa_preprocessing
 2. 02-RNAseq_differential expression_work_in_progress
 
