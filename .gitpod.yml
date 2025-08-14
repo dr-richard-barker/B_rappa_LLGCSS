@@ -1,4 +1,5 @@
-image: quay.io/nasa_genelab/gl4u:gl4u_rnaseq
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - name: Setup Environment and Start Jupyter Lab
