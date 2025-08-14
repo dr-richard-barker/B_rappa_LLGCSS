@@ -1,4 +1,4 @@
-# GeneLab RNAseq pipeline for Brassica Rappa, Wsiconsin Fast Plant, base line tests for Lunar LEAF RNAseq analysis
+# GeneLab RNAseq pipeline for Brassica Rappa, Wisconsin Fast Plant, base line tests for Lunar LEAF RNAseq analysis
 
 ## Contents
 
