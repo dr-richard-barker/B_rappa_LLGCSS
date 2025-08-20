@@ -18,7 +18,6 @@ RUN sudo apt-get update && sudo apt-get install -y \
     wget \
     make \
     texlive-full \
-    pandoc \
     g++ \
     libncurses5-dev \
     zlib1g-dev \
@@ -34,9 +33,8 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 # Add conda to path
 ENV PATH=$HOME/miniconda3/bin:$PATH
 
-# Update conda and install mamba
-RUN conda update -n base -c defaults conda \
-    && conda install -n base -c conda-forge mamba
+# Install mamba and pandoc
+RUN conda install -n base -c conda-forge mamba pandoc -y
 
 # Copy environment file
 COPY environment.yml /tmp/environment.yml
