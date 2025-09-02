@@ -5,7 +5,7 @@ with open('brapa_all_genes.tsv', 'r') as infile, open('brapa_symbol_to_kegg_id_m
     writer.writerow(['kegg_id', 'symbol'])
     for line in infile:
         parts = line.strip().split('\t')
-        if len(parts) > 1:
+        if len(parts) > 3:  # Ensure we have at least 4 columns
             kegg_id = parts[0]
             description = parts[3] # The description is in the 4th column
             symbol = ''
@@ -13,4 +13,9 @@ with open('brapa_all_genes.tsv', 'r') as infile, open('brapa_symbol_to_kegg_id_m
                 symbol = description.split(';')[0]
             else:
                 symbol = description.split(' ')[0]
+            writer.writerow([kegg_id, symbol])
+        elif len(parts) > 1:
+            # Fallback for lines with fewer columns
+            kegg_id = parts[0]
+            symbol = parts[1] if len(parts) > 1 else ''
             writer.writerow([kegg_id, symbol])
