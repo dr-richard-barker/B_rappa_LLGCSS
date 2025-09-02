@@ -47,8 +47,23 @@ print(pathways_local_files)
 # column and numeric data (like log2FoldChange) in the subsequent columns.
 #
 cat("\nLoading B. rapa gene expression data...\n")
-DGE_output_table <- read.csv("Brapa_analysis/05-DESeq2_DGE/differential_expression.csv")
-brapa_gene_data <- DGE_output_table[,c("KEGG_ID", "Log2fc_(scent)v(no_scent)")]
+# Check if the differential expression file exists
+dge_file_path <- "Brapa_analysis/05-DESeq2_DGE/differential_expression.csv"
+if (!file.exists(dge_file_path)) {
+  stop(paste("Required file not found:", dge_file_path, 
+             "\nPlease run the differential expression analysis first."))
+}
+
+DGE_output_table <- read.csv(dge_file_path)
+
+# Check if required columns exist
+required_cols <- c("KEGG_ID", "Log2fc_(FLT)v(GC)")
+missing_cols <- required_cols[!required_cols %in% colnames(DGE_output_table)]
+if (length(missing_cols) > 0) {
+  stop(paste("Required columns missing from DGE file:", paste(missing_cols, collapse=", ")))
+}
+
+brapa_gene_data <- DGE_output_table[,c("KEGG_ID", "Log2fc_(FLT)v(GC)")]
 colnames(brapa_gene_data) <- c("ID", "logFC")
 brapa_gene_data <- na.omit(brapa_gene_data)
 
