@@ -25,4 +25,13 @@ for fn in fns:
     url = retrieve_file_url(accession = sys.argv[1], filename = fn)
     command = f"curl {url} -L --create-dirs  -o {sys.argv[3]}/{fn}"
     print(f"running: {command.split()}")
-    subprocess.run(command.split())
+    try:
+        result = subprocess.run(command.split(), check=True, capture_output=True, text=True)
+        print(f"Successfully downloaded: {fn}")
+    except subprocess.CalledProcessError as e:
+        print(f"Error downloading {fn}: {e}")
+        print(f"Return code: {e.returncode}")
+        if e.stderr:
+            print(f"Error output: {e.stderr}")
+    except Exception as e:
+        print(f"Unexpected error downloading {fn}: {e}")
