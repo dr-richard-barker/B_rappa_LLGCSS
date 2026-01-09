@@ -1,0 +1,46 @@
+PEER REVIEW LOG - INFOGENIUS VISION
+Generated: 2026-01-09T19:16:47.452Z
+--------------------------------------------------
+INPUT PARAMETERS
+--------------------------------------------------
+Raw Topic: WT 40 cGY vs  WT 0 cGY,Down,PS.LIGHTREACTION.PHOTOSYSTEM I
+Sanitized Topic: WT 40 cGY vs  WT 0 cGY Down PS.LIGHTREACTION.PHOTOSYSTEM I
+Complexity Level: Expert
+Visual Style: Default
+Infographic Template: Academic 4-Panel (A-D)
+Color Scheme: Default
+Background Color: Pure White
+Language: English
+
+--------------------------------------------------
+MODEL ARCHITECTURE
+--------------------------------------------------
+Reasoning Model: gemini-3-pro-preview
+Generation Model: gemini-3-pro-image-preview
+Grounding Tool: google_search
+
+--------------------------------------------------
+RESEARCH GROUNDING (SOURCES USED)
+--------------------------------------------------
+- oup.com: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLhWEBj44jNn-HTZF7x3qfeNCptoLdBsHvzA-cVlBpajPRU08UazaxfAK_s5fZt0AoevuWgT8XGujpiOSASq2qC4J9cz8D9WAyaoJHFbxeUqANZNWDFL3thSHZjPde0x49R2JNy684ft6XunHG4wTpzjM-Jg==
+
+--------------------------------------------------
+IMAGE PROMPT (INTERNAL)
+--------------------------------------------------
+A high-fidelity, four-panel scientific illustration in a technical blueprint style, visualizing the downregulation of Photosystem I in irradiated plants. The image is divided into a strict 2x2 grid labeled A, B, C, D.
+**Quadrant A (Top-Left): Experimental Setup.** A detailed vector illustration of an *Arabidopsis thaliana* seedling. To the right, a stylized radiation source emits faint, parallel gamma ray beams (represented as dashed technical lines) hitting the plant. Labels: "WT Control (0 cGy)" and "WT Irradiated (40 cGy)".
+**Quadrant B (Top-Right): Photosystem I Structure.** A cross-section of the thylakoid membrane showing the Photosystem I supercomplex. Differentiate the core subunits (PsaA, PsaB) in dark grey and the Light Harvesting Complex I (LHCI) belt in a lighter shade. Technical callouts point to "PsaA", "PsaB", "PsaD", and "Iron-Sulfur Clusters".
+**Quadrant C (Bottom-Left): Transcriptional Repression.** A cellular diagram connecting the nucleus to the chloroplast. Inside the nucleus, DNA strands show "PSI Genes" with a "Blocked/Repressed" icon (red 'X' or downward arrow). Arrows trace the reduced flow of mRNA (depicted as sparse wavy lines) moving to the chloroplast, contrasting with a dense flow in a small 'Control' inset. Label: "Downregulated Gene Expression".
+**Quadrant D (Bottom-Right): Data Visualization.** A stylized "MapMan" visualization or heatmap. A central square labeled "Photosynthesis" is divided into smaller squares. The specific square for "PS.I" is colored deep blue to signify downregulation, while others are neutral. A legend bar shows a gradient from Blue (Down) to White (No Change) to Red (Up). Text annotation: "Bin 1.1.2: PS.LIGHTREACTION.PHOTOSYSTEM I (p < 0.05)".
+**Style:** Monochrome technical aesthetic (slate grey, white, distinct blue for data highlights) with precise, academic typography (Helvetica or Arial). Flat white background. High contrast, sharp lines.
+
+--------------------------------------------------
+FIGURE LEGEND
+--------------------------------------------------
+**Figure 1: Transcriptomic Downregulation of Photosystem I in Irradiated *Arabidopsis* Seedlings.** 
+**(A)** Experimental design showing Wild Type (WT) *Arabidopsis thaliana* seedlings exposed to 40 cGy ionizing radiation versus 0 cGy controls. 
+**(B)** Structural schematic of the eukaryotic Photosystem I (PSI) supercomplex embedded in the thylakoid membrane, highlighting core subunits (PsaA/B) and the Light Harvesting Complex I (LHCI). 
+**(C)** Mechanism of radiation-induced downregulation. Radiation stress triggers retrograde signaling and nuclear repression of chloroplast-targeted genes, resulting in reduced mRNA abundance for PSI subunits. 
+**(D)** MapMan ontology enrichment analysis visualizing the "PS.LIGHTREACTION.PHOTOSYSTEM I" bin. The blue color intensity indicates the degree of downregulation in the 40 cGy treatment group relative to the control, demonstrating a coordinated suppression of the photosynthetic apparatus.
+--------------------------------------------------
+END OF LOG
