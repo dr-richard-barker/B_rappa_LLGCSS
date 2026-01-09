@@ -1,0 +1,47 @@
+PEER REVIEW LOG - INFOGENIUS VISION
+Generated: 2026-01-09T16:32:14.432Z
+--------------------------------------------------
+INPUT PARAMETERS
+--------------------------------------------------
+Raw Topic: AT1G63730,|,disease,resistance,protein,(TIR-NBS-LRR,"class),",putative,,,,,,,,
+Sanitized Topic: AT1G63730,-,disease,resistance,protein,(TIR-NBS-LRR,"class),",putative,,,,,,,,
+Complexity Level: Expert
+Visual Style: Default
+Infographic Template: Academic 4-Panel (A-D)
+Color Scheme: Default
+Background Color: Pure White
+Language: English
+
+--------------------------------------------------
+MODEL ARCHITECTURE
+--------------------------------------------------
+Reasoning Model: gemini-3-pro-preview
+Generation Model: gemini-3-pro-image-preview
+Grounding Tool: google_search
+
+--------------------------------------------------
+RESEARCH GROUNDING (SOURCES USED)
+--------------------------------------------------
+- researchgate.net: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCY4A0z2uK1PPAIbLqb_UD69FTWU8-QVPm79sy303Yn42el4V_gwOKcvVp5ZZDOlnPg_hz4XvQUDChK1q73ii0q8XszRWzEu_DbG2HE-VW5GOkslO7ligW2MUDLpAaY1bk5UuoDua5Mnj31TVo36uzr8RXVZaw84Q0HxbVPdqZhrxCgVfU658NfQk2psxrbFEF3uXceOKb6m7EVhGpaukQlwQI4ANFKdGqjDb_CcRuV_bYLLdJLLhgrLWpkKje3Xg3mbKAd4vmpROUOrw=
+- suba.live: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5HgiueJV7AJRn2noUinYRPWXbpAMS2W_HI96oA4ox76ByF2ErPdN_5ENJl5BWDAUvYGurz4KaE8yf4WQVnCq2wl3JC09k8Ttq2lOPMQLwJtx3XoxEPb8H9cCT80sOBNtHjtYfuFep
+
+--------------------------------------------------
+IMAGE PROMPT (INTERNAL)
+--------------------------------------------------
+A high-fidelity, technical scientific infographic describing the protein AT1G63730, set on a pure white background (#FFFFFF). The layout is a strict Academic 4-Panel Grid labeled 'A', 'B', 'C', and 'D' in the upper left corners of each quadrant.
+**Quadrant A (Introduction):** A precise linear genetic map of the AT1G63730 locus with exon/intron markers, below which is a 3D ribbon diagram of the protein structure. Distinctly color-code the domains: TIR (Deep Teal), NB-ARC (Slate Blue), and LRR (Muted Gold). Annotate "N-term" and "C-term".
+**Quadrant B (Detail 1):** A schematic comparison of "OFF" vs "ON" states. The "OFF" state shows the LRR domain folding back to inhibit the NB-ARC domain, labeled "ADP-Bound". The "ON" state shows an open conformation with ATP glowing faintly in the binding pocket, labeled "ATP-Bound / Active". Use technical arrows to show the conformational shift.
+**Quadrant C (Detail 2):** A complex molecular diagram showing the "TIR-Resistosome" tetramerization. Four TIR domains come together in the center. Show floating NAD+ molecules entering the center and being cleaved into small signal metabolites (labeled "v-cADPR"). Nearby, show the recruitment of the EDS1-PAD4 heterodimer (rendered in semi-transparent grey) binding to these signals.
+**Quadrant D (Conclusion):** A cellular cross-section diagram. The bottom shows the plasma membrane. Above it, burst icons representing "ROS Accumulation" and "Ion Flux". In the nucleus (background), show stylized DNA strands with "WRKY" transcription factors binding. A bold label "Hypersensitive Response (HR)" indicates cell death.
+**Style:** Minimalist, clean scientific vector illustration. Neutral, cool academic color palette (Teals, Blues, Golds, Greys). No photorealism; use flat shading and precise outlines suitable for a textbook or journal figure. Text labels must be crisp, sans-serif, and in English.
+
+--------------------------------------------------
+FIGURE LEGEND
+--------------------------------------------------
+**Figure 1: Structural topology and putative signaling mechanism of the TNL-H class resistance protein AT1G63730.**
+**(A) Locus and Domain Architecture:** Schematic of the AT1G63730 gene model on Chromosome 1 and the resulting polypeptide structure, highlighting the N-terminal TIR (signaling), central NB-ARC (ATPase switch), and C-terminal LRR (sensor) domains.
+**(B) Activation State Transition:** Molecular model illustrating the shift from the autoinhibited, ADP-bound monomeric state to the active, ATP-bound state upon effector perception.
+**(C) Holoenzyme Assembly & NADase Activity:** Detail of the tetrameric "resistosome" formation where clustered TIR domains actively hydrolyze NAD+ into variant cyclic ADPR (v-cADPR) signaling molecules, mediating interaction with the EDS1-PAD4/SAG101 immune node.
+**(D) Immune Output:** Schematic of downstream consequences, including calcium influx, reactive oxygen species (ROS) burst, and the activation of programmed cell death (Hypersensitive Response) to restrict pathogen spread.
+--------------------------------------------------
+END OF LOG
