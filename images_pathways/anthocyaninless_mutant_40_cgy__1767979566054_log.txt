@@ -1,0 +1,54 @@
+PEER REVIEW LOG - INFOGENIUS VISION
+Generated: 2026-01-09T17:26:06.054Z
+--------------------------------------------------
+INPUT PARAMETERS
+--------------------------------------------------
+Raw Topic: Anthocyaninless mutant 40 cGY vs WT 40 cGY,Down,STEROID SULFOTRANSFERASE
+Sanitized Topic: Anthocyaninless mutant 40 cGY vs WT 40 cGY Down STEROID SULFOTRANSFERASE
+Complexity Level: Expert
+Visual Style: Default
+Infographic Template: Academic 4-Panel (A-D)
+Color Scheme: Default
+Background Color: Pure White
+Language: English
+
+--------------------------------------------------
+MODEL ARCHITECTURE
+--------------------------------------------------
+Reasoning Model: gemini-3-pro-preview
+Generation Model: gemini-3-pro-image-preview
+Grounding Tool: google_search
+
+--------------------------------------------------
+RESEARCH GROUNDING (SOURCES USED)
+--------------------------------------------------
+- atted.jp: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZWwTHOu9M5O2-YkGF1tys1PA_K37hzu6hiMYdp3SJ1gCqCD3GSufhjrsvPkld6uxDajT_O8XfNJlIJHOOlGr9y7YCr2HDHppVQnm7ldGNNMrbMDMEGue10IuT5w==
+- uni-muenchen.de: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-hBeMmHlnuoJNRYgpa8UIvw_Gl1r3phr4ACzLybe0VXYLe5VinVoHUcxKazygBd9ZEDhPgBQuF0spQy3YDMDynO-Sh-T-z5uV3bVAXWOMa6LnZx93qGpwc87ZPzOCWYHt_Hed6BoEAOMzfKUa6kcfQfj2BMbj
+- jenage.de: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoex6MKqYtmaRtg9eT2HK-4RcoE2lVuxHonT2Dyb8DcGifGSOng8uDyExAaOxa2gcW3mWNaxHaz4-C4Usr5bvhdfT3PpdowlvOqELmgjHr5Ams562jN20ZUlEIFebYCSw5lLfuRdRqxFzJKY6FmZPQDioz-dKMmE8=
+
+--------------------------------------------------
+IMAGE PROMPT (INTERNAL)
+--------------------------------------------------
+**
+**A high-fidelity scientific infographic divided into a precise 4-quadrant academic grid (A, B, C, D) on a pure white background.**
+
+*   **Quadrant A (Top-Left): Phenotypes.** Realistic botanical illustration of two *Brassica rapa* seedlings side-by-side. Left: "Wild Type" with distinct purple coloration on the stem and leaf veins. Right: "Anthocyaninless Mutant" (*anl*) appearing entirely bright green. A stylized radiation icon (yellow trefoil or ray beams) labeled "40 cGy" hovers above them.
+*   **Quadrant B (Top-Right): The Pathway.** A technical biochemical flowchart of the Flavonoid pathway. Chemical structures of Dihydroflavonol converting to Anthocyanidin. A bold red "X" marks the enzyme "DFR" (Dihydroflavonol 4-reductase) with the label "Mutant Block." The pathway fades into a void for the mutant, while the WT side leads to a purple pigment icon.
+*   **Quadrant C (Bottom-Left): Mechanism.** A detailed cellular schematic showing the "Steroid Sulfotransferase" (ST) enzyme mechanism. The enzyme is depicted adding a sulfate group (S) to a Brassinosteroid molecule (BL), converting it to "Inactive BL-SO4." Arrows indicate this process is normally "Stress Induced."
+*   **Quadrant D (Bottom-Right): The Data.** A clean, modern bar chart or heatmap. Two bars labeled "WT 40 cGy" (High bar, dark grey) and "Mutant 40 cGy" (Low bar, light grey). A downward arrow explicitly points to the mutant bar labeled "Downregulation of STEROID SULFOTRANSFERASE."
+
+**Style:** Technical blueprint, monochrome slate blue and charcoal lines with accent colors (Purple for anthocyanin, Green for mutant, Red for inhibition). Extremely sharp, vector-like quality, distinct academic layout.
+
+--------------------------------------------------
+FIGURE LEGEND
+--------------------------------------------------
+**
+**Figure 1: Differential Regulation of Steroid Sulfotransferase in Irradiated *Brassica rapa* Genotypes.**
+**(A)** Phenotypic comparison of *Brassica rapa* Wild Type (WT, purple pigmentation) and Anthocyaninless (*anl*, green pigmentation) mutants. The *anl* phenotype results from a null mutation in the *DFR* gene.
+**(B)** Schematic of the Anthocyanin Biosynthetic Pathway, highlighting the metabolic block at Dihydroflavonol 4-reductase (DFR) in *anl* mutants, preventing anthocyanin accumulation.
+**(C)** Radiation exposure protocol (40 cGy) and the physiological role of Steroid Sulfotransferase (ST). ST normally inactivates active brassinosteroids (BL) via sulfonation (BL-SO4) during stress to modulate growth.
+**(D)** Comparative gene expression profile. The data indicates a significant **downregulation** of Steroid Sulfotransferase transcripts in *anl* mutants compared to WT under 40 cGy radiation, suggesting an impaired capacity to modulate brassinosteroid activity in response to radiation stress.
+
+### **
+--------------------------------------------------
+END OF LOG
