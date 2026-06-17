@@ -3,7 +3,7 @@ library(biomaRt)
 
 # Set the Ensembl dataset for Brassica rapa
 ensembl <- useEnsembl(biomart = "plants_mart",
-                      dataset = "brapa_eg_gene",
+                      dataset = "braparapa_eg_gene",
                       host = "https://plants.ensembl.org",
                       verbose = TRUE)
 

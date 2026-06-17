@@ -47,6 +47,8 @@ RUN conda config --add channels bioconda && \
     conda config --set channel_priority strict && \
     conda install --quiet --yes --update-all --name base mamba pandoc && \
     conda clean --all --force-pkgs-dirs --yes
+# Install mamba and pandoc
+RUN conda install -n base -c conda-forge mamba pandoc -y
 
 # Copy environment file
 COPY environment.yml /tmp/environment.yml
