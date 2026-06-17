@@ -1,40 +1,40 @@
+# Load error handling utilities
+source("r_error_handling.R")
+
 .libPaths(c("/tmp/R/library", .libPaths()))
+
+# Check and install required packages with error handling
+required_packages <- c("BiocManager", "tximport", "DESeq2", "tidyverse", "ggfortify", 
+                      "ComplexHeatmap", "EnhancedVolcano", "tidyHeatmap", "clusterProfiler", 
+                      "pathview", "goseq", "fgsea", "enrichplot", "ggnewscale")
+
+check_required_packages(required_packages)
+
+# Load libraries safely
+safe_library("BiocManager")
 BiocManager::install("pathview")
-library(tximport)
-library(DESeq2)
+safe_library("tximport")
+safe_library("DESeq2")
 
-library(tidyverse)
-library(BiocManager) # Needed to install packages from Bioconductor
-library(ggfortify)
-
-library(ComplexHeatmap)
-
-library(EnhancedVolcano)
-
-library(tidyHeatmap)
-
-library(clusterProfiler)
-
-library(pathview)
-
-library(goseq)
-
-library(fgsea)
-
-library(enrichplot)
-
-library(ggnewscale)
-dir.create("Brapa_analysis/04-DESeq2_NormCounts/PCA", recursive = TRUE)
-
-dir.create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/PCA", recursive = TRUE)
-
-dir.create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/Heatmaps", recursive = TRUE)
-
-dir.create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/VolcanoPlots", recursive = TRUE)
-
-dir.create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/GSEA", recursive = TRUE)
-
-dir.create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/pathview", recursive = TRUE)
+safe_library("tidyverse")
+safe_library("BiocManager") # Needed to install packages from Bioconductor
+safe_library("ggfortify")
+safe_library("ComplexHeatmap")
+safe_library("EnhancedVolcano")
+safe_library("tidyHeatmap")
+safe_library("clusterProfiler")
+safe_library("pathview")
+safe_library("goseq")
+safe_library("fgsea")
+safe_library("enrichplot")
+safe_library("ggnewscale")
+# Create required directories with error handling
+safe_dir_create("Brapa_analysis/04-DESeq2_NormCounts/PCA", "PCA output directory")
+safe_dir_create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/PCA", "DGE PCA directory")
+safe_dir_create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/Heatmaps", "Heatmaps directory")
+safe_dir_create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/VolcanoPlots", "Volcano plots directory")
+safe_dir_create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/GSEA", "GSEA directory")
+safe_dir_create("Brapa_analysis/05-DESeq2_DGE/DGE_plots/pathview", "Pathview directory")
 list.dirs(path = "Brapa_analysis", full.names = TRUE, recursive = TRUE) %>% cat(sep = "\n")
 counts_dir <- "Brapper_fastq/RSEM_output"
 
@@ -67,8 +67,11 @@ pathview_dir <- "Brapa_analysis/05-DESeq2_DGE/DGE_plots/pathview"
 # brapa_gene_to_kegg <- read.delim("brapa_gene_to_kegg.tsv", header=FALSE, col.names=c("pathway_id", "gene_id"))
 
 # brapa_symbol_to_kegg_id_map <- read.csv("brapa_symbol_to_kegg_id_map.csv")
-sampleTable <- read.csv(file.path(metadata_dir,"Brapa_metadata.csv"),
+# Check if metadata file exists
+metadata_file <- file.path(metadata_dir,"Brapa_metadata.csv")
+check_file_exists(metadata_file, "Metadata file")
 
+sampleTable <- read.csv(metadata_file,
                   header=TRUE, row.names=1, stringsAsFactors=TRUE, strip.white=TRUE, sep=",")
 sampleTable
 group <- sampleTable[,1]
@@ -379,11 +382,11 @@ EnhancedVolcano(DGE_output_table,
 
     lab = DGE_output_table$SYMBOL,
 
-    x = 'Log2fc_(scent)v(no_scent)',
+    x = 'Log2fc_(FLT)v(GC)',
 
-    y = 'Adj.p.value_(scent)v(no_scent)',
+    y = 'Adj.p.value_(FLT)v(GC)',
 
-    title = 'Scent versus No Scent',
+    title = 'FLT versus GC',
 
     legendLabels=c('NS','|Log2FC| > 1','Adj. p-value < 0.05',
 
@@ -409,13 +412,13 @@ ggsave(file.path(DGE_volcano,'Brapa_volcano_DGE.png'), width = 6.5, height = 8.5
 
 ## Create a new column with the KEGG IDs
 
-DGE_output_table$KEGG_ID <- brapa_symbol_to_kegg_id_map$KEGG_ID[match(DGE_output_table$SYMBOL, brapa_symbol_to_kegg_id_map$SYMBOL)]
+DGE_output_table$KEGG_ID <- brapa_symbol_to_kegg_id_map$kegg_id[match(DGE_output_table$SYMBOL, brapa_symbol_to_kegg_id_map$symbol)]
 
 
 
 ## Create a named vector of fold changes
 
-foldchanges <- DGE_output_table$Log2fc_(scent)v(no_scent)
+foldchanges <- DGE_output_table$`Log2fc_(FLT)v(GC)`
 
 names(foldchanges) <- DGE_output_table$KEGG_ID
 
@@ -451,9 +454,15 @@ DGE_res <- cbind(IDs, all_mean, log2fc, stat, pvalue, padj)
 DGE_res <- DGE_res %>% dplyr::filter(All.mean > mean_exp_cutoff)
 dim(DGE_res)
 head(DGE_res)
-DGE_res_ranked <- DGE_res %>% dplyr::arrange(desc( !!rlang::sym(paste0(rank_var,"_(scent)v(no_scent)"))))
+# Check if the required column exists before proceeding
+required_col <- paste0(rank_var,"_(FLT)v(GC)")
+if (!required_col %in% colnames(DGE_res)) {
+  stop(paste("Required column", required_col, "not found in DGE_res. Available columns:", paste(colnames(DGE_res), collapse=", ")))
+}
+
+DGE_res_ranked <- DGE_res %>% dplyr::arrange(desc( !!rlang::sym(paste0(rank_var,"_(FLT)v(GC)"))))
 head(DGE_res_ranked)
-gene_list <- DGE_res_ranked %>% dplyr::select( !!rlang::sym(paste0(rank_var,"_(scent)v(no_scent)"))) %>% pull
+gene_list <- DGE_res_ranked %>% dplyr::select( !!rlang::sym(paste0(rank_var,"_(FLT)v(GC)"))) %>% pull
 
 
 
@@ -490,7 +499,7 @@ gse_table <- as.data.frame(gse)
 
 ## Save the GSEA output table to a file ##
 
-write.csv(gse_table,file.path(DGE_gsea, paste("Brapa_scent_v_no_scent_GSEA", rank_var, "ranked_output.csv", sep="_")))
+write.csv(gse_table,file.path(DGE_gsea, paste("Brapa_FLT_v_GC_GSEA", rank_var, "ranked_output.csv", sep="_")))
 
 
 
@@ -503,7 +512,7 @@ dotplot(gse, showCategory=10, split=".sign") + facet_grid(.~.sign)
 
 ## Save your dotplot ##
 
-ggsave(file.path(DGE_gsea, paste("Brapa_scent_v_no_scent_GSEA", rank_var, "ranked_dotplot.png", sep="_")), width = 11, height = 8.5, dpi = 300)
+ggsave(file.path(DGE_gsea, paste("Brapa_FLT_v_GC_GSEA", rank_var, "ranked_dotplot.png", sep="_")), width = 11, height = 8.5, dpi = 300)
 gse_pairwise_termsim <- pairwise_termsim(gse)
 
 emapplot(gse_pairwise_termsim, showCategory = 10)
@@ -512,7 +521,7 @@ emapplot(gse_pairwise_termsim, showCategory = 10)
 
 ## Save your network enrichment map ##
 
-ggsave(file.path(DGE_gsea, paste("Brapa_scent_v_no_scent_GSEA", rank_var, "ranked_network_map.png", sep="_")), width = 11, height = 8.5, dpi = 300)
+ggsave(file.path(DGE_gsea, paste("Brapa_FLT_v_GC_GSEA", rank_var, "ranked_network_map.png", sep="_")), width = 11, height = 8.5, dpi = 300)
 ## print session info ##
 
 print(" ")

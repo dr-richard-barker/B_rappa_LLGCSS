@@ -1,0 +1,76 @@
+PEER REVIEW LOG - INFOGENIUS VISION
+Generated: 2026-01-09T16:38:14.014Z
+--------------------------------------------------
+INPUT PARAMETERS
+--------------------------------------------------
+Raw Topic: AT3G24650,"ABI3,",SIS10,|,ABI3,(ABA,INSENSITIVE,3),,,,,,,,
+Sanitized Topic: AT3G24650,"ABI3,",SIS10,-,ABI3,(ABA,INSENSITIVE,3),,,,,,,,
+Complexity Level: Expert
+Visual Style: Default
+Infographic Template: Academic 4-Panel (A-D)
+Color Scheme: Default
+Background Color: Pure White
+Language: English
+
+--------------------------------------------------
+MODEL ARCHITECTURE
+--------------------------------------------------
+Reasoning Model: gemini-3-pro-preview
+Generation Model: gemini-3-pro-image-preview
+Grounding Tool: google_search
+
+--------------------------------------------------
+RESEARCH GROUNDING (SOURCES USED)
+--------------------------------------------------
+- uniprot.org: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNJzevdbRrSbxxtx8M89Oa3ti4937rMGbef4yn2BFgz5bxwnuk8Y_4CLFIMHPrzDK2O1Lns-rIz_01LKD11xfj6c8e4yQ6sAyhvAPlDep6viK6HhvWiU4ooFYdIOl8UhkitiXrOG3df6c=
+- thebiogrid.org: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_p-ZAAdIPw-o0E-uKDzv2rN9aG9p1D_oLD0NDY3AfyPuUv90vc0zQ6mMRWl1cYWRo1EpbDRNTp7nVVXGjm9fCcsUQH8-zpjCx76Lr0m3zTmK6pO2oPdDIfh0O9ttJb6XBQxiEVxcfLMZ-5QONGyLHv5phOjb5IO2fRWkV5g==
+- henau.edu.cn: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMWDUJi6FljKK20I0HroiIZuADBOMhlkt8ProUjhV1xgq_C8T2mGN8_spTLlcxjtqSq0CkJQTn7lSv6TIJ1YlDXXRWE5A-iAjjTSVrl5c2JWm_awoNmP6xopWqHsrIorNycT4yA26sld2-40AncWWdXxAwsjgNyQPXUYs2o29usoRTCQ==
+- nih.gov: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUpTabYXO4cKj9svbs5zKBjIae0pRgBdoJbQPjdfaQUUoYFZMhZg40TLfBauttO0JJ-ltO8lg7TWdDascI20YY6bi7uEVEwt83vQOGASCG8irliQZx9KpU1BX7-VPOvacasMk3d7aybL7DJD8=
+- arabidopsis.org: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5Q5i-TUIMyeBaU7ni7oh1wupxMFHfxekBDicaR8WdZ7jXHGQ49Maj8Ps01cU3mGvO1-SVnm530bofiQ9_CEIjeeFwZYBGSS2a6odQFk6b2Q9vOC8V4wfMKJZRRIFGB0t1naiyezFwM8h_7QnhICMFS0LmfVDXFX-Tb6Hd6d8-r_rDP1Nl457LCIL5kcNYXaLyh74=
+- oup.com: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ4DScR7pPjRBZYiJzviB19aDnn089PfinW52bZiCL23Umihj31aKaLHVXq0LOvVK5fix0FxDDwznfI-CnYAsdG6nkrYfNp0D1i2gMZ_dGknC3Bq9VMxIV3cVaVBwPIRGXuAUoKx0cqz0OR5mZaiFI3iM_JNW_AkkJgx2SALkWIDH1
+- researchgate.net: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQED1-Hbe97zz_EAX6OJON0RF3HtZ_hc4TDnQOYRP7xD25rSqM3dUgUSfzlX8jC4Yh14d3n64yDQdGjONjwv5Yk-jXKmVGGBuHsdtm8Z3Wvd-eZb3kiy8asWj1oRs39yBHLdgrEOpP_dR1AQOmDG4ptW4RpaeoWMG36Meoo-sBwynNAr5LEfz0sktkSpjsHzLwY9qRKOn2B8gl8boelx1U7r01e_1Ddci5D0C4-V4e3ZZu3Dybkcc_5YqX8N3KtkIRzHUw==
+- pnas.org: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHDyoDh17aozsUxlp55t03TFolffzALhD75NQYhcK1pJKLa_a-dd0BFa6pSNCCSHXiy62sw9fSaouvztrl8XZ0ASiR6QaXNf4KefNq7vWIKc4bm7_ZGHc02dCdUR92_lEAqx39_ViA9o2Zug==
+- nih.gov: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmPi-Zpw2Ki9Ek9uPMmmKErBLCcHFjEMNRx3rknQBlnutwuW5G0V2wSWqPJvuMda1SgHP-Ga0FVqZUrS-YLDhFahvgHgbp-wwA2DIJalo5yrcFjWthaCCzntC8hqZ0b0CqOJpC5zZeprl5KA==
+- nih.gov: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESUzBa7OTyUCDE1-D2VriIRuJBIvA0TPjf0NbtL70Lphf-JzDiK99q2UhSRkQQ9Fh93a_N-rtHorT_3JIpeDvGSro3wFGS9i35jNtMbBSUhdk12gIdO_l71Aur9cABaOXqqFHS
+- biologists.com: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDBJEsKHUh-I7HvTwNmQSP3a3Xpao9BQdlJ9u02vb1vrkc28bjt3HLO06ooEYpMUZLCvmmUB-7jD9MHls794_Wt1nLVqDrFfGHZhmfWxl4qx0RPepuX1qpahBLVAfkhQm5tb_eTSQxQ0rC0NBXfkGoK_7k9T_ggFVn9OnNDMg4YCsHBSRdSTNpetW0YJQlHMy2fBxt2XtPoNxPZuGZJWZ8Bw==
+- nih.gov: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFftBQlwQ4T5p8o8ys8wfTEFYiGCGP9VzL2y3gfnrYXMjQj4xg3yWCMJCdTGtPwYfRlx4451LiYeK85srTCaLNJzlIy7nJ6BymHpBQ-bME4-aaCaNfhDxGheztdWQtekRv_qzoInULZaYF8WQo=
+- nih.gov: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHGobu-FsXiQmERBzRqez3N3uDSuzJRC7_7B5z8x7PgcnuqfI4HQ6M73iIFadoyLCHqmrgzcnmSENjpreHzPAPrzTks_2toGjUz-KObO-7WbFTeD8Rg0C9rNz1cNSw2xufrWt4
+
+--------------------------------------------------
+IMAGE PROMPT (INTERNAL)
+--------------------------------------------------
+**[Layout: Academic 4-Panel (A-D)]**
+**General:** A monochrome, high-contrast technical blueprint of the gene AT3G24650 (ABI3) on a pure white background (#FFFFFF). Lines are dark slate grey (#2F4F4F) and deep navy (#000080). Text is crisp sans-serif (Helvetica style).
+
+**Quadrant A (Top-Left): Developmental Timeline.**
+A horizontal timeline labeled "Seed Development." Phases: "Morphogenesis" -> "Maturation" -> "Desiccation." A curve labeled "ABI3 Expression" rises sharply during Maturation and drops at Desiccation. Below, a cross-section of an *Arabidopsis* seed showing the embryo arrested in the "Torpedo stage," labeled "Embryo Dormancy Enforced."
+
+**Quadrant B (Top-Right): Molecular Structure.**
+A linear diagram of the protein bar: "N-term -- [A1 Acidic] -- [B1] -- [B2] -- [B3 DNA Binding] -- C-term."
+**Zoom-in Detail:** A 3D wireframe schematic of the B3 domain. Show it as a "Seven-stranded open $\beta$-barrel" with two $\alpha$-helices. It is shown clamping onto a double-helix DNA segment. Labels: "B3 Domain," "Major Groove Interaction," "RY Motif: 5'-CATGCA-3'."
+
+**Quadrant C (Bottom-Left): Signal Integration Pathway.**
+A flowchart. Top inputs: "Abscisic Acid (ABA)" and "High Glucose." Arrows converge on a central node labeled "ABI3 (SIS10)."
+Output arrows from ABI3 lead to:
+1. "Seed Storage Proteins (2S/12S) [Activation]"
+2. "LEA Proteins (Desiccation) [Activation]"
+3. "SGR1/2 (Degreening) [Activation]"
+4. "Germination [REPRESSION]"
+A "STOP" symbol blocks the Germination path. Annotation: "*sis10* mutation breaks this repression loop."
+
+**Quadrant D (Bottom-Right): Phenotype Data.**
+Split view. Left: "Wild Type." Drawing of a brown, shriveled seed labeled "Desiccation Tolerant." Right: "*abi3* Mutant." Drawing of a smooth, bright green seed labeled "Viviparous-like / Stay-green."
+Below: A line graph. X-axis: "Glucose Concentration (%)". Y-axis: "Germination Rate (%)". Two lines: "Wild Type" (drops to 0% as Glucose increases) and "*sis10/abi3*" (remains high/flat near 100%, indicating resistance).
+
+--------------------------------------------------
+FIGURE LEGEND
+--------------------------------------------------
+**Figure 1: Structural and Functional Characterization of the *Arabidopsis* ABI3/SIS10 Locus (AT3G24650).**
+**(A) Spatiotemporal Context:** Schematic of *Arabidopsis thaliana* seed development, highlighting ABI3 expression peaking during the maturation phase (late embryogenesis) to arrest growth and induce desiccation tolerance.
+**(B) Protein Architecture:** Domain organization of the ABI3 transcription factor, featuring the A1 activation domain and the B1, B2, and B3 basic domains. The inset details the 3D topology of the B3 domain (7-stranded $\beta$-barrel) interacting with the RY cis-element (CATGCA).
+**(C) The ABA-Sugar Signaling Nexus:** The regulatory pathway showing ABI3 as the integration node for Abscisic Acid (ABA) and Glucose signaling. High glucose levels upregulate ABA, which activates ABI3 to repress germination; the *sis10* mutation uncouples this blockade.
+**(D) Phenotypic & Expression Data:** Comparative analysis of Wild Type (WT) vs. *abi3/sis10* mutants. Top: WT seeds are brown and dormant, while *abi3* seeds remain green and intolerant to desiccation. Bottom: Dose-response curve illustrating germination rates under increasing glucose concentrations, showing the "sugar insensitive" (resistant) phenotype of *sis10*.
+
+###
+--------------------------------------------------
+END OF LOG
