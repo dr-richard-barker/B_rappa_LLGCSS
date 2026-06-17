@@ -1,10 +1,11 @@
-FROM gitpod/workspace-base:latest
+FROM gitpod/workspace-base@sha256:12853f7c901eb2b677a549cb112c85f9679d18feb30093bcc63aa252540ecad9
 
-USER gitpod
+USER root
 ENV TZ=America/Los_Angeles
 
 # Install system dependencies
-RUN sudo apt-get update && sudo apt-get install -y \
+RUN apt-get update --quiet && \
+    apt-get install --quiet --yes --no-install-recommends \
     libcurl4-openssl-dev \
     libssl-dev \
     libxml2-dev \
@@ -23,16 +24,29 @@ RUN sudo apt-get update && sudo apt-get install -y \
     zlib1g-dev \
     libbz2-dev \
     liblzma-dev \
-    && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Install conda
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
-    && bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3 \
-    && rm Miniconda3-latest-Linux-x86_64.sh
+# Install Miniforge
+RUN wget --quiet https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
+    bash Miniforge3-Linux-x86_64.sh -b -p /opt/conda && \
+    rm Miniforge3-Linux-x86_64.sh
 
-# Add conda to path
-ENV PATH=$HOME/miniconda3/bin:$PATH
+# Set PATH for Conda
+ENV PATH="/opt/conda/bin:$PATH"
 
+# Change ownership for gitpod
+RUN chown -R gitpod:gitpod /opt/conda
+
+# Change user to gitpod
+USER gitpod
+
+# Configure conda
+RUN conda config --add channels bioconda && \
+    conda config --add channels conda-forge && \
+    conda config --set channel_priority strict && \
+    conda install --quiet --yes --update-all --name base mamba pandoc && \
+    conda clean --all --force-pkgs-dirs --yes
 # Install mamba and pandoc
 RUN conda install -n base -c conda-forge mamba pandoc -y
 
