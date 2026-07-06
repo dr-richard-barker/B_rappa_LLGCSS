@@ -178,9 +178,9 @@ See `results/` directory for complete outputs and figures.
 ## Authors & Contact
 
 **Project Lead:** Dr. Richard Barker  
-**Affiliation:** [Your Institution]  
-**Contact:** [Your Email]  
-**ORCID:** [Your ORCID if available]
+**Affiliation:** Purdue University
+**Contact:** dr richard barker @ gmail . com
+**ORCID:** 0000-0001-5681-9857
 
 ## How to Cite
 
@@ -225,7 +225,7 @@ For bug reports or feature requests, please open an issue.
 This research was supported by the **Lunar LEAF (Life Sciences & Engineering for Lunar Environments and Applications for Flight)** program.
 
 We acknowledge:
-- [NASA/funding agency]
+- NASA as the funding agency
 - GeneLab consortium for RNAseq pipeline standards
 - [Any collaborators or data providers]
 
