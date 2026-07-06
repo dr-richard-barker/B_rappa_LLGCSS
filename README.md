@@ -55,9 +55,6 @@ jupyter lab
 
 Then open `notebooks/01-preprocessing-RNAseq.ipynb` to begin.
 
-### Option 2: Cloud-based (Gitpod)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dr-richard-barker/B_rappa_LLGCSS)
 
 ## System Requirements
 
