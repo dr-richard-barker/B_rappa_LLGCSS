@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Brassica rapa — Radiation-Induced Change in Floral Scent (LLGCSS)"
+abstract: >-
+  RNA-seq analysis code and data for a Brassica rapa (Wisconsin Fast Plant)
+  project investigating whether galactic cosmic ray (GCR) radiation alters
+  floral scent, combining a High/Low floral-scent transcriptome with a
+  0/40 cGy radiation dose-response transcriptome. Part of the Lunar LEAF effort.
+type: software
+authors:
+  - family-names: Barker
+    given-names: Richard
+    orcid: "https://orcid.org/0000-0001-5681-9857"
+    # affiliation: "TODO — confirm current affiliation before deposit"
+license: CC0-1.0
+repository-code: "https://github.com/dr-richard-barker/B_rappa_LLGCSS"
+keywords:
+  - Brassica rapa
+  - RNA-seq
+  - floral scent
+  - space radiation
+  - galactic cosmic rays
+  - Lunar LEAF
+  - transcriptomics
+  - DESeq2
+# doi: "TODO — add Zenodo DOI once minted"

@@ -1,0 +1,61 @@
+# ---------------------------------------------------------------------------
+# B_rappa_LLGCSS .gitignore
+# Large data / reference / index / derived files are kept on disk but NOT in git.
+# They are documented in DATA.md and provided via the data deposit (Zenodo / OSDR).
+# NOTE: .gitignore only affects UNtracked files; nothing already committed is
+# removed by these rules.
+# ---------------------------------------------------------------------------
+
+# --- Reference genomes & annotations (kept locally for comparative genomics) ---
+*.fa
+*.fa.gz
+*.fna
+*.fna.gz
+*.fasta
+*.fasta.gz
+*.gff3
+*.gff3.gz
+*.gtf
+*.gtf.gz
+*.gtf.zip
+*.annotation_info.txt.gz
+FPsc_genome/
+Brapa_FPsc_v1_3/
+FPsc_genome/
+
+# --- Alignment / quantification indexes & intermediates (regenerable) ---
+Brapper_fastq/STAR_index/
+Brapper_fastq/RSEM_output/
+Brapper_fastq/Reference/
+RSEM_index.*
+*.results
+*.theta
+*.stat
+*.tab
+
+# --- Bulky HTML reports (iDEP deg reports, multiqc, pathway workflows) ---
+# ship via data deposit, not git. Force-add with `git add -f` if one is a deliverable.
+*.html
+
+# --- Large derived result tables (ship via data deposit, not git) ---
+**/Results_LFC_Pval_DESeq2.csv
+**/Radi_model_with_interactions_deg_values_DESeq2.csv
+**/differential_expression*GLbulkRNAseq*.csv
+**/Fixative_Results_LFC_Pval_DESeq2.csv
+NewTest/B.rapa_to_Ara_mart_export.txt
+# Large count matrices (raw counts ship via deposit; small factor/metadata sheets stay tracked)
+**/RSEM_Unnormalized_Counts*.csv
+**/GeneCounts_RSEM.csv
+**/GeneCounts_Cropping*expression*.csv
+**/TPM_RSEM.csv
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.bak
+*~
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Legacy archive stays on disk but out of version control ---
+docs/legacy/

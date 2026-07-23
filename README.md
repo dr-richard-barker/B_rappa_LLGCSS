@@ -1,257 +1,122 @@
-# B. rappa RNA-seq Analysis: Lunar LEAF LLGCSS Project
-
-## Overview
-
-This repository contains the complete RNA-sequencing analysis pipeline for *Brassica rappa* (Wisconsin Fast Plant) exposed to simulated galactic cosmic ray radiation. This work supports the Lunar LEAF (Life Sciences & Engineering for Lunar Environments and Applications for Flight) program and provides baseline molecular responses for plant adaptation studies relevant to future lunar agriculture.
-
-## Project Description
-
-**Purpose:** Investigate transcriptomic responses of *B. rappa* to cosmic ray simulation to establish baseline data for the Lunar LEAF project's genetic expression studies.
-
-**Organism:** *Brassica rappa* (Wisconsin Fast Plant)  
-**Reference Genome Version:** BrapaFPsc v1.3 (GCF_000309985.2)  
-**Analysis Method:** GeneLab standard RNAseq pipeline  
-**License:** CC0 1.0 Universal (Public Domain)
-
-## Contents
-
-### Notebooks (Analysis Pipeline)
-- **`notebooks/01-preprocessing-RNAseq.ipynb`** - Raw data quality control, trimming, alignment, and quantification (fastq → counts)
-- **`notebooks/02-differential-expression.ipynb`** - Normalization, differential expression analysis, visualization, and pathway enrichment
-
-### Data Organization
-- **`data/metadata/`** - Experimental design and sample information
-- **`data/processed/`** - Intermediate and final analysis outputs
-- **`reference/`** - Reference genome and annotation files
-- **`results/`** - Final figures and summary tables
-
-### Code & Scripts
-- **`scripts/`** - Reusable R and Python functions for analysis
-- **`environment.yml`** - Complete conda environment specification for reproducibility
-- **`.gitpod.yml`** - Configuration for cloud-based development
-
-### Documentation
-- **`METHODS.md`** - Detailed methods and pipeline specifications
-- **`DATA-DICTIONARY.md`** - Description of all data files and formats
-- **`QUICKSTART.md`** - Quick start guide for running the analysis
-- **`CITATION.cff`** - Citation metadata
-
-## Quick Start
-
-### Option 1: Local Installation
-
-```bash
-# Clone repository
-git clone https://github.com/dr-richard-barker/B_rappa_LLGCSS.git
-cd B_rappa_LLGCSS
-
-# Create conda environment
-conda env create -f environment.yml
-conda activate gl4u_rnaseq_2024
-
-# Start Jupyter Lab
-jupyter lab
-```
-
-Then open `notebooks/01-preprocessing-RNAseq.ipynb` to begin.
-
-
-## System Requirements
-
-- **Python:** 3.10
-- **R:** 4.4.1
-- **Memory:** 16 GB recommended
-- **Disk Space:** ~100 GB for raw sequencing data (not included in repository)
-- **Operating System:** Linux/macOS preferred; Windows with WSL2 supported
-
-## Installation
-
-### Prerequisites
-- Conda or Manconda installed ([Installation guide](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html))
-- Git
-
-### Setup Steps
-
-```bash
-# Create environment with all dependencies
-conda env create -f environment.yml
-
-# Activate environment
-conda activate gl4u_rnaseq_2024
-
-# (Optional) Install additional development tools
-pip install nbclassic
-```
-
-**Dependencies Include:**
-- **Bioinformatics tools:** STAR, RSEM, Trim Galore!, FastQC, MultiQC, samtools
-- **R packages:** DESeq2, tidyverse, ggplot2, clusterProfiler, pathview
-- **Python packages:** pandas, numpy, scipy, jupyter
-
-See `environment.yml` for complete version specifications.
-
-## Usage
-
-### Step 1: Prepare Raw Data
-```bash
-# Download raw FASTQ files from NCBI SRA (see DATA.md for links)
-# Place in: data/raw/fastq/
-```
-
-### Step 2: Run Preprocessing Pipeline
-Open and execute `notebooks/01-preprocessing-RNAseq.ipynb`:
-- Quality control with FastQC/MultiQC
-- Read trimming with Trim Galore!
-- Genome alignment with STAR
-- Read quantification with RSEM
-
-**Outputs:** `data/processed/counts/`
-
-### Step 3: Run Differential Expression Analysis
-Open and execute `notebooks/02-differential-expression.ipynb`:
-- Count normalization with DESeq2
-- Statistical testing for differential expression
-- Visualization (PCA, heatmaps, volcano plots)
-- Gene set enrichment analysis
-
-**Outputs:** `results/`
-
-## Data Availability
-
-### Raw Sequencing Data
-- **Source:** NCBI Sequence Read Archive (SRA)
-- **Bioproject ID:** [SRA_PROJECT_ID]
-- **Download with:**
-  ```bash
-  fastq-dump --gzip [SRA_RUN_ID]
-  ```
-- See `DATA.md` for complete list of sample accessions
-
-### Reference Files
-- **Genome:** *B. rappa* v1.3 (GCF_000309985.2) from NCBI Datasets
-- **Included:** `reference/` directory contains reference sequences
-- **Alternative sources:** 
-  - NCBI: https://www.ncbi.nlm.nih.gov/datasets
-  - Phytozome: https://phytozome-next.jgi.doe.gov/
-
-## Reproducibility
-
-This repository is designed for full reproducibility:
-
-1. **Exact versions:** All software versions pinned in `environment.yml`
-2. **Containerization:** Gitpod configuration for cloud reproducibility
-3. **Documentation:** Step-by-step methods in `METHODS.md`
-4. **Code availability:** All analysis scripts included and annotated
-
-To reproduce all results:
-```bash
-conda env create -f environment.yml
-conda activate gl4u_rnaseq_2024
-jupyter execute notebooks/01-preprocessing-RNAseq.ipynb
-jupyter execute notebooks/02-differential-expression.ipynb
-```
-
-## Methods Summary
-
-**RNAseq Pipeline Overview:**
-1. **Quality Assessment:** FastQC evaluates raw read quality metrics
-2. **Preprocessing:** Trim Galore! removes adapters and low-quality bases
-3. **Alignment:** STAR maps reads to *B. rappa* v1.3 reference genome
-4. **Quantification:** RSEM generates transcript abundance estimates
-5. **Normalization:** DESeq2 applies variance-stabilizing transformation
-6. **Statistical Testing:** DESeq2 performs negative binomial GLM differential expression testing
-7. **Visualization & Enrichment:** ggplot2 and clusterProfiler for downstream analysis
-
-For detailed methods, see `METHODS.md`.
-
-## Key Results
-
-[Summary of main findings - to be added after analysis completion]
-
-- Number of differentially expressed genes: [N]
-- Treatment effect: [description]
-- Key pathways identified: [pathways]
-- [Other key results]
-
-See `results/` directory for complete outputs and figures.
-
-## Authors & Contact
-
-**Project Lead:** Dr. Richard Barker  
-**Affiliation:** Purdue University
-**Contact:** dr richard barker @ gmail . com
-**ORCID:** 0000-0001-5681-9857
-
-## How to Cite
-
-If you use this code or data, please cite:
-
-```bibtex
-@software{barker2024brappa,
-  title={B. rappa RNA-seq Analysis: Lunar LEAF LLGCSS Project},
-  author={Barker, Richard},
-  year={2024},
-  url={https://github.com/dr-richard-barker/B_rappa_LLGCSS},
-  doi={[Zenodo DOI]},
-  note={Available on Zenodo}
-}
-```
-
-Or use the CITATION.cff file: `cite this repository` button on GitHub.
-
-## License
-
-This work is released under the **Creative Commons Zero v1.0 Universal (CC0 1.0)** license, effectively placing it in the public domain. You are free to:
-- Use for any purpose
-- Modify and adapt
-- Distribute commercially and non-commercially
-- No attribution required (though appreciated!)
-
-See `LICENSE` file for full legal text.
-
-## Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b improve/feature`)
-3. Make your changes
-4. Submit a pull request with description
-
-For bug reports or feature requests, please open an issue.
-
-## Funding & Acknowledgments
-
-This research was supported by the **Lunar LEAF (Life Sciences & Engineering for Lunar Environments and Applications for Flight)** program.
-
-We acknowledge:
-- NASA as the funding agency
-- GeneLab consortium for RNAseq pipeline standards
-- [Any collaborators or data providers]
-
-## References
-
-- GeneLab RNAseq Processing Pipeline: [https://github.com/nasa/GeneLab_Data_Processing](https://github.com/nasa/GeneLab_Data_Processing)
-- FastQC: [https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-- STAR Aligner: [https://github.com/alexdobin/STAR](https://github.com/alexdobin/STAR)
-- RSEM: [https://github.com/deweylab/RSEM](https://github.com/deweylab/RSEM)
-- DESeq2: [https://bioconductor.org/packages/DESeq2/](https://bioconductor.org/packages/DESeq2/)
-
-## Troubleshooting
-
-### Issue: Environment creation fails
-**Solution:** Try updating conda: `conda update conda`
-
-### Issue: STAR index building runs out of memory
-**Solution:** Reduce `--limitGenomeGenerateRAM` parameter in notebooks
-
-### Issue: Gitpod times out
-**Solution:** Use local installation for long-running analyses; Gitpod sessions have 30-minute inactivity limit
-
-For more issues, see GitHub Issues or contact the authors.
+# *Brassica rapa* — Radiation-Induced Change in Floral Scent (LLGCSS)
+
+RNA-seq analysis code and data for a *Brassica rapa* (Wisconsin Fast Plant) project
+investigating whether **galactic cosmic ray (GCR) radiation alters floral scent**.
+Part of the **Lunar LEAF** (Life sciences & Engineering for lunar Agriculture and
+Flight) effort.
+
+> **Status:** actively being consolidated and developed into a follow-up manuscript.
+> See **[`README_PLAN.md`](README_PLAN.md)** for the full research + tidy-up plan,
+> the current state of the analysis, and open decisions. Read that first if you are
+> picking this work up.
 
 ---
 
-**Last Updated:** July 2024  
-**Repository Status:** Active Development  
-**Maintained by:** Dr. Richard Barker
+## What this repository actually contains
+
+This repo brings together **two separate RNA-seq experiments** in the same species.
+Keeping them distinct matters — they use different samples *and* different genome
+annotations.
+
+### 1. Scent dataset (the practice / seed dataset)
+- 8 samples, **High- vs Low-scent** *B. rapa* lines.
+- SRA accessions `SRR4417237`–`SRR4417244`; reads were processed through NASA
+  **OSDR/GeneLab**-style tooling to obtain counts.
+- Gene IDs: Chiifu / Ensembl Plants (`Bra000001` style).
+- Files: `Metadata/Brapp_Scent_metadata_factors.csv`, `NewTest/` (DE table +
+  B. rapa→Arabidopsis ortholog export), notebooks `01`/`02`.
+
+### 2. Radiation / GCR dataset
+- 39 GeneLab-style libraries. Factors: `condition` = 0 / 40 cGy, `genotype` = WT /
+  *anthocyaninless*, `preservative` = DRS / RL.
+- Analysed with iDEP-generated DESeq2 models (main effects + interaction terms).
+- Gene IDs: FPsc / RefSeq (`BRA028087` style).
+- Files: `counts and factors/`, `Radiation model/`, `treatment_genotype + preservative/`,
+  `Exporatory_Model_V1/`.
+- **The counts/results here are our own exploratory analysis.** The primary radiation
+  study is being carried forward separately by collaborators; treat OSDR as the source
+  of record (accession/DOI to be linked).
+
+> **Important:** the two datasets' gene-ID namespaces (`Bra…` vs `BRA…`) do **not**
+> join directly. Reconciling them is the first analytical step toward the scent×radiation
+> question — see `README_PLAN.md` §4.
+
+---
+
+## Repository layout
+
+```
+01-RNAseq_processing_Brapa_FPsc_v1_3.ipynb   fastq → counts (FastQC→TrimGalore→STAR→RSeQC→RSEM)
+02-RNAseq_analysis_Brapa.ipynb               counts → DESeq2 DGE → PCA/volcano/heatmap → KEGG GSEA + pathview
+brapa_gsea.R                                 standalone DGE + KEGG GSEA + pathview pipeline (non-model plant)
+brapa_sbgnview.R                             SBGNview pathway painting
+create_mapping.R / gene_id_mapping.R         Ensembl Plants biomaRt: B. rapa symbol ↔ Ensembl ↔ KEGG
+r_error_handling.R                           reusable package/file/dir guards, sourced by the R scripts
+download_file_urls.py                        fetch files from an OSDR/GLDS accession by pattern
+process_genes.py                             build a symbol↔KEGG map (see caveat below)
+environment.yml                              pinned conda env (GeneLab RNAseq)
+Metadata/, counts and factors/               experiment metadata + count/factor matrices
+Brapper_fastq/                               scent-dataset processing tree (QC, STAR/RSEM outputs)
+Radiation model/, treatment_genotype + preservative/, Exporatory_Model_V1/   radiation DESeq2 models
+NewTest/                                     scent DE results + B. rapa→Arabidopsis ortholog export
+Brapa_analysis/                              KEGG annotation files (gene→pathway, pathway→name)
+FPsc_genome/, Brapa_FPsc_v1_3/               Wisconsin Fast Plant (FPsc v1.3) reference
+images*/                                     figures from exploratory analyses
+docs/                                        LEGACY.md manifest + on-disk legacy archive
+README_PLAN.md                               research + consolidation plan (read this)
+```
+
+### Reference genomes (kept on disk, not in git)
+Two *B. rapa* assemblies are present for the comparative-genomics work:
+- **Wisconsin Fast Plant — FPsc v1.3** (Phytozome `BrapaFPsc_277_v1.3`), in `FPsc_genome/`.
+- **NCBI RefSeq `GCF_000309985.2` (CAAS Brap v3.01, Chiifu-based)**, in `Brapper_fastq/Reference/`.
+
+Large reference, index, and derived-result files are **git-ignored** and provided via
+the data deposit rather than committed (they are what previously bloated the history).
+
+---
+
+## Reusable / notable pieces
+
+- **`brapa_gsea.R`** — a KEGG GSEA + `pathview` pipeline for a *non-model* plant
+  (custom `TERM2GENE`/`TERM2NAME`), the most reusable code here. *Currently orphaned
+  from its inputs (`Brapa_metadata.csv`, `Brapa_analysis/dds.rds`) — see plan.*
+- **`create_mapping.R` / `gene_id_mapping.R`** — the right approach for rebuilding a
+  full ortholog/ID map via Ensembl Plants biomaRt.
+- **`01`/`02` notebooks** — the canonical processing and analysis pipeline (adapted from
+  the NASA GeneLab GL4U training module).
+
+## Known caveats (before you trust an output)
+
+- `process_genes.py` and the shipped `brapa_symbol_to_kegg_id_map.csv` were derived from
+  a file that turned out to contain the **wrong organism** (*Bradyrhizobium*, not
+  *Brassica*); that source file is archived in `docs/legacy/`. Rebuild KEGG/ortholog
+  maps before relying on pathway results.
+- The notebooks still carry some leftover mouse/OSD-104 narrative text from the GeneLab
+  template; a cleanup pass is planned.
+- The in-repo ortholog map (`NewTest/B.rapa_to_Ara_mart_export.txt`) covers only ~15% of
+  genes and needs a full rebuild.
+
+---
+
+## Quick start
+
+```bash
+conda env create -f environment.yml
+conda activate gl4u_rnaseq_2024
+jupyter lab
+# open 01-RNAseq_processing_Brapa_FPsc_v1_3.ipynb, then 02-RNAseq_analysis_Brapa.ipynb
+```
+
+## Data availability
+- **Scent reads:** NCBI SRA `SRR4417237`–`SRR4417244`; processed via NASA OSDR/GeneLab.
+- **Radiation data:** collaborator-led; cite OSDR accession/DOI (link to be added).
+
+## Citation
+See [`CITATION.cff`](CITATION.cff). A Zenodo DOI will be minted on deposit.
+
+## License
+Released under **CC0 1.0 Universal** (public domain). See [`LICENSE`](LICENSE).
+
+## Author
+**Dr. Richard Barker** — ORCID [0000-0001-5681-9857](https://orcid.org/0000-0001-5681-9857)
