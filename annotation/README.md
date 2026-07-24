@@ -40,7 +40,8 @@ routes, evidence`.
 Committed (small, the deliverables):
 - `build_annotation.py` — Phase 1: builds the crosswalk + GO/Pfam annotation.
 - `curate_scent_geneset.py` — Phase 2: tiered, route-classified scent gene set.
-- `scent_radiation_test.py` — tier-aware enrichment test (Phase 3 preview).
+- `scent_radiation_test.py` — tier-aware Fisher enrichment (Phase 1/2 preview).
+- `phase3_geneset_test.py` — Phase 3: powered rank-based gene-set test + confounds.
 - `scent_orthology.py` — Phase 4: cross-species conservation via Ensembl Compara.
 - `scent_geneset.tsv` — the 363 curated scent genes (tier + route).
 - `scent_orthology_matrix.tsv` — scent gene × species ortholog-count matrix.
@@ -157,29 +158,40 @@ python3 annotation/build_annotation.py
 python3 annotation/scent_radiation_test.py
 ```
 
-## Preliminary answer to "does GCR radiation influence floral scent?"
+## Does GCR radiation influence floral scent? — Phase 3 powered test
 
 *Exploratory — our radiation counts are an in-house re-analysis (the primary radiation
-study is collaborator-led); treat as a signal to follow up, not a final result.*
+study is collaborator-led); treat as hypothesis-generating, not a final result.*
 
-- The **radiation effect is very weak** at 40 cGy: only **13 genes** are DE in WT
-  (40 vs 0 cGy, adjP<0.1) and **0** in the *anthocyaninless* mutant. The dominant signal
-  in the radiation experiment is genotype, not dose.
-- The scent gene set **validates** on the scent axis, across all four routes: DE between
-  High/Low lines = terpenoid 5/34, ester 13/117, apocarotenoid 4/15, benzenoid 4/71,
-  GLV 4/42 (Tier1+2 overall 28/258; Tier1 core 11/72). The set captures real scent
-  variation.
-- **Scent × radiation (tiered):** the **Tier-1 core volatile enzymes** (terpene
-  synthases, SABATH, LOX, CCD) are **0/55 among radiation DEGs** — no radiation response.
-  In the broader Tier1+2 set, only **1/232** is radiation-DE: `Bra029041`, an
-  O-methyltransferase (radiation log2FC +1.8), fold ≈10× but **Fisher p = 0.094 — not
-  significant**.
+The Phase-1 preview used a Fisher test on the 13 hard DEGs — badly under-powered.
+`phase3_geneset_test.py` instead uses a **rank-based competitive gene-set test**
+(Mann-Whitney U of the scent set's radiation dose effect vs the genome-wide background,
+iDEP interaction model, main 40-vs-0 cGy term, 31,008 genes) — every gene's effect size
+counts, no DEG cutoff.
 
-**Defensible statement:** the repository now establishes the join and a validated,
-tiered scent gene set. On the current in-house radiation counts there is **no significant
-preferential perturbation of floral-scent biosynthesis genes** at 40 cGy — and notably
-the *core* volatile-forming enzymes are entirely unresponsive — with the broad-tier
-O-methyltransferase `Bra029041` as the single, non-significant follow-up candidate. The
-test is under-powered by the weak overall radiation response, so this is a *"no
-significant effect, under-powered"* result. Re-running against the collaborators'
-radiation counts (and higher doses, if available) is the logical next step (Phase 3/4).
+- **Core volatile enzymes (Tier-1: TPS, SABATH, LOX, CCD) show no shift** (signed-log2FC
+  MWU p = 0.40). The enzymes that directly *make* the scent are unresponsive to 40 cGy.
+- **The broad scent set (Tier-1+2, n=287) shows a weak but nominally significant
+  down-shift** relative to background (signed-log2FC MWU **p = 0.032**, z = −2.14; scent
+  median ≈ 0 vs background +0.13 — i.e. scent genes do *not* join the mild genome-wide
+  up-shift at 40 cGy). Magnitude (|log2FC|) is unchanged (p = 0.95), so scent genes are
+  not *more* variable, just directionally lower.
+- **The signal is concentrated in the ester / methyltransferase route** (SABATH/BAHD/OMT,
+  n=142): median −0.11, **MWU p = 0.012** — the same *tailoring* family that the
+  comparative genomics (Phase 4/4b) flagged as the cross-lineage scent node. Terpenoid,
+  benzenoid, GLV and apocarotenoid routes show nothing (p ≥ 0.58).
+- **Confounds are clean:** 0 scent genes have a significant dose×genotype or
+  dose×preservative interaction — the (weak) scent response does not depend on the
+  *anthocyaninless* background or the preservative.
+- **Dual-hit candidates** (radiation-responsive *and* scent-associated High/Low):
+  `Bra013161` (GLV; dose +2.5, scent adjP 0.01), `Bra028224` and `Bra039555` (ester).
+  `Bra029041` is dose-**up** (+1.6) — an outlier *against* its route's overall down-trend.
+
+**Defensible statement:** at 40 cGy the core scent-forming enzymes are unaffected, but the
+broad scent set — specifically the **ester/methyltransferase tailoring route** — shows a
+weak, directional, nominally significant (uncorrected; borderline after multiple-testing)
+**down-shift** relative to the genomic radiation response, landing exactly where the
+cross-species conservation analysis predicted the labile scent node to be. This is a
+small, hypothesis-generating effect, not a headline result. The decisive test is to re-run
+`phase3_geneset_test.py` on the **collaborators' radiation counts** (higher power, and
+ideally higher doses), for which the ID join and gene set are already prepared.
