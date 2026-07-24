@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home · B. rapa floral scent under radiation</title>
+<meta name="description" content="Does galactic cosmic radiation alter floral scent? A work-in-progress transcriptomic framework in Brassica rapa (Wisconsin Fast Plant), part of the Lunar LEAF effort. Preliminary, unconfirmed signal — not a claimed discovery.">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<header class="site"><nav>
+  <span class="brand">🌸 B. rapa · Scent × Radiation</span>
+  <a href="#overview" style="color:var(--accent)">Overview</a>
+  <a href="#repo">In this repo</a>
+  <a href="#signal">Preliminary signal</a>
+  <a href="#data">Data &amp; code</a>
+  <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub ↗</a>
+</nav></header>
+<main>
+<section class="hero">
+  <h1>Does space radiation alter floral scent? Building and testing the question in <em>Brassica rapa</em></h1>
+  <p class="lede">RNA-seq analysis code and data for a <em>Brassica rapa</em> (Wisconsin Fast Plant)
+     project asking whether galactic-cosmic-ray (GCR) radiation changes floral scent — part of the
+     <b>Lunar LEAF</b> (Life sciences &amp; Engineering for lunar Agriculture and Flight) effort.</p>
+  <div class="badges">
+    <span class="badge">CC0-1.0</span><span class="badge">Lunar LEAF</span>
+    <span class="badge">RNA-seq</span><span class="badge">NASA OSDR / GeneLab-style</span>
+    <span class="badge">🚧 in development</span>
+  </div>
+  <div class="btnrow">
+    <a class="btn primary" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/README_PLAN.md">Research &amp; tidy-up plan →</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/docs/MANUSCRIPT_OUTLINE.md">Manuscript outline</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation">Analysis code</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">Code &amp; data (GitHub)</a>
+  </div>
+  <p class="note"><b>🚧 Status — work in progress.</b> This repository is an <b>analytical
+  framework and a preliminary, testable signal — not a finished study or a claimed discovery.</b>
+  The two RNA-seq datasets are still being reconciled, the manuscript is a draft outline with
+  open placeholders, and the low-dose radiation effect described below is small and awaits
+  higher-power counts from collaborators to confirm. Treat everything here as provisional.</p>
+</section>
+
+<h2 id="overview">Overview</h2>
+<div class="content"><p>Lunar and Martian agriculture will need to know which plant traits change
+under galactic cosmic radiation. Floral scent underlies pollination and is one of the most
+biochemically well-mapped plant traits, yet its response to radiation is essentially untested.
+This project builds a reusable transcriptomic framework to ask the question in <em>Brassica rapa</em>
+(Wisconsin Fast Plant), a fast-cycling model crop, and reports a first, deliberately modest test.
+The aim is a <b>resource + method + a specific, falsifiable prediction</b> — a foundation for a
+properly powered follow-up, not a definitive answer.</p><hr /></div>
+
+<h2 id="repo">What's in this repository</h2>
+<div class="content">
+<p>The repo brings together <b>two separate RNA-seq experiments</b> in the same species. They use
+different samples <em>and</em> different genome annotations, so their gene-ID namespaces
+(<code>Bra…</code> Chiifu/Ensembl vs <code>BRA…</code> FPsc/RefSeq) do not join directly —
+reconciling them is the first analytical step.</p>
+<ul>
+  <li><b>Scent dataset</b> — 8 samples, High- vs Low-scent <em>B. rapa</em> lines
+      (SRA <code>SRR4417237</code>–<code>SRR4417244</code>), processed through NASA OSDR/GeneLab-style tooling.</li>
+  <li><b>Radiation / GCR dataset</b> — 39 GeneLab-style libraries; factors: dose (0 / 40 cGy),
+      genotype (WT / <em>anthocyaninless</em>), preservative (DRS / RL); analysed with iDEP-generated
+      DESeq2 models. This is an <em>exploratory</em> re-analysis; the primary radiation study is being
+      carried forward separately by collaborators, with OSDR as the source of record.</li>
+</ul>
+</div>
+
+<h2 id="signal">Preliminary signal — unconfirmed</h2>
+<div class="content">
+<p class="note">The following is a <b>weak, preliminary result</b> stated as a hypothesis to test,
+not a finding. It is uncorrected, low-dose, and needs the collaborators' higher-power counts to
+confirm or refute.</p>
+<p>Working from a curated, tiered floral-volatile gene set (~363 genes across the terpenoid,
+benzenoid/phenylpropanoid, fatty-acid/green-leaf-volatile and apocarotenoid routes), the core
+volatile <em>synthase</em> enzymes appear <b>unaffected</b> by 40 cGy, whereas the
+ester/methyltransferase <b>"tailoring" route</b> shows a <b>weak, directional down-shift</b>
+(Mann–Whitney U <em>p</em> ≈ 0.01, uncorrected). This yields a specific, falsifiable prediction:
+<b>if radiation alters scent, it acts on the tailoring methyltransferases, not the core
+synthases</b> — the same gene family that is lineage-specifically expanded and scent-defining
+across flowering plants. Confirming this requires higher-powered radiation counts.</p>
+</div>
+
+<h2 id="data">Data &amp; code</h2>
+<div class="content"><ul>
+  <li><b>Plan &amp; current state:</b> <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/README_PLAN.md"><code>README_PLAN.md</code></a> — read first if picking this up</li>
+  <li><b>Manuscript outline:</b> <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/docs/MANUSCRIPT_OUTLINE.md"><code>docs/MANUSCRIPT_OUTLINE.md</code></a> (draft scaffold, bracketed placeholders)</li>
+  <li><b>Scent gene-set &amp; orthology:</b> <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation"><code>annotation/</code></a> (<code>scent_geneset.tsv</code>, orthology matrix, curation scripts)</li>
+  <li><b>Analysis notebooks:</b> <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/01-RNAseq_processing_Brapa_FPsc_v1_3.ipynb"><code>01</code></a> /
+      <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/02-RNAseq_analysis_Brapa.ipynb"><code>02</code></a>; radiation models in <code>Radiation model/</code></li>
+  <li><b>Figures:</b> per-gene expression and pathway plots in <code>images/</code>, <code>images_pathways/</code> (exploratory outputs, not curated manuscript figures)</li>
+</ul>
+<p class="note">Sequencing data trace to SRA/NASA OSDR (accessions/DOI to be linked); OSDR data
+remain subject to the NASA Open Data policy. Part of the Lunar LEAF effort.</p></div>
+</main>
+<footer class="site">
+  B. rapa — floral scent under space radiation (Lunar LEAF) · work in progress · CC0 data &amp; code ·
+  <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub</a>
+</footer></body></html>
