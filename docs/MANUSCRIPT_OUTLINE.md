@@ -45,23 +45,110 @@ Resource / methods-and-preliminary-results (e.g. *Frontiers in Plant Science / A
 - **Gap & aim:** no study links a radiation dose-response to a scent-gene framework; we build and
   test that link, and ask whether any effect falls on conserved vs labile parts of the pathway.
 
-## 2. Materials & Methods
-- **2.1 Datasets.** Scent: SRA `SRR4417237–244`, High/Low, processed via NASA OSDR/GeneLab.
-  Radiation: [collaborator/OSDR accession], 0/40 cGy × WT/*anthocyaninless* × DRS/RL preservative,
-  39 libraries; in-house DESeq2/iDEP DE (main + interaction terms).
-- **2.2 Gene-ID reconciliation.** Scent `Bra######` (Chiifu/Ensembl `Brapa_1.0`) vs radiation
-  `BRA######` shown to be the same loci differing only in case (100% join); `build_annotation.py`.
-- **2.3 Scent gene set.** GO + Pfam from Ensembl Plants BioMart; tiered curation
-  (Tier-1 core enzyme families vs Tier-2 supporting), 4 routes; `curate_scent_geneset.py`. Sources:
-  Dudareva 2013; Chen 2011; D'Auria 2006; Effmert 2005.
-- **2.4 Statistics.** Competitive gene-set test = Mann-Whitney U of the set's radiation dose
-  log2FC vs genome background (signed and |log2FC|), per tier and route; sign test for direction;
-  interaction terms for genotype/preservative confounds; `phase3_geneset_test.py`. State
-  multiple-testing handling.
-- **2.5 Cross-species conservation.** Ensembl Plants Compara REST homology anchored on 12
-  Arabidopsis scent genes (`scent_orthology.py`); literature + NCBI-grounded genes for
-  Petunia/snapdragon/rose absent from Ensembl (`scent_reference_species.tsv`,
-  `scent_query_accessions.tsv`); OrthoFinder protocol for full linkage (`phase4c_protocol.md`).
+## 2. Materials and Methods
+
+All analysis code is available at github.com/dr-richard-barker/B_rappa_LLGCSS (archived at Zenodo,
+[DOI]); the scripts named below reside in the repository's `annotation/` directory, and each result
+regenerates from the committed input tables by re-running the corresponding script.
+
+### 2.1 Plant RNA-seq datasets
+Two independent *Brassica rapa* (Wisconsin Fast Plant) bulk RNA-seq datasets were analysed. The
+**floral-scent dataset** comprised eight libraries contrasting High- and Low-scent lines (four
+biological replicates each), retrieved from the NCBI Sequence Read Archive (accessions
+`SRR4417237`–`SRR4417244`) and processed through NASA Open Science Data Repository (OSDR) /
+GeneLab-style tooling. The **radiation dataset** comprised 39 GeneLab-style libraries in a
+three-factor design — radiation dose (0 or 40 cGy of simulated galactic cosmic radiation),
+genotype (wild-type or *anthocyaninless*) and tissue preservative (DRS or RL) — obtained from NASA
+OSDR ([accession/DOI to be added]). The radiation experiment is led by collaborators; the counts and
+differential-expression results analysed here are an in-house re-analysis, with OSDR as the source of
+record.
+
+### 2.2 Read processing and differential expression
+Reads were processed with a GeneLab RNA-seq workflow (quality control with FastQC/MultiQC, adapter
+and quality trimming with Trim Galore!, alignment with STAR and transcript quantification with RSEM;
+[confirm exact tool versions and *B. rapa* reference build for each dataset before submission]).
+Differential expression was computed in iDEP/DESeq2 [ref] under a negative-binomial generalised
+linear model. For the scent dataset, genes were tested between High- and Low-scent groups (reported
+as log2 fold-change and Benjamini–Hochberg-adjusted *p*-value). For the radiation dataset, a combined
+genotype×dose factor plus preservative was modelled (`~ Treatment_genotype + preservative`) to yield
+the four pairwise contrasts, and a separate model with explicit two-way interaction terms
+(dose×preservative, dose×genotype, preservative×genotype) provided the marginal 40-vs-0 cGy dose
+effect and the interaction estimates used below. Per-gene log-normalised expression values for all 39
+radiation libraries were exported from iDEP for the gene-set analysis (§2.5).
+
+### 2.3 Gene-identifier reconciliation
+The scent dataset uses Chiifu/Ensembl Plants `Bra######` gene identifiers (assembly `Brapa_1.0`) and
+the radiation dataset uses `BRA######` identifiers. These denote the same loci differing only in
+letter case; after case-normalisation all 31,756 scent genes mapped one-to-one onto radiation genes,
+allowing the two datasets to be joined directly on gene identifier without cross-assembly mapping
+(`build_annotation.py`).
+
+### 2.4 Functional annotation and floral-scent gene-set definition
+Gene Ontology (GO) terms and Pfam protein-domain assignments for every *B. rapa* gene were retrieved
+from Ensembl Plants BioMart (schema `plants_mart`, dataset `brapa_eg_gene`, assembly `Brapa_1.0`;
+release [xx], accessed [date]) via `build_annotation.py`. A floral-volatile biosynthesis gene set was
+then curated in *B. rapa* space (`curate_scent_geneset.py`), because this Ensembl release exposes no
+*Arabidopsis* orthologues or functional descriptions for *B. rapa*. Genes were assigned to
+biosynthetic routes and to two confidence tiers on the basis of specific GO terms and Pfam domains,
+following canonical accounts of plant volatile biosynthesis [Dudareva et al. 2013; Chen et al. 2011;
+D'Auria 2006; Effmert et al. 2005]. **Tier 1** (core volatile-forming enzyme families) comprised
+terpene synthases (Pfam PF01397/PF03936), SABATH methyltransferases (PF03492), lipoxygenases
+(PF00305) and carotenoid-cleavage dioxygenases (PF03055). **Tier 2** (supporting/route-level genes)
+comprised BAHD acyltransferases (PF02458), O-methyltransferases (PF00891; GO:0008171), phenylalanine
+ammonia-lyases (PF00221) and genes carrying route-level GO terms for terpenoid, phenylpropanoid,
+jasmonate and apocarotenoid metabolism; the full term/domain lists are defined in the script.
+Deliberately broad terms (e.g. GO:0008299, "isoprenoid biosynthetic process," which also captures
+sterol and photosynthetic-carotenoid genes) were excluded. Because a gene may satisfy criteria for
+more than one route, a gene can appear under multiple routes. The set was validated on the scent axis
+by testing, per route, the proportion of member genes differentially expressed between High- and
+Low-scent lines (adjP < 0.1).
+
+### 2.5 Radiation gene-set testing
+Whether radiation preferentially perturbs scent genes was tested with a competitive gene-set
+approach on the 40-vs-0 cGy effect (`phase3_robust.py`). For each gene a confound-adjusted dose
+effect was computed from the 39-library log-normalised matrix as the mean, across the four
+genotype×preservative strata, of the difference between the mean expression at 40 cGy and at 0 cGy
+within each stratum. For a given gene set, the observed statistic was the difference between the mean
+dose effect of set members and that of all other genes (background). Significance was assessed two
+ways: (i) an analytic two-sided Mann–Whitney *U* test of set versus background dose effects; and
+(ii) a **correlation-aware permutation test** in which the dose labels were shuffled within each
+genotype×preservative stratum (5,000 permutations), the per-gene dose effect and the set-versus-
+background statistic recomputed each time, and a two-sided empirical *p*-value obtained. Permuting
+samples rather than genes preserves inter-gene correlation, which the analytic test ignores and which
+otherwise inflates significance for co-expressed gene sets. Tests were run for the whole set, for
+Tier-1 core genes, and for each biosynthetic route; permutation *p*-values across these seven tests
+were corrected by the Benjamini–Hochberg procedure (reported as *q*). An earlier, unadjusted version
+of the test (`phase3_geneset_test.py`) is retained for comparison.
+
+### 2.6 Confound and interaction analysis
+To assess whether any radiation response of scent genes depended on the experimental confounds, the
+number of scent-set genes with a significant dose×genotype or dose×preservative interaction term
+(adjP < 0.1) was counted from the iDEP interaction model.
+
+### 2.7 Cross-species orthology and conservation
+Because Ensembl Plants Compara does not include the Chiifu assembly used here (only
+`brassica_rapa_ro18`), cross-species conservation was assessed with an *Arabidopsis*-anchored panel of
+twelve canonical floral-scent genes spanning the four routes (`scent_orthology.py`). Orthologues of
+each *A. thaliana* gene across all plant genomes were retrieved from the Ensembl Plants Compara REST
+homology endpoint (`rest.ensembl.org`, `compara=plants`, orthologues, condensed format), and ortholog
+counts were tabulated per species to summarise conservation and lineage-specific copy-number
+expansion.
+
+### 2.8 Model-species scent genes and full ortholog protocol
+The classic model scent species (*Petunia hybrida*, *Antirrhinum majus*, *Rosa* spp.) are absent from
+Ensembl Plants Compara (and *A. majus* from OrthoDB), precluding programmatic orthology. A curated
+table of their functionally characterised scent genes was assembled from the primary literature and
+cross-referenced to the *B. rapa* routes (`scent_reference_species.tsv`); protein accessions for the
+landmark enzymes were retrieved from NCBI via E-utilities (`phase4c_link.py`;
+`scent_query_accessions.tsv`). A reproducible reciprocal-orthology protocol (proteome sources,
+OrthoFinder/DIAMOND commands and the intersection with the scent set) is provided for execution on
+external compute (`phase4c_protocol.md`).
+
+### 2.9 Software and data availability
+Analyses used Python 3 with NumPy, SciPy and Matplotlib; figures were produced by `make_figures.py`
+and tables by `make_tables.py`. Sequencing data trace to SRA (`SRR4417237`–`SRR4417244`) and NASA
+OSDR (radiation accession [to be added]); model-species protein accessions are listed in
+`scent_query_accessions.tsv`. All code and derived tables are archived at Zenodo ([DOI]).
 
 ## 3. Results
 - **3.1 A joined two-experiment resource.** The scent and radiation transcriptomes share the
