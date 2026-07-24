@@ -46,6 +46,9 @@ Committed (small, the deliverables):
 - `scent_orthology_matrix.tsv` — scent gene × species ortholog-count matrix.
 - `scent_reference_species.tsv` — Phase 4b: literature-curated scent genes in
   Petunia / snapdragon / rose (species absent from Ensembl Plants).
+- `phase4c_link.py` + `scent_query_proteins.faa` + `scent_query_accessions.tsv` —
+  Phase 4c: real NCBI protein records for the landmark genes + family bridge.
+- `phase4c_protocol.md` — Phase 4c: reproducible OrthoFinder/DIAMOND recipe.
 
 Regenerable / git-ignored (large; on disk, ship via deposit):
 - `gene_annotation.tsv` — per-gene GO/Pfam + scent flag (41,018 genes).
@@ -111,9 +114,37 @@ indicative — verify before manuscript use.)
 - Phylogenetic spread is good: rosids (B. rapa, rose) + asterids (Petunia, snapdragon)
   bracket the eudicots, so conserved-vs-labile calls are not an artefact of one clade.
 
-**To make this programmatic (future Phase 4c):** pull proteomes from Sol Genomics
-(Petunia axillaris/inflata), the *Antirrhinum majus* genome (Li 2019), and *Rosa chinensis*
-(Raymond 2018), and run reciprocal-best-hit / OrthoFinder against the B. rapa scent set.
+## Phase 4c — making 4b programmatic (executed part + protocol)
+
+No alignment toolchain (BLAST/DIAMOND/OrthoFinder) exists in this sandbox, so Phase 4c is
+split into the part that is **executable and grounded here** and a **reproducible protocol**
+for the user's compute (`phase4c_protocol.md`).
+
+**Executed (`phase4c_link.py`):** fetched **real NCBI/UniProt protein records** for the
+seven landmark model-species scent genes (no invented accessions) → `scent_query_proteins.faa`
++ `scent_query_accessions.tsv`:
+
+| gene | route | accession |
+|---|---|---|
+| PhBSMT (Petunia) | ester | `A4ZDG8` (BSMT3_PETHY) |
+| PhBPBT (Petunia) | ester | `Q6E593` (BEBT1_PETHY) |
+| PhODO1 (Petunia) | regulator | `Q50EX6` (ODO1_PETHY) |
+| AmBAMT (snapdragon) | ester | `Q9FYZ9` (BAMT_ANTMA) |
+| AmNES/LIS (snapdragon) | terpenoid | `ABR24418` |
+| RhNUDX1 (rose) | terpenoid | `M4I1C6` (NUDT1_ROSHC) |
+| RhOMT (rose) | benzenoid | `AAM23005` |
+
+The script then bridges each to its **candidate B. rapa orthologs** = the scent-set members
+of the same route (ester → 174 B. rapa genes / 39 Tier-1; terpenoid → 52 / 39; benzenoid →
+97). This is the honest link at family resolution; single-gene orthology across ~120 My
+needs the alignment step below.
+
+**Protocol (`phase4c_protocol.md`):** grounded proteome sources (Rosa `GCF_002994745.2`
+RefSeq; Petunia via Sol Genomics; Antirrhinum via Li 2019 portal; Chiifu B. rapa via Ensembl
+Plants) + OrthoFinder / DIAMOND-RBH commands + the intersection step. **Prediction to test:**
+the ester-MT queries (PhBSMT/AmBAMT/RhOMT) should land in a B. rapa SABATH/O-MT orthogroup
+containing `Bra029041`; RhNUDX1 (a Nudix hydrolase) should have **no** terpene-synthase
+ortholog — a built-in positive control for pathway convergence.
 
 ## Reproduce
 
