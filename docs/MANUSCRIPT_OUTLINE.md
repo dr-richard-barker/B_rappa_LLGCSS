@@ -1,9 +1,13 @@
 # Manuscript outline — *Floral scent under space radiation in Brassica rapa*
 
-**Status:** draft scaffold (2026-07). Grounded in the analyses in `annotation/`. Placeholders
-in **[brackets]**. Framing is deliberately modest: this is a **resource + analytical
-framework + a preliminary, testable signal**, not a claimed discovery — the 40 cGy radiation
-effect is small and needs the collaborators' higher-power counts to confirm.
+**Status:** draft (2026-07). Introduction, Methods, Results and Discussion are full prose;
+Abstract, figure/table legends and reference list are drafted. Remaining placeholders are marked
+**[brackets]** — mostly citations to add ([ref]) and specifics only the authors can supply
+(tool versions, reference build, radiation OSDR accession, Ensembl release/date, Zenodo DOI).
+Framing is deliberately modest and honest: a **resource + analytical framework + a statistically
+bounded (non-significant) result** at 40 cGy — not a claimed discovery. The set-level test is
+well powered (~3–4% coordinated shift detectable); a positive finding, if any, awaits the
+collaborators' higher-power counts.
 
 ## Working titles (pick/adapt)
 1. *A transcriptomic framework for testing whether space radiation alters floral scent, applied to* Brassica rapa
@@ -37,13 +41,44 @@ Resource / methods-and-preliminary-results (e.g. *Frontiers in Plant Science / A
   which the current low-dose data cannot confirm and a higher-powered dataset should test.
 
 ## 1. Introduction
-- Space agriculture & the Lunar LEAF context; why plant reproduction/pollination matters off-Earth.
-- Floral scent VOCs: terpenoid, benzenoid/phenylpropanoid, fatty-acid/GLV, apocarotenoid routes;
-  scent's ecological role; its biochemical tractability (Dudareva 2013).
-- GCR / low-dose ionizing radiation effects on plant transcriptomes (GeneLab/OSDR background).
-- *B. rapa* Fast Plants as a model; the two datasets available.
-- **Gap & aim:** no study links a radiation dose-response to a scent-gene framework; we build and
-  test that link, and ask whether any effect falls on conserved vs labile parts of the pathway.
+
+Sustained human presence beyond low-Earth orbit will depend on bioregenerative life-support
+systems in which plants recycle atmosphere, water and waste and provide fresh food [ref]. Realising
+this on the Moon or Mars requires understanding how the space environment — in particular chronic
+exposure to ionising radiation from galactic cosmic rays (GCR), against which planetary surfaces
+offer little shielding — reshapes plant biology [ref]. NASA's GeneLab / Open Science Data Repository
+(OSDR) has catalogued transcriptomic and phenotypic responses of plants to spaceflight and to
+ground-based radiation analogues [ref], but this work has concentrated on growth, development and
+canonical stress pathways; reproductive traits, and pollination-related traits in particular, remain
+comparatively unexamined.
+
+Floral scent is an attractive trait through which to ask whether radiation perturbs reproduction.
+The volatile organic compounds (VOCs) that constitute scent mediate plant–pollinator communication
+and thereby fruit and seed set [ref], a consideration that becomes acute for the pollinator-dependent
+crops likely to be grown in controlled off-Earth agriculture. Floral scent is also one of the
+best-characterised outputs of plant specialised metabolism: its VOCs derive from a small number of
+well-mapped routes — terpenoid, benzenoid/phenylpropanoid, fatty-acid–derived/green-leaf-volatile,
+and apocarotenoid — whose core biosynthetic enzymes (terpene synthases, phenylalanine ammonia-lyase,
+lipoxygenases, carotenoid-cleavage dioxygenases) are conserved across flowering plants, while the
+final "tailoring" steps that define species-specific scent are carried out by rapidly evolving
+methyltransferase and acyltransferase families (Dudareva et al. 2013; Pichersky & Gershenzon 2002).
+This layered architecture — a conserved core with a labile decorating layer — makes scent both
+biochemically tractable and well suited to asking *where* in a pathway an environmental perturbation
+would act.
+
+Whether ionising or space radiation alters floral scent is essentially untested. Addressing it
+requires linking a radiation dose-response to a scent-focused gene framework and testing, with
+adequate statistical power, whether scent-biosynthesis genes are preferentially affected — and,
+if so, whether the effect falls on the conserved core or the evolutionarily labile tailoring layer.
+
+Here we use *Brassica rapa* (Wisconsin Fast Plant), a fast-cycling Brassicaceae model, for which two
+complementary bulk RNA-seq datasets are available: a High- versus Low-scent contrast and a 0/40 cGy
+radiation dose-response. We reconcile the two datasets, curate a tiered floral-volatile gene set,
+test radiation perturbation of that set with a correlation-aware, power-characterised gene-set
+method, and interpret the result within a cross-species conservation framework spanning Brassicaceae,
+Solanaceae and the classic scent-model species. Our aim is deliberately modest: a reusable resource
+and analytical framework, an honest and statistically bounded first answer, and a specific,
+falsifiable prediction to guide properly powered follow-up.
 
 ## 2. Materials and Methods
 
@@ -174,18 +209,72 @@ OSDR (radiation accession [to be added]); model-species protein accessions are l
   *Table 3*.
 
 ## 4. Discussion
-- Convergence of three independent analyses (radiation test, Brassica expansion, cross-lineage
-  characterised genes) on the methyltransferase tailoring layer.
-- Interpretation: core biosynthesis is buffered; the regulatorily flexible decorating step is where
-  a subtle radiation effect (and, plausibly, scent plasticity generally) would first appear.
-- **Space-biology implication:** a specific, testable prediction for higher-dose / spaceflight data.
-- **Limitations (state plainly):** single low dose (40 cGy); in-house re-analysis; transcript-level
-  only (no VOC measurement); the set-level test is well-powered for *coordinated* shifts (~3–4%) but
-  individual large-effect genes can be missed (low per-gene power, 13 genome-wide DEGs); competitive-
-  test assumptions (addressed by the permutation null); Chiifu vs R-o-18/compara mismatch; key scent
-  models (Petunia/snapdragon/rose) absent from Ensembl.
-- **Future work:** rerun on collaborators' counts + higher doses; run the OrthoFinder protocol;
-  metabolite (VOC) measurement to connect transcript to emitted scent.
+
+We set out to test whether GCR-range radiation perturbs floral-scent biosynthesis in *B. rapa* and,
+if so, where in the pathway. Having reconciled a scent and a radiation transcriptome and defined a
+validated, tiered scent gene set, we found **no statistically significant coordinated effect** of
+40 cGy on the set after correlation-aware, multiple-testing correction. Crucially, this is an
+*informative* null rather than a failure to detect: the gene-set test is well powered, able to
+resolve a coordinated shift as small as ~3–4% in the set's dose response at 80% power, and the
+observed effects fall below that bound. The core volatile *synthase* enzymes are entirely
+unresponsive; the only sub-threshold trend is a mild relative under-response of the
+ester/methyltransferase tailoring route.
+
+That trend is noteworthy less for its (non-significant) magnitude than for its location. Three
+independent lines of evidence converge on the same part of the pathway. First, the radiation
+gene-set test — where any signal it carries sits in the ester/methyltransferase route. Second, the
+comparative genomics: while every scent route is deeply conserved across flowering plants, the
+volatile-tailoring methyltransferases are lineage-specifically expanded — most strikingly the
+Brassicaceae expansion of the O-methyltransferase/SABATH families (e.g. *COMT1*, with many *Brassica*
+paralogues where Solanaceae and monocots retain one). Third, the characterised scent genes of the
+model species reinforce it: methyl-benzoate and related volatiles are set by SABATH/BAHD tailoring
+enzymes in *Petunia* (PhBSMT), snapdragon (AmBAMT) and rose (RhOMT) alike. Across rosids and
+asterids, scent identity is fixed at this decorating step, and it is precisely there that our data
+place whatever weak signal exists.
+
+A coherent interpretation follows from the layered architecture of the pathway. The conserved,
+dosage-sensitive core biosynthetic enzymes appear buffered against a low radiation dose, whereas the
+regulatorily flexible, lineage-specifically expanded tailoring enzymes are the compartment in which
+a subtle perturbation — and, more speculatively, scent plasticity in general — would first become
+visible. This yields a concrete, falsifiable prediction: **if radiation alters floral scent, it
+should act on the tailoring methyltransferases and acyltransferases, not the core synthases** — a
+hypothesis that a higher-powered dataset can directly confirm or refute.
+
+For space biology, the immediate implication is measured. At a modest 40 cGy we find no evidence
+that radiation broadly reprograms scent biosynthesis, which is mildly reassuring for the prospect of
+maintaining pollinator-attractive crops in shielded off-Earth growth systems — but the bound is only
+as strong as the dose, the single time point, and the transcript-level readout allow, and the
+framework's value is that it transfers directly to higher doses, chronic exposure, spaceflight
+datasets and other species.
+
+Beyond the biology, the study makes several transferable methodological points. The two datasets
+initially appeared un-joinable because of a gene-identifier namespace mismatch that proved to be
+mere letter-case — a cautionary example of how superficial identifier differences can obscure
+directly comparable data. Where an annotation database lacks orthologue mappings for a non-model
+species, a scent gene set can still be defined natively from GO terms and Pfam domains. The ~10-fold
+gap we observed between naïve and correlation-aware p-values underscores that competitive gene-set
+tests on co-expressed sets must account for inter-gene correlation. And the rose *RhNUDX1* case —
+geraniol produced by a Nudix hydrolase rather than the usual terpene synthase — shows that
+orthology-only comparisons will miss functionally convergent scent genes, so orthology must be paired
+with pathway/function curation.
+
+**Limitations.** The radiation data are a single low dose (40 cGy), one time point, and an in-house
+re-analysis of collaborator-led data; the readout is transcriptional, not the emitted VOCs
+themselves. The gene-set test is well powered for *coordinated* shifts (~3–4%) but has limited power
+to detect individual large-effect genes (only 13 genome-wide differentially expressed genes at
+40 cGy), so isolated responsive scent genes could be missed. The competitive-test assumptions are
+addressed by the permutation null but not eliminated. Ensembl Plants Compara represents *B. rapa*
+only by the R-o-18 assembly rather than our Chiifu data, and the classic scent-model species
+(*Petunia*, snapdragon, rose) are absent from it entirely, so their comparison rests on curated
+literature rather than programmatic orthology.
+
+**Future directions.** The decisive next step is to re-run the identical, pre-specified gene-set and
+power analysis on the collaborators' higher-powered radiation counts and, ideally, across a dose
+series, to convert the present bound into either a confirmed tailoring-layer effect or a stronger
+null. Pairing transcriptomics with VOC metabolomics would connect gene expression to emitted scent
+and close the trait-level gap. Finally, executing the reciprocal-orthology protocol against the
+*Petunia*, snapdragon and rose proteomes would place the *B. rapa* tailoring genes into explicit
+cross-species orthogroups and test the conservation argument directly.
 
 ## 5. Data & code availability
 - Code + derived tables: GitHub `dr-richard-barker/B_rappa_LLGCSS`, archived at Zenodo **[DOI]**.
