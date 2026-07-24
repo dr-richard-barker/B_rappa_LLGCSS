@@ -15,23 +15,33 @@ scent genes map 1:1 onto radiation genes** (100%). So the datasets join directly
 gene ID — no cross-assembly mapping is needed. (`Brara.A00001` FPsc IDs and the
 `BRADO####` *Bradyrhizobium* KEGG file are unrelated third namespaces — do not use them.)
 
-## Scent gene set — defined in *B. rapa* space
+## Scent gene set — defined in *B. rapa* space, tiered (Phase 2)
 
 Because this Ensembl Plants release exposes no Arabidopsis orthologs or descriptions for
 *B. rapa*, the floral-volatile gene set is defined directly from **GO terms + Pfam
-domains** (terpenoid, benzenoid/phenylpropanoid, fatty-acid/green-leaf-volatile,
-apocarotenoid routes, plus SABATH volatile esterases). Curation is in
-`build_annotation.py` (`SCENT_GO`, `SCENT_PFAM`); non-scent methyltransferases
-(histone/RNA/protein) are deliberately excluded.
+domains**. Phase 2 (`curate_scent_geneset.py`) structures it by biosynthetic **route**
+and **confidence tier**, and drops over-broad terms (e.g. GO:0008299 "isoprenoid
+biosynthetic process", which also captures sterols / photosynthetic carotenoids).
 
-Result: **413 scent-candidate genes**, 322 present in both experiments.
+- **Tier 1 (core volatile-forming enzymes, 108 genes):** terpene synthases
+  (Pfam PF01397/PF03936), SABATH methyltransferases (PF03492), lipoxygenase (PF00305),
+  carotenoid cleavage dioxygenases (PF03055).
+- **Tier 2 (supporting / route-level, 255 genes):** BAHD acyltransferases (PF02458),
+  O-methyltransferases (PF00891 / GO:0008171), PAL (PF00221), terpenoid-route GO,
+  jasmonate metabolism.
+- **Total: 363 genes** (269 present in both experiments). Family sources cited in the
+  script header (Dudareva 2013; Chen 2011; D'Auria 2006; Effmert 2005).
+
+`scent_geneset.tsv` columns: `bra_id, BRA_id, in_scent_data, in_radiation_data, tier,
+routes, evidence`.
 
 ## Files
 
 Committed (small, the deliverables):
-- `build_annotation.py` — builds the crosswalk + annotation + scent set.
-- `scent_radiation_test.py` — preliminary enrichment test (Phase 3 preview).
-- `scent_geneset.tsv` — the 413 curated scent-candidate genes.
+- `build_annotation.py` — Phase 1: builds the crosswalk + GO/Pfam annotation.
+- `curate_scent_geneset.py` — Phase 2: tiered, route-classified scent gene set.
+- `scent_radiation_test.py` — tier-aware enrichment test (Phase 3 preview).
+- `scent_geneset.tsv` — the 363 curated scent genes (tier + route).
 
 Regenerable / git-ignored (large; on disk, ship via deposit):
 - `gene_annotation.tsv` — per-gene GO/Pfam + scent flag (41,018 genes).
@@ -57,16 +67,21 @@ study is collaborator-led); treat as a signal to follow up, not a final result.*
 - The **radiation effect is very weak** at 40 cGy: only **13 genes** are DE in WT
   (40 vs 0 cGy, adjP<0.1) and **0** in the *anthocyaninless* mutant. The dominant signal
   in the radiation experiment is genotype, not dose.
-- The scent gene set **validates** on the scent axis: 29/310 candidates are DE between
-  High- and Low-scent lines.
-- **Scent × radiation:** only **1** of the 13 radiation DEGs is a scent-candidate
-  (`Bra029041`, an O-methyltransferase / SABATH-adjacent volatile-ester enzyme;
-  radiation log2FC +1.8). Fold-enrichment is 8.3× but **Fisher p = 0.11 — not
-  significant**. The test is under-powered by the tiny radiation DEG count, so this is a
-  *"no significant evidence, but under-powered"* result, not a clean negative.
+- The scent gene set **validates** on the scent axis, across all four routes: DE between
+  High/Low lines = terpenoid 5/34, ester 13/117, apocarotenoid 4/15, benzenoid 4/71,
+  GLV 4/42 (Tier1+2 overall 28/258; Tier1 core 11/72). The set captures real scent
+  variation.
+- **Scent × radiation (tiered):** the **Tier-1 core volatile enzymes** (terpene
+  synthases, SABATH, LOX, CCD) are **0/55 among radiation DEGs** — no radiation response.
+  In the broader Tier1+2 set, only **1/232** is radiation-DE: `Bra029041`, an
+  O-methyltransferase (radiation log2FC +1.8), fold ≈10× but **Fisher p = 0.094 — not
+  significant**.
 
-**Defensible statement:** this repository now establishes the join and the scent gene set
-needed to ask the question; on the current in-house radiation counts there is no
-significant preferential perturbation of scent genes, with `Bra029041` as the single
-follow-up candidate. Re-running against the collaborators' radiation counts (and higher
-doses, if available) is the logical next step (Phase 3/4).
+**Defensible statement:** the repository now establishes the join and a validated,
+tiered scent gene set. On the current in-house radiation counts there is **no significant
+preferential perturbation of floral-scent biosynthesis genes** at 40 cGy — and notably
+the *core* volatile-forming enzymes are entirely unresponsive — with the broad-tier
+O-methyltransferase `Bra029041` as the single, non-significant follow-up candidate. The
+test is under-powered by the weak overall radiation response, so this is a *"no
+significant effect, under-powered"* result. Re-running against the collaborators'
+radiation counts (and higher doses, if available) is the logical next step (Phase 3/4).

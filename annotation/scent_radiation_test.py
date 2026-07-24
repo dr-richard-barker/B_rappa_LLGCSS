@@ -24,13 +24,16 @@ def norm(g):
     g = g.strip().strip('"'); import re
     m = re.fullmatch(r'(?i)bra(\d+)', g); return f"Bra{m.group(1)}" if m else None
 
-# scent-candidate gene set (present in both experiments)
-scent_set = set()
+# scent-candidate gene set (Phase 2 tiered); keep genes present in both experiments
+tier_of = {}; route_of = {}
 with open(os.path.join(HERE, "scent_geneset.tsv")) as fh:
     r = csv.DictReader(fh, delimiter='\t')
     for row in r:
         if row["in_scent_data"] == "1" and row["in_radiation_data"] == "1":
-            scent_set.add(row["bra_id"])
+            tier_of[row["bra_id"]] = int(row["tier"]); route_of[row["bra_id"]] = row["routes"]
+SET_T1 = {g for g, t in tier_of.items() if t == 1}          # specific
+SET_ALL = set(tier_of)                                       # sensitive (Tier 1+2)
+scent_set = SET_ALL
 
 # radiation DE: WT 40 vs 0 cGy, and antho_less 40 vs 0 cGy
 rad = {}
@@ -61,12 +64,23 @@ rad_deg_A = {g for g, v in rad.items() if v[3] is not None and sig(v[3])}
 print(f"Radiation background (WT contrast, testable): {len(bg)}")
 print(f"Radiation DEGs (WT 40 vs 0 cGy, adjP<{FDR}): {len(rad_deg_W)}")
 print(f"Radiation DEGs (antho_less 40 vs 0 cGy):     {len(rad_deg_A)}")
-print(f"Scent-candidate genes (in both experiments): {len(scent_set)}")
+print(f"Scent set (both experiments): Tier1 core={len(SET_T1)}  Tier1+2={len(SET_ALL)}")
 
 # --- validate the gene set on the SCENT axis (should move in High vs Low) ---
-sc_tested = [g for g in scent_set if g in scentDE and scentDE[g][1] is not None]
-sc_sig = [g for g in sc_tested if sig(scentDE[g][1])]
-print(f"\n[validation] scent-candidates DE in High vs Low (adjP<{FDR}): {len(sc_sig)}/{len(sc_tested)}")
+def scent_axis(S):
+    tested = [g for g in S if g in scentDE and scentDE[g][1] is not None]
+    return sum(1 for g in tested if sig(scentDE[g][1])), len(tested)
+for label, S in [("Tier1 core", SET_T1), ("Tier1+2", SET_ALL)]:
+    s, n = scent_axis(S)
+    print(f"[scent-axis validation] {label}: DE High vs Low (adjP<{FDR}) = {s}/{n}")
+from collections import defaultdict as _dd
+route_hit = _dd(lambda: [0, 0])
+for g in SET_ALL:
+    if g in scentDE and scentDE[g][1] is not None:
+        for rt in route_of[g].split(";"):
+            route_hit[rt][1] += 1
+            if sig(scentDE[g][1]): route_hit[rt][0] += 1
+print("  by route (DE/tested on scent axis):", {k: f"{v[0]}/{v[1]}" for k, v in route_hit.items()})
 
 # --- enrichment: scent genes among radiation DEGs (Fisher exact) ---
 def fisher(a, b, c, d):
@@ -84,16 +98,17 @@ def fisher(a, b, c, d):
         if px <= p0 * (1 + 1e-9): p += px
     return p
 
-for label, degset in [("WT 40 vs 0 cGy", rad_deg_W), ("antho_less 40 vs 0 cGy", rad_deg_A)]:
-    bgset = set(bg) if label.startswith("WT") else {g for g, v in rad.items() if v[3] is not None}
-    S = scent_set & bgset
-    a = len(S & degset); b = len(S) - a
-    c = len(degset & bgset) - a; d = len(bgset) - a - b - c
-    exp = len(S) * len(degset & bgset) / len(bgset) if bgset else 0
-    p = fisher(a, b, c, d)
-    fold = (a / len(S)) / (len(degset & bgset) / len(bgset)) if S and (degset & bgset) else float('nan')
-    print(f"\n[{label}] scent genes among radiation DEGs:")
-    print(f"  scent DEGs: {a}/{len(S)}  (expected ~{exp:.1f})  fold={fold:.2f}  Fisher p={p:.3g}")
+print("\n[enrichment] scent genes among radiation DEGs (Fisher exact, one-sided):")
+for clabel, degset, use_wt in [("WT 40 vs 0 cGy", rad_deg_W, True), ("antho_less 40 vs 0 cGy", rad_deg_A, False)]:
+    bgset = set(bg) if use_wt else {g for g, v in rad.items() if v[3] is not None}
+    for slabel, Sfull in [("Tier1 core", SET_T1), ("Tier1+2", SET_ALL)]:
+        S = Sfull & bgset
+        a = len(S & degset); b = len(S) - a
+        c = len(degset & bgset) - a; d = len(bgset) - a - b - c
+        exp = len(S) * len(degset & bgset) / len(bgset) if bgset else 0
+        p = fisher(a, b, c, d)
+        fold = (a / len(S)) / (len(degset & bgset) / len(bgset)) if S and (degset & bgset) else float('nan')
+        print(f"  [{clabel} | {slabel}] {a}/{len(S)} scent DEGs (exp ~{exp:.1f})  fold={fold:.2f}  Fisher p={p:.3g}")
 
 # --- headline candidates: scent-associated AND radiation-responsive ---
 print("\n[headline] genes that are BOTH scent-candidate AND radiation-DE (WT contrast):")
