@@ -59,3 +59,12 @@ Thumbs.db
 
 # --- Legacy archive stays on disk but out of version control ---
 docs/legacy/
+
+# --- Phase 1 annotation: large regenerable pulls (ship via deposit) ---
+annotation/brapa_go.tsv
+annotation/brapa_pfam.tsv
+annotation/brapa_ensembl_genes.tsv
+annotation/brapa_to_arabidopsis_orthologs.tsv
+annotation/gene_annotation.tsv
+annotation/id_crosswalk.tsv
+annotation/_attrs.tsv
