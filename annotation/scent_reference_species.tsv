@@ -1,0 +1,26 @@
+#  Phase 4b — literature-curated floral-scent genes in model scent species NOT in Ensembl Plants.
+#  These species (Petunia, Antirrhinum/snapdragon, Rosa) are absent from Ensembl Plants Compara
+#  (snapdragon is also absent from OrthoDB), so orthology cannot be pulled programmatically; this
+#  table is curated from the primary literature and cross-referenced to our B. rapa scent routes.
+#  CITATIONS ARE INDICATIVE — verify author/year/journal against the primary literature before
+#  manuscript use. Web-verified anchors (this session): Verdonk 2005 PMID15805488 (PhODO1);
+#  Nagegowda 2008 PMID18363779 (AmNES/LIS); Magnard 2015 PMID26138978 (RhNUDX1). Others are from
+#  domain knowledge and may be off by a year/journal.
+#  Columns: species | clade | gene | enzyme | route | volatile_product | family | reference
+species	clade	gene	enzyme	route	volatile_product	family	reference
+Petunia hybrida	asterid	PhPAL1/PhPAL2	phenylalanine ammonia-lyase	benzenoid_phenylpropanoid	(pathway entry)	PAL	Verdonk 2005 Plant Cell (PMID 15805488)
+Petunia hybrida	asterid	PhPAAS	phenylacetaldehyde synthase	benzenoid_phenylpropanoid	2-phenylacetaldehyde	aromatic AAAD	Kaminaga 2006 JBC
+Petunia hybrida	asterid	PhBPBT	benzoyl-CoA:benzyl/phenylethanol benzoyltransferase	ester	benzylbenzoate/phenylethylbenzoate	BAHD acyltransferase	Boatright 2004 Plant Physiol
+Petunia hybrida	asterid	PhBSMT1/2	benzoic/salicylic acid carboxyl methyltransferase	ester	methylbenzoate	SABATH methyltransferase	Negre 2003 Plant Cell; Underwood 2005
+Petunia hybrida	asterid	PhCFAT	coniferyl alcohol acyltransferase	benzenoid_phenylpropanoid	(isoeugenol precursor)	BAHD acyltransferase	Dexter 2007 Plant J
+Petunia hybrida	asterid	PhIGS1	isoeugenol synthase	benzenoid_phenylpropanoid	isoeugenol	PIP/NADPH reductase	Koeduka 2008
+Petunia hybrida	asterid	PhODO1	R2R3-MYB regulator	regulator	(activates benzenoid genes)	MYB TF	Verdonk 2005 Plant Cell (PMID 15805488)
+Petunia hybrida	asterid	PhEOBI/PhEOBII	R2R3-MYB regulators	regulator	(activate ODO1 + scent genes)	MYB TF	Spitzer-Rimon 2010/2012 Plant Cell
+Antirrhinum majus	asterid	AmNES/LIS-1,-2	nerolidol/linalool synthase	terpenoid	linalool, (E)-nerolidol	terpene synthase (TPS)	Nagegowda 2008 Plant J (PMID 18363779)
+Antirrhinum majus	asterid	AmMYS	myrcene synthase	terpenoid	myrcene	terpene synthase (TPS)	Dudareva 2003 Plant Cell
+Antirrhinum majus	asterid	AmOCS	(E)-beta-ocimene synthase	terpenoid	(E)-beta-ocimene	terpene synthase (TPS)	Dudareva 2003 Plant Cell
+Antirrhinum majus	asterid	AmBAMT	benzoic acid carboxyl methyltransferase	ester	methylbenzoate	SABATH methyltransferase	Dudareva 2000 (seminal floral SABATH)
+Rosa x hybrida	rosid	RhNUDX1	Nudix hydrolase (GPP diphosphohydrolase)	terpenoid	geraniol (non-canonical route)	Nudix hydrolase	Magnard 2015 Science (PMID 26138978)
+Rosa x hybrida	rosid	RhLINS/RhNES	linalool / nerolidol synthase	terpenoid	linalool, nerolidol	terpene synthase (TPS)	Conart 2019 Plant Physiol
+Rosa x hybrida	rosid	RhOMT1/2	orcinol O-methyltransferase	benzenoid_phenylpropanoid	3,5-dimethoxytoluene	O-methyltransferase	Lavid 2002 Plant Physiol
+Rosa x hybrida	rosid	RhAAT1	alcohol acyltransferase	ester	geranyl/2-phenylethyl acetate	BAHD acyltransferase	Guterman 2006

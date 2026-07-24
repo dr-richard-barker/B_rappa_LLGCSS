@@ -44,6 +44,8 @@ Committed (small, the deliverables):
 - `scent_orthology.py` — Phase 4: cross-species conservation via Ensembl Compara.
 - `scent_geneset.tsv` — the 363 curated scent genes (tier + route).
 - `scent_orthology_matrix.tsv` — scent gene × species ortholog-count matrix.
+- `scent_reference_species.tsv` — Phase 4b: literature-curated scent genes in
+  Petunia / snapdragon / rose (species absent from Ensembl Plants).
 
 Regenerable / git-ignored (large; on disk, ship via deposit):
 - `gene_annotation.tsv` — per-gene GO/Pfam + scent flag (41,018 genes).
@@ -83,6 +85,35 @@ point of action — a specific, testable prediction for Phase 3 on higher-dose d
 Ensembl Plants** — "other scent producers" here means Brassicas + Solanaceae + the broad
 plant tree. A Petunia/snapdragon comparison would need Sol Genomics / dedicated orthology
 (Phase 4b). Compara's B. rapa is R-o-18, so its counts are a proxy for our Chiifu data.
+
+## Phase 4b — the model scent species Ensembl can't reach (curated)
+
+The classic floral-scent models — **Petunia, snapdragon (*Antirrhinum*), rose (*Rosa*)** —
+are **not in Ensembl Plants Compara**, and snapdragon is **absent from OrthoDB** too, so
+their scent orthologs cannot be pulled programmatically. `scent_reference_species.tsv` is a
+**literature-curated** table of the *characterized* scent genes in these species, cross-
+referenced to our B. rapa routes. (Anchor genes web-verified this session: PhODO1 /
+Verdonk 2005, AmNES/LIS / Nagegowda 2008, RhNUDX1 / Magnard 2015; supporting citations are
+indicative — verify before manuscript use.)
+
+**Cross-lineage synthesis — the same "tailoring" node keeps defining scent:**
+- The **methyltransferase / acyltransferase tailoring step is the scent-defining node in
+  every lineage**: Petunia **PhBSMT** (methylbenzoate), snapdragon **AmBAMT** (methylbenzoate),
+  rose **RhOMT** (3,5-dimethoxytoluene) — all SABATH/OMT or BAHD enzymes decorating a
+  conserved precursor. This is the **same family** that is most Brassica-expanded in Phase 4
+  (COMT1 29 copies, BSMT1/SABATH 13) **and** that contains `Bra029041`, the one gene that
+  moved under radiation. Across rosids (Brassica, rose) and asterids (Petunia, snapdragon),
+  scent identity is set at this labile decorating step — a coherent, cross-clade thread.
+- **The same volatile can be made by non-orthologous enzymes** — rose makes geraniol via a
+  Nudix hydrolase (**RhNUDX1**), not the usual terpene synthase. So **orthology alone will
+  miss functionally convergent scent genes**; a scent comparison must combine orthology
+  (Phase 4) with pathway/enzyme-function curation (this table).
+- Phylogenetic spread is good: rosids (B. rapa, rose) + asterids (Petunia, snapdragon)
+  bracket the eudicots, so conserved-vs-labile calls are not an artefact of one clade.
+
+**To make this programmatic (future Phase 4c):** pull proteomes from Sol Genomics
+(Petunia axillaris/inflata), the *Antirrhinum majus* genome (Li 2019), and *Rosa chinensis*
+(Raymond 2018), and run reciprocal-best-hit / OrthoFinder against the B. rapa scent set.
 
 ## Reproduce
 
