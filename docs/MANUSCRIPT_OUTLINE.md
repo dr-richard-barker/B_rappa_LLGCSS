@@ -155,13 +155,17 @@ OSDR (radiation accession [to be added]); model-species protein accessions are l
   Chiifu locus namespace; 31,756 genes join 1:1. → *Fig 1* (design + join schematic).
 - **3.2 A validated, tiered floral-scent gene set.** 363 genes (108 Tier-1 core), all four routes;
   validated on the scent axis (DE High vs Low across every route). → *Fig 2*, *Table 1*.
-- **3.3 Radiation does not significantly perturb the scent set at 40 cGy.** Stratified
-  (genotype×preservative) dose contrast; competitive test with a correlation-aware permutation
-  null + BH FDR. Core enzymes unaffected (p≥0.37); the whole set and the ester/methyltransferase
-  route give the only trends (analytic MWU p≈0.004 but permutation p≈0.06, **BH q≈0.16 — n.s.**),
-  illustrating ~10× correlation inflation of the naive test. Effect sizes tiny; confounds clean
-  (0 significant interactions). Report as a non-significant, pre-specified trend + candidates
-  (`Bra013161`, `Bra028224`, `Bra039555`). → *Fig 3*, *Table 2*.
+- **3.3 Radiation does not significantly perturb the scent set at 40 cGy — an informative null.**
+  Stratified (genotype×preservative) dose contrast; competitive test with a correlation-aware
+  permutation null + BH FDR. Core enzymes unaffected (p≥0.37); the whole set and the
+  ester/methyltransferase route give the only trends (analytic MWU p≈0.004 but permutation p≈0.06,
+  **BH q≈0.16 — n.s.**), illustrating ~10× correlation inflation of the naive test. A power/
+  sensitivity analysis shows the set-level test is well-powered — it would detect a coordinated
+  shift of ≥~0.04 log2 (~3%) at 80% power — and the observed effects fall below that, so any
+  coordinated scent-set response at 40 cGy is bounded to <~3–4% (not merely undetected). Effect
+  sizes tiny; confounds clean (0 significant interactions). Report as a bounded null + a
+  pre-specified trend + candidates (`Bra013161`, `Bra028224`, `Bra039555`). → *Fig 3*, *Fig S1*,
+  *Table 2*.
 - **3.4 The affected route is the evolutionarily labile scent node.** All scent routes are deeply
   conserved (orthologs to tomato/rice), but the volatile-tailoring methyltransferases
   (COMT/SABATH/BAHD) are lineage-specifically expanded (COMT1 29 Brassica copies; BSMT1 13) and are
@@ -175,9 +179,11 @@ OSDR (radiation accession [to be added]); model-species protein accessions are l
 - Interpretation: core biosynthesis is buffered; the regulatorily flexible decorating step is where
   a subtle radiation effect (and, plausibly, scent plasticity generally) would first appear.
 - **Space-biology implication:** a specific, testable prediction for higher-dose / spaceflight data.
-- **Limitations (state plainly):** single low dose (40 cGy); in-house re-analysis; small,
-  uncorrected/borderline effect; competitive-test assumptions; Chiifu vs R-o-18/compara mismatch;
-  key scent models (Petunia/snapdragon/rose) absent from Ensembl.
+- **Limitations (state plainly):** single low dose (40 cGy); in-house re-analysis; transcript-level
+  only (no VOC measurement); the set-level test is well-powered for *coordinated* shifts (~3–4%) but
+  individual large-effect genes can be missed (low per-gene power, 13 genome-wide DEGs); competitive-
+  test assumptions (addressed by the permutation null); Chiifu vs R-o-18/compara mismatch; key scent
+  models (Petunia/snapdragon/rose) absent from Ensembl.
 - **Future work:** rerun on collaborators' counts + higher doses; run the OrthoFinder protocol;
   metabolite (VOC) measurement to connect transcript to emitted scent.
 
@@ -220,6 +226,15 @@ raw counts. All four routes are deeply conserved (orthologs present through Sola
 monocots), whereas volatile-tailoring enzymes expand lineage-specifically — note the Brassicaceae
 expansion of *COMT1* (rows for *Brassica* spp.) and the terpene-synthase expansions in grape and
 tomato.
+
+**Figure S1. Sensitivity of the radiation gene-set test.** Statistical power (α = 0.05, two-sided)
+of the competitive gene-set test to detect a coordinated additive shift δ (log2) in the scent set's
+40-vs-0 cGy dose effect, estimated by shifting the stratified permutation null. Curves for the whole
+scent set, the ester/methyltransferase route and the Tier-1 core; filled markers indicate δ at 80%
+power (≈0.04, 0.06, 0.04 log2 respectively); dashed vertical lines show the observed |effect| for
+each set. The observed effects lie below the 80%-power thresholds, so a coordinated scent-set
+response larger than ~3–4% would have been detected; the null is therefore informative, not merely
+under-powered (at the set level). Source: `phase3_power.py`.
 
 ### Table legends
 **Table 1. Composition of the curated *Brassica rapa* floral-scent gene set.** The 363 genes are

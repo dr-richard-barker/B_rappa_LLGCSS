@@ -1,0 +1,4 @@
+set	n	observed_T	crit_value_c(0.05,2-sided)	MDE_delta_p50	delta_80pct_power	delta_90pct_power	delta_80_as_foldchange	delta_80_as_percent
+whole_scent_set	287	-0.0193	0.0221	0.030	0.040	0.040	1.028	2.8
+ester_route	142	-0.0336	0.0394	0.050	0.060	0.070	1.042	4.2
+Tier1_core	76	-0.0044	0.0240	0.030	0.040	0.040	1.028	2.8

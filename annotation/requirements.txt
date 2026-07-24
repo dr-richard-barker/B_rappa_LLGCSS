@@ -1,0 +1,9 @@
+# Python dependencies for the annotation/ analysis layer (Phases 1-5).
+# The RNA-seq processing/DE pipeline uses the conda env in ../environment.yml; this file
+# covers only the downstream ID-reconciliation, gene-set, orthology, and figure scripts.
+# Everything else used (csv, json, re, os, urllib) is in the Python 3 standard library.
+# Install:  python3 -m pip install -r annotation/requirements.txt
+numpy>=1.26,<3
+scipy>=1.11,<2
+matplotlib>=3.8,<4
+# Network fetches (BioMart, Ensembl Compara REST, NCBI E-utilities) use stdlib urllib + curl.

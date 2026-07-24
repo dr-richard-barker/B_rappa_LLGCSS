@@ -1,0 +1,364 @@
+bra_id,BRA_id,in_scent_data,in_radiation_data,tier,routes,evidence
+Bra000133,BRA000133,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra000179,BRA000179,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra000568,BRA000568,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra000630,BRA000630,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra000631,BRA000631,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra000727,BRA000727,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra000738,BRA000738,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra000864,BRA000864,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra001405,BRA001405,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra001516,BRA001516,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra001552,BRA001552,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra001555,BRA001555,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra001557,BRA001557,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra001731,BRA001731,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra001832,BRA001832,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra001988,BRA001988,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra002026,BRA002026,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra002165,BRA002165,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra002468,BRA002468,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra002485,BRA002485,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra002714,BRA002714,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra002919,BRA002919,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra002962,BRA002962,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra002967,BRA002967,0,1,1,terpenoid,"T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra002968,BRA002968,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra003007,BRA003007,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra003009,BRA003009,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra003126,BRA003126,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra003184,BRA003184,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra003526,BRA003526,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra003629,BRA003629,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra003680,BRA003680,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra003681,BRA003681,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra003682,BRA003682,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra003707,BRA003707,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra003953,BRA003953,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra004057,BRA004057,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra004058,BRA004058,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra004059,BRA004059,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra004060,BRA004060,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra004081,BRA004081,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra004115,BRA004115,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra004175,BRA004175,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra004183,BRA004183,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra004184,BRA004184,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra004273,BRA004273,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra004277,BRA004277,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra004977,BRA004977,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra004996,BRA004996,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra005042,BRA005042,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra005221,BRA005221,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra005648,BRA005648,1,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra005747,BRA005747,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra005802,BRA005802,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra005957,BRA005957,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra006412,BRA006412,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra006796,BRA006796,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra006797,BRA006797,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra006985,BRA006985,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra007649,BRA007649,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra007770,BRA007770,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra007825,BRA007825,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra007826,BRA007826,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra007918,BRA007918,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra008037,BRA008037,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra008313,BRA008313,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra008316,BRA008316,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra008358,BRA008358,0,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra008967,BRA008967,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra009043,BRA009043,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra009106,BRA009106,1,1,2,terpenoid,T2 GO:0051762 sesquiterpene biosynthetic process
+Bra009292,BRA009292,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra009458,BRA009458,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra009459,BRA009459,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra009460,BRA009460,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra009461,BRA009461,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra009559,BRA009559,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra009632,BRA009632,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra009716,BRA009716,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra009717,BRA009717,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra009868,BRA009868,1,1,2,terpenoid,T2 GO:0016102 diterpenoid biosynthetic process
+Bra010226,BRA010226,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra010319,BRA010319,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra010356,BRA010356,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra010433,BRA010433,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra010434,BRA010434,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra010555,BRA010555,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra010556,BRA010556,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra010711,BRA010711,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra010928,BRA010928,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra010977,BRA010977,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra011022,BRA011022,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra011292,BRA011292,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra011353,BRA011353,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra011384,BRA011384,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra011685,BRA011685,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra011722,BRA011722,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra011895,BRA011895,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra011934,BRA011934,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra012040,BRA012040,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra012070,BRA012070,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra012137,BRA012137,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra012138,BRA012138,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra012184,BRA012184,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra012268,BRA012268,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra012269,BRA012269,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra012270,BRA012270,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra012494,BRA012494,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra012513,BRA012513,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra012515,BRA012515,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra012603,BRA012603,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra012779,BRA012779,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra012794,BRA012794,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra012899,BRA012899,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra012955,BRA012955,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra013070,BRA013070,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra013109,BRA013109,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra013161,BRA013161,1,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra013298,BRA013298,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra013378,BRA013378,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra013482,BRA013482,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra013484,BRA013484,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra013809,BRA013809,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra014354,BRA014354,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra014587,BRA014587,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra014768,BRA014768,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra014988,BRA014988,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra015002,BRA015002,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra015015,BRA015015,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra015058,BRA015058,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra015454,BRA015454,0,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra015664,BRA015664,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra015719,BRA015719,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra016209,BRA016209,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra016211,BRA016211,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra016212,BRA016212,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra016432,BRA016432,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra016433,BRA016433,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra016498,BRA016498,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra016602,BRA016602,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra016735,BRA016735,1,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra017023,BRA017023,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra017041,BRA017041,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra017075,BRA017075,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra017210,BRA017210,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra017337,BRA017337,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra017350,BRA017350,1,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra017351,BRA017351,1,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra017624,BRA017624,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra017699,BRA017699,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra017700,BRA017700,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra017763,BRA017763,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra017797,BRA017797,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra018040,BRA018040,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra018686,BRA018686,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra019031,BRA019031,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra019582,BRA019582,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra019711,BRA019711,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra020255,BRA020255,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra020376,BRA020376,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra020608,BRA020608,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra020921,BRA020921,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra020922,BRA020922,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T2 GO:0010333 terpene synthase activity"
+Bra020953,BRA020953,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra020970,BRA020970,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra021082,BRA021082,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra021151,BRA021151,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra021322,BRA021322,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra021495,BRA021495,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra021496,BRA021496,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra021497,BRA021497,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra021558,BRA021558,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra021560,BRA021560,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra021563,BRA021563,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra021564,BRA021564,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra021566,BRA021566,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra022379,BRA022379,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra022476,BRA022476,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra022535,BRA022535,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra022537,BRA022537,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra022603,BRA022603,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra022700,BRA022700,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra022862,BRA022862,0,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra023191,BRA023191,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra023565,BRA023565,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra023829,BRA023829,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra023973,BRA023973,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra024128,BRA024128,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra024129,BRA024129,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra024131,BRA024131,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra024134,BRA024134,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra024450,BRA024450,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra024546,BRA024546,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra024701,BRA024701,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra025160,BRA025160,0,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra025163,BRA025163,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra025164,BRA025164,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra025401,BRA025401,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra025402,BRA025402,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra025403,BRA025403,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra025404,BRA025404,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra025527,BRA025527,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra025614,BRA025614,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra025753,BRA025753,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra025874,BRA025874,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra025875,BRA025875,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra025876,BRA025876,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra026163,BRA026163,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra026320,BRA026320,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra026440,BRA026440,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra026453,BRA026453,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra026454,BRA026454,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra026472,BRA026472,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra026473,BRA026473,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra027079,BRA027079,1,1,1,terpenoid,"T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra027098,BRA027098,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra027099,BRA027099,0,1,2,terpenoid,T2 GO:0010333 terpene synthase activity | T2 GO:0016114 terpenoid biosynthetic process
+Bra027336,BRA027336,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra027410,BRA027410,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra027608,BRA027608,1,1,1,terpenoid,"T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra027609,BRA027609,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra027672,BRA027672,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra027770,BRA027770,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra027815,BRA027815,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra027931,BRA027931,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra028024,BRA028024,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra028166,BRA028166,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028199,BRA028199,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028224,BRA028224,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028235,BRA028235,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028251,BRA028251,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra028366,BRA028366,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra028399,BRA028399,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra028426,BRA028426,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028482,BRA028482,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028681,BRA028681,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028682,BRA028682,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028793,BRA028793,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra028858,BRA028858,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028859,BRA028859,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028893,BRA028893,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra028937,BRA028937,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra029041,BRA029041,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra029185,BRA029185,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra029388,BRA029388,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra029831,BRA029831,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra029875,BRA029875,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra029884,BRA029884,1,1,2,terpenoid,T2 GO:0051762 sesquiterpene biosynthetic process
+Bra029999,BRA029999,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030000,BRA030000,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030012,BRA030012,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra030190,BRA030190,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030195,BRA030195,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030279,BRA030279,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030322,BRA030322,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra030351,BRA030351,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030359,BRA030359,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030360,BRA030360,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030550,BRA030550,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra030701,BRA030701,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra030876,BRA030876,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra030878,BRA030878,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra030988,BRA030988,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra031161,BRA031161,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra031162,BRA031162,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra031989,BRA031989,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra031990,BRA031990,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra032155,BRA032155,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra032157,BRA032157,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra032158,BRA032158,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra032159,BRA032159,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra032160,BRA032160,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra032161,BRA032161,0,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra032304,BRA032304,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra032359,BRA032359,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra032718,BRA032718,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra032743,BRA032743,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra032744,BRA032744,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra032805,BRA032805,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra032837,BRA032837,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra032918,BRA032918,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra033050,BRA033050,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra033107,BRA033107,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra033110,BRA033110,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra033152,BRA033152,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra033395,BRA033395,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra033495,BRA033495,1,1,2,terpenoid,T2 GO:0016114 terpenoid biosynthetic process
+Bra033498,BRA033498,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra033526,BRA033526,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra033733,BRA033733,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra033964,BRA033964,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra033967,BRA033967,0,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra033968,BRA033968,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra033991,BRA033991,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra034150,BRA034150,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra034255,BRA034255,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra034387,BRA034387,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra034600,BRA034600,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra034677,BRA034677,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra034678,BRA034678,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra034836,BRA034836,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra034838,BRA034838,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra034872,BRA034872,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra035033,BRA035033,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra035081,BRA035081,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra035120,BRA035120,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra035243,BRA035243,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra035320,BRA035320,1,1,2,fatty_acid_GLV,T2 GO:0009695 jasmonic acid biosynthetic process
+Bra035323,BRA035323,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra035334,BRA035334,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra035481,BRA035481,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra035482,BRA035482,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra035675,BRA035675,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra035680,BRA035680,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra035927,BRA035927,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra036069,BRA036069,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra036207,BRA036207,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra036208,BRA036208,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra036239,BRA036239,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra036480,BRA036480,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra036601,BRA036601,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra036738,BRA036738,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra036847,BRA036847,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra036946,BRA036946,1,1,2,fatty_acid_GLV,T2 GO:0009694 jasmonic acid metabolic process
+Bra037126,BRA037126,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra037763,BRA037763,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra037891,BRA037891,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra037985,BRA037985,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra037986,BRA037986,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra037987,BRA037987,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra038086,BRA038086,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra038320,BRA038320,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra038396,BRA038396,0,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra038414,BRA038414,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra038499,BRA038499,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra038504,BRA038504,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra038514,BRA038514,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra038561,BRA038561,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra038569,BRA038569,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra038645,BRA038645,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra038694,BRA038694,0,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra038873,BRA038873,0,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra038929,BRA038929,1,1,2,benzenoid_phenylpropanoid,T2 GO:0009699 phenylpropanoid biosynthetic process
+Bra039202,BRA039202,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra039203,BRA039203,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra039206,BRA039206,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra039238,BRA039238,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0010333 terpene synthase activity"
+Bra039519,BRA039519,0,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra039555,BRA039555,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra039556,BRA039556,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra039777,BRA039777,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00221 phenylalanine ammonia-lyase (PAL; phenylpropanoid entry)
+Bra039853,BRA039853,1,1,2,benzenoid_phenylpropanoid,T2 GO:0008171 O-methyltransferase activity
+Bra039928,BRA039928,0,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra039948,BRA039948,1,1,1,fatty_acid_GLV,T1 Pfam:PF00305 lipoxygenase (LOX; green-leaf-volatile route)
+Bra040330,BRA040330,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA)
+Bra040354,BRA040354,0,1,1,terpenoid,"T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra040449,BRA040449,1,1,1,apocarotenoid,T1 Pfam:PF03055 carotenoid cleavage dioxygenase (CCD; caveat: incl. NCED/ABA) | T2 GO:0010436 carotenoid dioxygenase activity
+Bra040582,BRA040582,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"
+Bra040586,BRA040586,1,1,2,ester,T2 Pfam:PF02458 BAHD acyltransferase (volatile esters; broad family)
+Bra040633,BRA040633,1,1,1,ester,T1 Pfam:PF03492 SABATH methyltransferase (methyl-benzoate/-salicylate/-jasmonate)
+Bra040689,BRA040689,1,1,2,benzenoid_phenylpropanoid,T2 Pfam:PF00891 O-methyltransferase (benzenoid volatiles; also lignin) | T2 GO:0008171 O-methyltransferase activity
+Bra040746,BRA040746,1,1,2,ester;fatty_acid_GLV,T2 GO:0080032 methyl jasmonate esterase activity | T2 GO:0009694 jasmonic acid metabolic process | T2 GO:0080031 methyl salicylate esterase activity
+Bra040920,BRA040920,1,1,1,terpenoid,"T1 Pfam:PF01397 terpene synthase (TPS, N-term) | T1 Pfam:PF03936 terpene synthase (TPS, C-term) | T2 GO:0016114 terpenoid biosynthetic process | T2 GO:0016102 diterpenoid biosynthetic process | T2 GO:0010334 sesquiterpene synthase activity | T2 GO:0051762 sesquiterpene biosynthetic process | T2 GO:0010333 terpene synthase activity"

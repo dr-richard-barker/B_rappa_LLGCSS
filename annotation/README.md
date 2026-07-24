@@ -44,6 +44,7 @@ Committed (small, the deliverables):
 - `phase3_geneset_test.py` — Phase 3: quick competitive gene-set test.
 - `phase3_robust.py` — Phase 3 (trust this): stratified effect + permutation null + BH FDR.
   Emits `phase3_dose_stats.tsv` + `phase3_robust_results.tsv`.
+- `phase3_power.py` — minimum-detectable-effect / power curves (Fig S1).
 - `scent_orthology.py` — Phase 4: cross-species conservation via Ensembl Compara.
 - `scent_geneset.tsv` — the 363 curated scent genes (tier + route).
 - `scent_orthology_matrix.tsv` — scent gene × species ortholog-count matrix.
@@ -194,11 +195,22 @@ route/tier tests.
 - **Dual-hit candidates** (worth tracking, not significant as a set): `Bra013161` (GLV),
   `Bra028224`, `Bra039555` (ester); `Bra029041` is dose-up.
 
+**How much could we have detected? (`phase3_power.py`, Fig S1).** The set-level test is *not*
+under-powered: shifting the permutation null shows it detects, at 80% power / α=0.05, a coordinated
+shift as small as **δ ≈ 0.04 log2 (~3%)** in the whole set's 40-vs-0 cGy dose response (Tier-1 core
+~0.04; ester route ~0.06 because n is smaller). The observed effects (|T| = 0.019–0.034) sit *below*
+these thresholds. So the null is informative: any *coordinated* radiation response of the scent set
+is bounded to below ~3–4% at 40 cGy. (Caveat: this is the best case — a perfectly coordinated shift;
+a heterogeneous real signal would need to be larger. And it is set-level power: individual
+large-effect genes can still be missed, since per-gene power at 40 cGy is low — only 13 genome-wide
+DEGs.)
+
 **Defensible statement:** on the in-house 40 cGy counts, **there is no statistically significant
 effect of radiation on the floral-scent gene set** after correlation-aware, multiple-testing
-correction. The strongest (still non-significant, q≈0.16) trend is a mild relative
-under-response of the **ester/methyltransferase tailoring route** — the family the comparative
-genomics independently flagged — making it the pre-registered target for the properly powered
-test on the **collaborators' radiation counts** (rerun `phase3_robust.py`; join + gene set are
-ready). The analytic-vs-permutation gap here is itself a methodological caution: competitive
-gene-set p-values on co-expressed sets must be correlation-corrected.
+correction, and the test was **well-powered at the set level** (detectable coordinated effect
+~3–4%), so this is an *informative* null bounding any coordinated response — not a shrug. The
+strongest (still non-significant, q≈0.16) trend is a mild relative under-response of the
+**ester/methyltransferase tailoring route** — the family the comparative genomics independently
+flagged — the pre-registered target for the properly powered test on the **collaborators' radiation
+counts** (rerun `phase3_robust.py`; join + gene set are ready). The analytic-vs-permutation gap is a
+methodological caution: competitive gene-set p-values on co-expressed sets must be correlation-corrected.

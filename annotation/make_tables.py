@@ -105,11 +105,20 @@ csv_write(os.path.join(TBL,"table1_geneset_composition.csv"),t1)
 csv_write(os.path.join(TBL,"table2_candidates.csv"),t2)
 csv_write(os.path.join(TBL,"table3_model_species.csv"),t3)
 
+# ---- supplementary tables: S1 full scent set, S2 full ortholog matrix ----
+def tsv_to_csv(src, dst):
+    with open(src) as fi, open(dst,"w",newline='') as fo:
+        w=csv.writer(fo)
+        for row in csv.reader(fi, delimiter='\t'): w.writerow(row)
+tsv_to_csv(os.path.join(HERE,"scent_geneset.tsv"), os.path.join(TBL,"TableS1_scent_geneset_full.csv"))
+tsv_to_csv(os.path.join(HERE,"scent_orthology_matrix.tsv"), os.path.join(TBL,"TableS2_ortholog_matrix.csv"))
+
 # ---- results.html (Pages) ----
 FIGS=[("figures/Fig1_design.png","Fig 1. Two-experiment design and the Bra↔BRA gene-ID join."),
       ("figures/Fig2_geneset.png","Fig 2. (A) The 363-gene scent set by route and tier. (B) Scent-axis validation: % of each route's genes differentially expressed between High- and Low-scent lines."),
       ("figures/Fig3_radiation_test.png","Fig 3. Radiation dose effect (40 vs 0 cGy) by scent route vs genomic background. No route is significant after correlation-aware permutation and BH correction; the ester/methyltransferase route gives the strongest (still non-significant) trend."),
-      ("figures/Fig4_conservation.png","Fig 4. Cross-species conservation of an Arabidopsis-anchored scent panel (Ensembl Compara ortholog counts). Note the Brassicaceae-specific expansion of COMT1 and the terpene-synthase expansions in grape/tomato.")]
+      ("figures/Fig4_conservation.png","Fig 4. Cross-species conservation of an Arabidopsis-anchored scent panel (Ensembl Compara ortholog counts). Note the Brassicaceae-specific expansion of COMT1 and the terpene-synthase expansions in grape/tomato."),
+      ("figures/FigS1_power.png","Fig S1. Sensitivity of the gene-set test: power to detect a coordinated shift δ in the scent set's dose response. The set-level test is well-powered (~3–4% detectable at 80% power); observed effects (dashed) fall below, so the null is informative, not merely under-powered.")]
 gallery="".join(f'<figure><img src="{s}" alt="{html.escape(c)}"><figcaption>{html.escape(c)}</figcaption></figure>' for s,c in FIGS)
 page=f"""<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -137,7 +146,9 @@ candidates — not a confirmed radiation-responsive hit list.</p>
 <p class="note">Sources: <code>scent_geneset.tsv</code>, <code>phase3_robust_results.tsv</code>,
 <code>scent_orthology_matrix.tsv</code>, <code>scent_reference_species.tsv</code>,
 <code>scent_query_accessions.tsv</code>. Markdown: <a href="TABLES.md"><code>docs/TABLES.md</code></a>;
-CSV: <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation/tables"><code>annotation/tables/</code></a>.</p>
+CSV: <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation/tables"><code>annotation/tables/</code></a>.
+Supplementary (Fig S1, Tables S1–S2): <a href="SUPPLEMENTARY.md"><code>docs/SUPPLEMENTARY.md</code></a>;
+reproduce all: <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/annotation/reproduce.sh"><code>annotation/reproduce.sh</code></a>.</p>
 </div></main>
 <footer class="site">B. rapa — floral scent under space radiation (Lunar LEAF) · work in progress · CC0 ·
 <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub</a></footer></body></html>"""

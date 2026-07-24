@@ -1,0 +1,13 @@
+gene,AT_id,route,total_orthologs,n_species,arabidopsis_lyrata,arabidopsis_halleri,brassica_rapa_ro18,brassica_oleracea,brassica_napus,brassica_juncea,solanum_lycopersicum_gca000188115v5cm,solanum_tuberosum,vitis_vinifera,oryza_sativa
+TPS21,AT5G23960,terpenoid,230,32,0,1,1,3,4,2,7,15,0,0
+TPS10,AT2G24210,terpenoid,400,54,2,1,1,1,2,2,11,4,27,1
+TPS03,AT4G16740,terpenoid,405,55,1,1,1,2,4,2,11,4,27,1
+TPS04,AT1G61120,terpenoid,126,66,1,1,1,1,2,1,1,1,3,0
+PAL1,AT2G37040,benzenoid_phenylpropanoid,1069,114,2,1,2,2,4,6,0,8,15,9
+COMT1,AT5G54160,benzenoid_phenylpropanoid,192,69,2,2,4,9,9,7,1,1,1,0
+BSMT1,AT3G11480,ester(SABATH),315,60,1,1,2,2,6,3,3,3,3,0
+JMT,AT1G19640,ester(SABATH),160,85,1,1,0,0,1,0,1,1,2,1
+LOX2,AT3G45140,fatty_acid_GLV,499,115,1,1,2,2,4,1,1,3,2,6
+HPL1,AT4G15440,fatty_acid_GLV,161,109,1,1,1,2,2,3,1,1,1,1
+CCD1,AT3G63520,apocarotenoid,233,110,1,1,2,1,4,2,2,0,2,1
+CCD4,AT4G19170,apocarotenoid,186,111,1,1,1,2,3,4,2,3,2,2
