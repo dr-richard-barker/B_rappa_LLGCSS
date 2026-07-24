@@ -68,3 +68,4 @@ annotation/brapa_to_arabidopsis_orthologs.tsv
 annotation/gene_annotation.tsv
 annotation/id_crosswalk.tsv
 annotation/_attrs.tsv
+annotation/ortho_cache/

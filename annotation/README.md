@@ -41,12 +41,48 @@ Committed (small, the deliverables):
 - `build_annotation.py` — Phase 1: builds the crosswalk + GO/Pfam annotation.
 - `curate_scent_geneset.py` — Phase 2: tiered, route-classified scent gene set.
 - `scent_radiation_test.py` — tier-aware enrichment test (Phase 3 preview).
+- `scent_orthology.py` — Phase 4: cross-species conservation via Ensembl Compara.
 - `scent_geneset.tsv` — the 363 curated scent genes (tier + route).
+- `scent_orthology_matrix.tsv` — scent gene × species ortholog-count matrix.
 
 Regenerable / git-ignored (large; on disk, ship via deposit):
 - `gene_annotation.tsv` — per-gene GO/Pfam + scent flag (41,018 genes).
 - `id_crosswalk.tsv` — `Bra` ↔ `BRA` + presence flags.
 - `brapa_go.tsv`, `brapa_pfam.tsv` — raw Ensembl Plants BioMart pulls.
+
+## Phase 4 — cross-species conservation of the scent module (Ensembl orthology)
+
+Ensembl Plants Compara does not include our Chiifu `Bra######` assembly (only
+`brassica_rapa_ro18`), so conservation is **anchored on Arabidopsis** — a curated panel
+of 12 canonical floral-scent genes, one+ per route — with orthologs pulled across all
+plant genomes via the Compara REST homology endpoint (`scent_orthology.py` →
+`scent_orthology_matrix.tsv`; raw JSON cached in `ortho_cache/`).
+
+**Result — the scent module is an ancient toolkit with lineage-specific tailoring:**
+- **All four biosynthetic routes are deeply conserved** across flowering plants — every
+  panel gene has orthologs from Brassicaceae through Solanaceae (tomato/potato) to
+  monocots (rice). The core scent machinery predates the crucifers.
+- **The volatile-*tailoring* enzymes expand lineage-specifically** — this is the known
+  engine of scent diversity:
+  - benzenoid/ester O-methyltransferases: **COMT1 = 29 Brassica copies** (vs 1 in
+    tomato/potato), **BSMT1/SABATH = 13** (many-to-many) — strong Brassicaceae expansion.
+  - terpene synthases expand elsewhere (e.g. **TPS10 = 27 orthologs in grape**, and in
+    monocots) — a different lineage's elaboration.
+  - `brassica_rapa_ro18` has **lost the JMT ortholog** (0 copies) — a contraction.
+- Part of the Brassica copy inflation reflects the **Brassica whole-genome triplication**,
+  not necessarily scent-specific selection — stated as a caveat, not a result.
+
+**Tie back to the radiation result:** `Bra029041` — the single gene that moved under
+radiation — is an **O-methyltransferase**, i.e. it belongs to the *most Brassica-expanded,
+most regulatorily flexible* scent-tailoring family (COMT/SABATH), not the conserved core.
+So the "floral scent may be altered in space" hypothesis is best framed as: *if* radiation
+perturbs scent, the expanded ester/benzenoid-methyltransferase families are the likely
+point of action — a specific, testable prediction for Phase 3 on higher-dose data.
+
+**Scope caveats:** the classic scent-model plants (Petunia, snapdragon, rose) are **not in
+Ensembl Plants** — "other scent producers" here means Brassicas + Solanaceae + the broad
+plant tree. A Petunia/snapdragon comparison would need Sol Genomics / dedicated orthology
+(Phase 4b). Compara's B. rapa is R-o-18, so its counts are a proxy for our Chiifu data.
 
 ## Reproduce
 
