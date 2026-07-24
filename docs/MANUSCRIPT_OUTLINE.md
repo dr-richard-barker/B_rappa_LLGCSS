@@ -22,23 +22,27 @@ Resource / methods-and-preliminary-results (e.g. *Frontiers in Plant Science / A
 [R. Barker (lead)]; [radiation-experiment collaborators — confirm contribution/authorship];
 [others]. ORCID 0000-0001-5681-9857.
 
-## Abstract (structured skeleton)
-- **Background:** Lunar/Martian agriculture needs to know which plant traits change under
-  galactic cosmic radiation (GCR); floral scent underlies pollination and is biochemically
-  well-mapped, but its radiation response is untested.
-- **Approach:** We combine two *B. rapa* (Wisconsin Fast Plant) transcriptomes — a High/Low
-  floral-scent contrast and a 0/40 cGy radiation dose-response — reconcile their gene IDs,
-  define a tiered floral-volatile gene set, and test whether radiation perturbs it, then place
-  the result in a cross-species conservation framework.
-- **Results:** [scent set of 363 genes across 4 routes, validated]; at 40 cGy there is **no
-  statistically significant effect** on the scent gene set after correlation-aware and
-  multiple-testing correction. The core volatile enzymes are unaffected; the only sub-threshold
-  trend (permutation p≈0.06, BH q≈0.16) is a mild relative under-response of the
-  ester/methyltransferase "tailoring" route — the same family that is lineage-specifically
-  expanded and scent-defining across flowering plants.
-- **Conclusions:** We provide a reusable framework and a specific, falsifiable prediction — if
-  radiation alters scent, it acts on the tailoring methyltransferases, not the core synthases —
-  which the current low-dose data cannot confirm and a higher-powered dataset should test.
+## Abstract
+
+Sustaining crops beyond Earth will require knowing which plant traits are altered by galactic
+cosmic radiation (GCR). Floral scent, which mediates pollination and is among the best-mapped
+outputs of plant specialised metabolism, is one such trait whose radiation response is untested.
+We combine two *Brassica rapa* (Wisconsin Fast Plant) bulk RNA-seq datasets — a High- versus
+Low-scent contrast and a 0/40 cGy radiation dose-response — to build a reusable framework for the
+question. After establishing that the two datasets' gene identifiers denote the same loci
+(joining 31,756 genes one-to-one), we curate a tiered floral-volatile gene set of 363 genes
+spanning the terpenoid, benzenoid/phenylpropanoid, fatty-acid/green-leaf-volatile and
+apocarotenoid routes, and validate it against the scent contrast. Testing radiation perturbation
+with a correlation-aware permutation gene-set test, we find no statistically significant effect
+of 40 cGy on the scent gene set after multiple-testing correction; the core volatile-synthase
+enzymes are unaffected. A power analysis shows the test resolves coordinated shifts as small as
+~3–4%, so this is an informative bound rather than a failure to detect. The only sub-threshold
+trend is a mild relative under-response of the ester/methyltransferase "tailoring" route — the
+same enzyme family that is lineage-specifically expanded in Brassicaceae and that defines scent
+across *Petunia*, snapdragon and rose. We thus provide a reproducible resource and a specific,
+falsifiable prediction — that any radiation effect on scent acts on the tailoring
+methyltransferases, not the core synthases — to be tested in higher-powered radiation data.
+*(~250 words.)*
 
 ## 1. Introduction
 
