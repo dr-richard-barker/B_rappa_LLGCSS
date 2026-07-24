@@ -1,0 +1,17 @@
+Species,Gene,Enzyme / role,Route,Volatile product,Family,NCBI/UniProt,Reference
+Petunia hybrida,PhPAL1/PhPAL2,phenylalanine ammonia-lyase,benzenoid phenylpropanoid,(pathway entry),PAL,,Verdonk 2005 Plant Cell (PMID 15805488)
+Petunia hybrida,PhPAAS,phenylacetaldehyde synthase,benzenoid phenylpropanoid,2-phenylacetaldehyde,aromatic AAAD,,Kaminaga 2006 JBC
+Petunia hybrida,PhBPBT,benzoyl-CoA:benzyl/phenylethanol benzoyltransferase,ester,benzylbenzoate/phenylethylbenzoate,BAHD acyltransferase,sp|Q6E593.1|BEBT1_PETHY,Boatright 2004 Plant Physiol
+Petunia hybrida,PhBSMT1/2,benzoic/salicylic acid carboxyl methyltransferase,ester,methylbenzoate,SABATH methyltransferase,sp|A4ZDG8.1|BSMT3_PETHY,Negre 2003 Plant Cell; Underwood 2005
+Petunia hybrida,PhCFAT,coniferyl alcohol acyltransferase,benzenoid phenylpropanoid,(isoeugenol precursor),BAHD acyltransferase,,Dexter 2007 Plant J
+Petunia hybrida,PhIGS1,isoeugenol synthase,benzenoid phenylpropanoid,isoeugenol,PIP/NADPH reductase,,Koeduka 2008
+Petunia hybrida,PhODO1,R2R3-MYB regulator,regulator,(activates benzenoid genes),MYB TF,sp|Q50EX6.1|ODO1_PETHY,Verdonk 2005 Plant Cell (PMID 15805488)
+Petunia hybrida,PhEOBI/PhEOBII,R2R3-MYB regulators,regulator,(activate ODO1 + scent genes),MYB TF,,Spitzer-Rimon 2010/2012 Plant Cell
+Antirrhinum majus,"AmNES/LIS-1,-2",nerolidol/linalool synthase,terpenoid,"linalool, (E)-nerolidol",terpene synthase (TPS),ABR24418.1,Nagegowda 2008 Plant J (PMID 18363779)
+Antirrhinum majus,AmMYS,myrcene synthase,terpenoid,myrcene,terpene synthase (TPS),,Dudareva 2003 Plant Cell
+Antirrhinum majus,AmOCS,(E)-beta-ocimene synthase,terpenoid,(E)-beta-ocimene,terpene synthase (TPS),,Dudareva 2003 Plant Cell
+Antirrhinum majus,AmBAMT,benzoic acid carboxyl methyltransferase,ester,methylbenzoate,SABATH methyltransferase,sp|Q9FYZ9.1|BAMT_ANTMA,Dudareva 2000 (seminal floral SABATH)
+Rosa x hybrida,RhNUDX1,Nudix hydrolase (GPP diphosphohydrolase),terpenoid,geraniol (non-canonical route),Nudix hydrolase,sp|M4I1C6.1|NUDT1_ROSHC,Magnard 2015 Science (PMID 26138978)
+Rosa x hybrida,RhLINS/RhNES,linalool / nerolidol synthase,terpenoid,"linalool, nerolidol",terpene synthase (TPS),,Conart 2019 Plant Physiol
+Rosa x hybrida,RhOMT1/2,orcinol O-methyltransferase,benzenoid phenylpropanoid,"3,5-dimethoxytoluene",O-methyltransferase,AAM23005.1,Lavid 2002 Plant Physiol
+Rosa x hybrida,RhAAT1,alcohol acyltransferase,ester,geranyl/2-phenylethyl acetate,BAHD acyltransferase,,Guterman 2006

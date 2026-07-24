@@ -1,0 +1,7 @@
+Biosynthetic route,Tier 1 (core enzymes),Tier 2 (supporting),Total,Example families
+Terpenoid,39,13,52,terpene synthases (TPS)
+Benzenoid / phenylpropanoid,0,97,97,"PAL, O-methyltransferases"
+Ester / methyltransferase,39,135,174,"SABATH MTs, BAHD acyltransferases"
+Fatty-acid / GLV,14,38,52,"lipoxygenase (LOX), HPL"
+Apocarotenoid,16,0,16,carotenoid cleavage dioxygenases (CCD)
+All routes,108,255,363,—

@@ -10,6 +10,7 @@
   <a href="#overview" style="color:var(--accent)">Overview</a>
   <a href="#repo">In this repo</a>
   <a href="#signal">Preliminary signal</a>
+  <a href="results.html">Figures &amp; tables</a>
   <a href="#data">Data &amp; code</a>
   <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub ↗</a>
 </nav></header>
@@ -27,8 +28,8 @@
   <div class="btnrow">
     <a class="btn primary" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/README_PLAN.md">Research &amp; tidy-up plan →</a>
     <a class="btn" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/docs/MANUSCRIPT_OUTLINE.md">Manuscript outline</a>
+    <a class="btn" href="results.html">Figures &amp; tables →</a>
     <a class="btn" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation">Analysis code</a>
-    <a class="btn" href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">Code &amp; data (GitHub)</a>
   </div>
   <p class="note"><b>🚧 Status — work in progress.</b> This repository is an <b>analytical
   framework and a preliminary, testable signal — not a finished study or a claimed discovery.</b>
@@ -62,19 +63,23 @@ reconciling them is the first analytical step.</p>
 </ul>
 </div>
 
-<h2 id="signal">Preliminary signal — unconfirmed</h2>
+<h2 id="signal">Preliminary signal — no significant effect at 40 cGy</h2>
 <div class="content">
-<p class="note">The following is a <b>weak, preliminary result</b> stated as a hypothesis to test,
-not a finding. It is uncorrected, low-dose, and needs the collaborators' higher-power counts to
-confirm or refute.</p>
+<p class="note">Stated as a hypothesis to test, not a finding. At this low dose the result is a
+<b>non-significant trend</b>; it needs the collaborators' higher-power counts to confirm or refute.</p>
 <p>Working from a curated, tiered floral-volatile gene set (~363 genes across the terpenoid,
 benzenoid/phenylpropanoid, fatty-acid/green-leaf-volatile and apocarotenoid routes), the core
-volatile <em>synthase</em> enzymes appear <b>unaffected</b> by 40 cGy, whereas the
-ester/methyltransferase <b>"tailoring" route</b> shows a <b>weak, directional down-shift</b>
-(Mann–Whitney U <em>p</em> ≈ 0.01, uncorrected). This yields a specific, falsifiable prediction:
-<b>if radiation alters scent, it acts on the tailoring methyltransferases, not the core
-synthases</b> — the same gene family that is lineage-specifically expanded and scent-defining
-across flowering plants. Confirming this requires higher-powered radiation counts.</p>
+volatile <em>synthase</em> enzymes are <b>unaffected</b> by 40 cGy. A correlation-aware permutation
+test (5,000 sample-label shuffles, stratified by genotype and preservative) with
+Benjamini–Hochberg correction finds <b>no route significant at FDR&lt;0.10</b> — the naïve
+competitive test (<em>p</em> ≈ 0.004) was inflated roughly ten-fold by inter-gene correlation. The
+strongest <em>remaining</em> trend is a mild relative down-shift of the
+ester/methyltransferase <b>"tailoring" route</b> (permutation <em>p</em> ≈ 0.07, BH <em>q</em> ≈ 0.16 —
+not significant). That is enough to motivate a specific, falsifiable prediction: <b>if radiation
+alters scent, it should act on the tailoring methyltransferases, not the core synthases</b> — the
+same gene family that is lineage-specifically expanded and scent-defining across flowering plants
+(<a href="results.html">see Fig 3–4 and the tables</a>). Confirming or refuting this needs
+higher-powered radiation counts.</p>
 </div>
 
 <h2 id="data">Data &amp; code</h2>

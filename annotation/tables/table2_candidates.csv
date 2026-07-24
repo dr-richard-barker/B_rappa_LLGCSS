@@ -1,0 +1,13 @@
+Gene (Bra),Route,Tier,"Radiation dose effect (40 vs 0 cGy, log2)",Scent High/Low log2FC,Scent adjP,Enzyme evidence
+Bra028893,Ester / methyltransferase,2,-0.56,+1.21,0.014,T2 Pfam:PF02458 BAHD acyltransferase (vola
+Bra012779,Terpenoid,2,+0.37,-0.47,0.0028,T2 GO:0016114 terpenoid biosynthetic proce
+Bra009460,Ester / methyltransferase,1,-0.23,-1.70,0.0089,T1 Pfam:PF03492 SABATH methyltransferase (
+Bra012138,Ester / methyltransferase,2,-0.22,+0.37,0.033,T2 Pfam:PF02458 BAHD acyltransferase (vola
+Bra014354,Benzenoid / phenylpropanoid,2,-0.11,+0.69,0.078,T2 GO:0009699 phenylpropanoid biosynthetic
+Bra028224,Ester / methyltransferase,2,+0.10,+0.72,0.03,T2 Pfam:PF02458 BAHD acyltransferase (vola
+Bra020970,Apocarotenoid,1,+0.09,+1.50,0.016,T1 Pfam:PF03055 carotenoid cleavage dioxyg
+Bra013161,Fatty-acid / GLV,2,+0.09,+0.50,0.01,T2 GO:0009695 jasmonic acid biosynthetic p
+Bra019582,Ester / methyltransferase,2,-0.08,+1.77,0.088,T2 Pfam:PF02458 BAHD acyltransferase (vola
+Bra040746,Ester / methyltransferase,2,+0.08,-0.94,0.042,T2 GO:0080032 methyl jasmonate esterase ac
+Bra032359,Apocarotenoid,1,-0.07,+2.29,0.00054,T1 Pfam:PF03055 carotenoid cleavage dioxyg
+Bra039556,Ester / methyltransferase,2,-0.06,-2.73,0.00023,T2 Pfam:PF02458 BAHD acyltransferase (vola
