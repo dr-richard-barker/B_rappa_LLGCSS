@@ -112,8 +112,10 @@ jupyter lab
 - **Scent reads:** NCBI SRA `SRR4417237`–`SRR4417244`; processed via NASA OSDR/GeneLab.
 - **Radiation data:** collaborator-led; cite OSDR accession/DOI (link to be added).
 
-## Citation
-See [`CITATION.cff`](CITATION.cff). A Zenodo DOI will be minted on deposit.
+## Citation & deposit
+See [`CITATION.cff`](CITATION.cff). A Zenodo DOI will be minted on deposit — steps in
+[`docs/ZENODO_DEPOSIT.md`](docs/ZENODO_DEPOSIT.md). Manuscript scaffold:
+[`docs/MANUSCRIPT_OUTLINE.md`](docs/MANUSCRIPT_OUTLINE.md).
 
 ## License
 Released under **CC0 1.0 Universal** (public domain). See [`LICENSE`](LICENSE).
