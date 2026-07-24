@@ -99,14 +99,73 @@ Resource / methods-and-preliminary-results (e.g. *Frontiers in Plant Science / A
 - Scent raw reads: SRA `SRR4417237–244` (via OSDR/GeneLab). Radiation: [OSDR accession/DOI].
 - Model-species scent proteins: NCBI/UniProt accessions in `annotation/scent_query_accessions.tsv`.
 
-## Figures & Tables (all derivable from `annotation/`)
-- **Fig 1** two-experiment design + `Bra`↔`BRA` join schematic.
-- **Fig 2** scent gene set: routes × tiers; scent-axis validation (DE High/Low per route).
-- **Fig 3** radiation gene-set test: per-route MWU (forest/violin of dose log2FC, scent vs background).
-- **Fig 4** cross-species conservation heatmap (`scent_orthology_matrix.tsv`) + expansion callouts.
-- **Table 1** the 363-gene scent set summary (from `scent_geneset.tsv`).
-- **Table 2** radiation×scent candidate genes (dual hits).
-- **Table 3** characterised scent genes across model species (`scent_reference_species.tsv`).
+## Figures & Tables (all derivable from `annotation/`; rendered figures in `annotation/figures/`)
+
+### Figure legends
+**Figure 1. Two-experiment design and gene-identifier reconciliation.** Schematic of the two
+*B. rapa* RNA-seq datasets combined here — the floral-scent experiment (8 libraries, High- vs
+Low-scent lines, Chiifu `Bra######` identifiers) and the radiation dose-response experiment (39
+libraries; dose 0/40 cGy × genotype WT/*anthocyaninless* × preservative DRS/RL, `BRA######`
+identifiers). The two identifier sets denote the same Chiifu loci differing only in case;
+case-normalisation joins 31,756 genes 1:1, enabling the tiered scent gene set and the downstream
+radiation and cross-species analyses.
+
+**Figure 2. The curated floral-scent gene set and its validation.** (**A**) The 363-gene set by
+biosynthetic route and confidence tier (Tier 1, core volatile-forming enzyme families; Tier 2,
+supporting/route-level), from GO-term and Pfam-domain curation. (**B**) Scent-axis validation: the
+percentage of each route's genes differentially expressed between High- and Low-scent lines
+(adjP < 0.1); the number of testable genes per route is shown above each bar. Every route contains
+scent-responsive genes, confirming the set captures floral-scent biology in this species.
+
+**Figure 3. Radiation dose effect on the scent gene set, by biosynthetic route.** Box plots of the
+genotype×preservative-stratified radiation dose effect (40 vs 0 cGy, log2) for each scent route
+against the genome-wide background (grey; dashed line, background median). Boxes show median and
+IQR, whiskers 1.5×IQR, outliers omitted. No route is significant after a correlation-aware
+permutation test (5,000 sample-label shuffles stratified by genotype and preservative) with
+Benjamini–Hochberg correction; the ester/methyltransferase "tailoring" route gives the strongest
+but still non-significant trend (permutation *p* ≈ 0.07, *q* ≈ 0.16). Core volatile-synthase
+enzymes (Tier 1) are unaffected.
+
+**Figure 4. Cross-species conservation of the floral-scent pathway.** Heatmap of Ensembl Plants
+Compara ortholog counts for a panel of 12 Arabidopsis-anchored scent genes (rows) across
+representative plant genomes (columns); colour encodes log(1 + ortholog count), cell numbers are
+raw counts. All four routes are deeply conserved (orthologs present through Solanaceae and
+monocots), whereas volatile-tailoring enzymes expand lineage-specifically — note the Brassicaceae
+expansion of *COMT1* (rows for *Brassica* spp.) and the terpene-synthase expansions in grape and
+tomato.
+
+### Table legends
+**Table 1. Composition of the curated *Brassica rapa* floral-scent gene set.** The 363 genes are
+assigned by GO term and Pfam domain to biosynthetic routes (terpenoid; benzenoid/phenylpropanoid;
+fatty-acid/green-leaf-volatile; apocarotenoid) and to an ester/methyltransferase tailoring category,
+and to a confidence tier (Tier 1, core volatile-forming enzyme families — terpene synthases, SABATH
+methyltransferases, lipoxygenases, carotenoid-cleavage dioxygenases; Tier 2, supporting/route-level
+genes). Columns give per-route Tier-1 and Tier-2 counts, route totals, and example families.
+Because a gene may carry evidence for more than one route, route totals sum to more than 363. Source:
+`scent_geneset.tsv` (`curate_scent_geneset.py`).
+
+**Table 2. Scent-associated candidate genes and their radiation dose response.** *B. rapa*
+scent-set genes that are differentially expressed between High- and Low-scent lines
+(Benjamini–Hochberg adjP < 0.1), ranked by the absolute genotype×preservative-stratified radiation
+dose effect (40 vs 0 cGy, log2). Columns: gene (Chiifu `Bra` ID), biosynthetic route, confidence
+tier, stratified dose effect, scent High/Low log2 fold-change and adjP, and the Pfam/GO enzyme
+evidence. **Note:** the scent gene set as a whole shows *no* significant radiation response after
+correlation-aware, multiple-testing correction (Figure 3); the genes listed are individual
+candidates for targeted follow-up (e.g. in higher-powered data), not a validated radiation-responsive
+set. adjP, BH-adjusted *p*-value; GLV, green-leaf volatile; MT, methyltransferase; SABATH,
+salicylic-acid/benzoic-acid/theobromine methyltransferase family.
+
+**Table 3. Characterised floral-scent biosynthesis genes in model scent species absent from Ensembl
+Plants.** Landmark, functionally characterised scent genes from *Petunia hybrida*, *Antirrhinum
+majus* (snapdragon) and *Rosa* spp. — none represented in Ensembl Plants Compara (snapdragon is also
+absent from OrthoDB) — curated from the primary literature and cross-referenced to the *B. rapa*
+biosynthetic routes. NCBI/UniProt accessions were retrieved programmatically for the landmark
+enzymes (Methods; `scent_query_accessions.tsv`); the remaining citations are indicative and should be
+verified against the primary literature before submission. The table illustrates that the
+volatile-tailoring methyltransferase/acyltransferase step is the scent-defining node across lineages
+(PhBSMT, AmBAMT, RhOMT) and that functionally convergent genes (rose RhNUDX1, a Nudix hydrolase
+producing geraniol) can lack orthologs elsewhere in the pathway — a caveat for orthology-only
+comparisons. Source: `scent_reference_species.tsv` + `scent_query_accessions.tsv`.
 
 ## Key references (verified this project)
 Dudareva 2013 New Phytol 198:16; Verdonk 2005 Plant Cell (PhODO1, PMID 15805488); Nagegowda 2008
