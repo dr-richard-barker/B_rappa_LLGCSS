@@ -41,7 +41,9 @@ Committed (small, the deliverables):
 - `build_annotation.py` — Phase 1: builds the crosswalk + GO/Pfam annotation.
 - `curate_scent_geneset.py` — Phase 2: tiered, route-classified scent gene set.
 - `scent_radiation_test.py` — tier-aware Fisher enrichment (Phase 1/2 preview).
-- `phase3_geneset_test.py` — Phase 3: powered rank-based gene-set test + confounds.
+- `phase3_geneset_test.py` — Phase 3: quick competitive gene-set test.
+- `phase3_robust.py` — Phase 3 (trust this): stratified effect + permutation null + BH FDR.
+  Emits `phase3_dose_stats.tsv` + `phase3_robust_results.tsv`.
 - `scent_orthology.py` — Phase 4: cross-species conservation via Ensembl Compara.
 - `scent_geneset.tsv` — the 363 curated scent genes (tier + route).
 - `scent_orthology_matrix.tsv` — scent gene × species ortholog-count matrix.
@@ -163,35 +165,40 @@ python3 annotation/scent_radiation_test.py
 *Exploratory — our radiation counts are an in-house re-analysis (the primary radiation
 study is collaborator-led); treat as hypothesis-generating, not a final result.*
 
-The Phase-1 preview used a Fisher test on the 13 hard DEGs — badly under-powered.
-`phase3_geneset_test.py` instead uses a **rank-based competitive gene-set test**
-(Mann-Whitney U of the scent set's radiation dose effect vs the genome-wide background,
-iDEP interaction model, main 40-vs-0 cGy term, 31,008 genes) — every gene's effect size
-counts, no DEG cutoff.
+Two scripts: `phase3_geneset_test.py` (competitive Mann-Whitney U, quick look) and
+`phase3_robust.py` (the version to trust) — the latter measures the dose effect from the
+39-sample log-normalised matrix as a **genotype×preservative-stratified contrast** (controls
+both confounds directly) and adds a **correlation-aware permutation null** (5,000 sample-label
+shuffles stratified by genotype×preservative — shuffling samples preserves gene–gene
+correlation, which the analytic MWU ignores) plus **Benjamini-Hochberg FDR** across the 7
+route/tier tests.
 
-- **Core volatile enzymes (Tier-1: TPS, SABATH, LOX, CCD) show no shift** (signed-log2FC
-  MWU p = 0.40). The enzymes that directly *make* the scent are unresponsive to 40 cGy.
-- **The broad scent set (Tier-1+2, n=287) shows a weak but nominally significant
-  down-shift** relative to background (signed-log2FC MWU **p = 0.032**, z = −2.14; scent
-  median ≈ 0 vs background +0.13 — i.e. scent genes do *not* join the mild genome-wide
-  up-shift at 40 cGy). Magnitude (|log2FC|) is unchanged (p = 0.95), so scent genes are
-  not *more* variable, just directionally lower.
-- **The signal is concentrated in the ester / methyltransferase route** (SABATH/BAHD/OMT,
-  n=142): median −0.11, **MWU p = 0.012** — the same *tailoring* family that the
-  comparative genomics (Phase 4/4b) flagged as the cross-lineage scent node. Terpenoid,
-  benzenoid, GLV and apocarotenoid routes show nothing (p ≥ 0.58).
-- **Confounds are clean:** 0 scent genes have a significant dose×genotype or
-  dose×preservative interaction — the (weak) scent response does not depend on the
-  *anthocyaninless* background or the preservative.
-- **Dual-hit candidates** (radiation-responsive *and* scent-associated High/Low):
-  `Bra013161` (GLV; dose +2.5, scent adjP 0.01), `Bra028224` and `Bra039555` (ester).
-  `Bra029041` is dose-**up** (+1.6) — an outlier *against* its route's overall down-trend.
+**The correction matters a lot.** Inter-gene correlation inflated the naive MWU ~10×:
 
-**Defensible statement:** at 40 cGy the core scent-forming enzymes are unaffected, but the
-broad scent set — specifically the **ester/methyltransferase tailoring route** — shows a
-weak, directional, nominally significant (uncorrected; borderline after multiple-testing)
-**down-shift** relative to the genomic radiation response, landing exactly where the
-cross-species conservation analysis predicted the labile scent node to be. This is a
-small, hypothesis-generating effect, not a headline result. The decisive test is to re-run
-`phase3_geneset_test.py` on the **collaborators' radiation counts** (higher power, and
-ideally higher doses), for which the ID join and gene set are already prepared.
+| set | analytic MWU p | permutation p | BH q |
+|---|---|---|---|
+| Tier-1 core (n=76) | 0.37 | 0.69 | 0.81 |
+| Tier-1+2 all (n=287) | 0.0065 | 0.061 | 0.155 |
+| route: ester/MT (n=142) | 0.0042 | 0.067 | 0.155 |
+| route: apocarotenoid (n=15) | 0.060 | 0.059 | 0.155 |
+| terpenoid / benzenoid / GLV | 0.15–0.50 | 0.40–0.96 | 0.67–0.96 |
+
+- **After correlation-aware + multiple-testing correction, nothing reaches FDR<0.10.** The
+  best signals (ester/tailoring route and the whole set) sit at permutation p≈0.06, **q≈0.16 —
+  a non-significant trend**, not the "significant" effect the uncorrected MWU (p≈0.004) implied.
+- **Core volatile enzymes (Tier-1) are unaffected** on every test (p≥0.37) — consistent.
+- **Effect sizes are tiny** (stratified dose effect: set median +0.006 vs background +0.015 log
+  units) — even the trend is a small relative under-response, not a suppression.
+- **Confounds are clean:** 0 scent genes with a significant dose×genotype or dose×preservative
+  interaction; the stratified design already removes those effects.
+- **Dual-hit candidates** (worth tracking, not significant as a set): `Bra013161` (GLV),
+  `Bra028224`, `Bra039555` (ester); `Bra029041` is dose-up.
+
+**Defensible statement:** on the in-house 40 cGy counts, **there is no statistically significant
+effect of radiation on the floral-scent gene set** after correlation-aware, multiple-testing
+correction. The strongest (still non-significant, q≈0.16) trend is a mild relative
+under-response of the **ester/methyltransferase tailoring route** — the family the comparative
+genomics independently flagged — making it the pre-registered target for the properly powered
+test on the **collaborators' radiation counts** (rerun `phase3_robust.py`; join + gene set are
+ready). The analytic-vs-permutation gap here is itself a methodological caution: competitive
+gene-set p-values on co-expressed sets must be correlation-corrected.

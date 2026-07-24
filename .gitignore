@@ -69,3 +69,5 @@ annotation/gene_annotation.tsv
 annotation/id_crosswalk.tsv
 annotation/_attrs.tsv
 annotation/ortho_cache/
+
+annotation/phase3_dose_stats.tsv

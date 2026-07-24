@@ -26,12 +26,15 @@ Resource / methods-and-preliminary-results (e.g. *Frontiers in Plant Science / A
   floral-scent contrast and a 0/40 cGy radiation dose-response — reconcile their gene IDs,
   define a tiered floral-volatile gene set, and test whether radiation perturbs it, then place
   the result in a cross-species conservation framework.
-- **Results:** [scent set of 363 genes across 4 routes, validated]; core volatile enzymes are
-  unaffected by 40 cGy, but the ester/methyltransferase "tailoring" route shows a weak,
-  directional down-shift (MWU p≈0.01, uncorrected) — the same family that is lineage-specifically
+- **Results:** [scent set of 363 genes across 4 routes, validated]; at 40 cGy there is **no
+  statistically significant effect** on the scent gene set after correlation-aware and
+  multiple-testing correction. The core volatile enzymes are unaffected; the only sub-threshold
+  trend (permutation p≈0.06, BH q≈0.16) is a mild relative under-response of the
+  ester/methyltransferase "tailoring" route — the same family that is lineage-specifically
   expanded and scent-defining across flowering plants.
-- **Conclusions:** We provide a reusable framework and a specific, falsifiable prediction: if
-  radiation alters scent, it acts on the tailoring methyltransferases, not the core synthases.
+- **Conclusions:** We provide a reusable framework and a specific, falsifiable prediction — if
+  radiation alters scent, it acts on the tailoring methyltransferases, not the core synthases —
+  which the current low-dose data cannot confirm and a higher-powered dataset should test.
 
 ## 1. Introduction
 - Space agriculture & the Lunar LEAF context; why plant reproduction/pollination matters off-Earth.
@@ -65,10 +68,13 @@ Resource / methods-and-preliminary-results (e.g. *Frontiers in Plant Science / A
   Chiifu locus namespace; 31,756 genes join 1:1. → *Fig 1* (design + join schematic).
 - **3.2 A validated, tiered floral-scent gene set.** 363 genes (108 Tier-1 core), all four routes;
   validated on the scent axis (DE High vs Low across every route). → *Fig 2*, *Table 1*.
-- **3.3 Radiation spares the core but weakly suppresses the tailoring route.** Tier-1 core: no
-  shift (p=0.40); broad set: down-shift vs background (signed MWU p=0.032); concentrated in the
-  ester/methyltransferase route (p=0.012); magnitude unchanged; confounds clean (0 significant
-  interactions). Dual-hit candidates `Bra013161`, `Bra028224`, `Bra039555`. → *Fig 3*, *Table 2*.
+- **3.3 Radiation does not significantly perturb the scent set at 40 cGy.** Stratified
+  (genotype×preservative) dose contrast; competitive test with a correlation-aware permutation
+  null + BH FDR. Core enzymes unaffected (p≥0.37); the whole set and the ester/methyltransferase
+  route give the only trends (analytic MWU p≈0.004 but permutation p≈0.06, **BH q≈0.16 — n.s.**),
+  illustrating ~10× correlation inflation of the naive test. Effect sizes tiny; confounds clean
+  (0 significant interactions). Report as a non-significant, pre-specified trend + candidates
+  (`Bra013161`, `Bra028224`, `Bra039555`). → *Fig 3*, *Table 2*.
 - **3.4 The affected route is the evolutionarily labile scent node.** All scent routes are deeply
   conserved (orthologs to tomato/rice), but the volatile-tailoring methyltransferases
   (COMT/SABATH/BAHD) are lineage-specifically expanded (COMT1 29 Brassica copies; BSMT1 13) and are
