@@ -33,6 +33,9 @@ deposit rather than in the git history. This is what previously inflated `.git` 
 
 - `Metadata/Brapp_Scent_metadata_factors.csv` — scent sample sheet (High/Low)
 - `counts and factors/LEAF_Metadata.csv` — radiation sample sheet (clean, canonical)
-- `brapa_symbol_to_kegg_id_map.csv` — **rebuild recommended** (derived from a
-  wrong-organism source; see `docs/LEGACY.md`)
+- `brapa_symbol_to_kegg_id_map.csv` — **rebuilt** (was derived from a wrong-organism
+  source; now routed via Arabidopsis orthologs, carries `brapa_gene` as a join key)
+- `annotation/brapa_to_arabidopsis_orthologs.tsv` — **rebuilt**, 18,770 RBH pairs
+  (was a 100-byte BioMart error message)
+- `annotation/build_annotation.py` — regenerates all of the above from KEGG + the RBH map
 - `Brapa_analysis/Metadata/brapa_kegg_*.tsv` — KEGG gene→pathway / pathway→name

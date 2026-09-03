@@ -1,0 +1,164 @@
+pathway_id	pathway_name
+brp01100	Metabolic pathways
+brp01110	Biosynthesis of secondary metabolites
+brp01200	Carbon metabolism
+brp01210	2-Oxocarboxylic acid metabolism
+brp01212	Fatty acid metabolism
+brp01230	Biosynthesis of amino acids
+brp01232	Nucleotide metabolism
+brp01250	Biosynthesis of nucleotide sugars
+brp01240	Biosynthesis of cofactors
+brp01310	Nitrogen cycle
+brp01320	Sulfur cycle
+brp00010	Glycolysis / Gluconeogenesis
+brp00020	Citrate cycle (TCA cycle)
+brp00030	Pentose phosphate pathway
+brp00040	Pentose and glucuronate interconversions
+brp00051	Fructose and mannose metabolism
+brp00052	Galactose metabolism
+brp00053	Ascorbate and aldarate metabolism
+brp00500	Starch and sucrose metabolism
+brp00620	Pyruvate metabolism
+brp00630	Glyoxylate and dicarboxylate metabolism
+brp00640	Propanoate metabolism
+brp00650	Butanoate metabolism
+brp00660	C5-Branched dibasic acid metabolism
+brp00562	Inositol phosphate metabolism
+brp00566	Sulfoquinovose metabolism
+brp00190	Oxidative phosphorylation
+brp00195	Photosynthesis
+brp00196	Photosynthesis
+brp00710	Carbon fixation by Calvin cycle
+brp00910	Nitrogen metabolism
+brp00920	Sulfur metabolism
+brp00061	Fatty acid biosynthesis
+brp00062	Fatty acid elongation
+brp00071	Fatty acid degradation
+brp00073	Cutin, suberine and wax biosynthesis
+brp00100	Steroid biosynthesis
+brp00561	Glycerolipid metabolism
+brp00564	Glycerophospholipid metabolism
+brp00565	Ether lipid metabolism
+brp00600	Sphingolipid metabolism
+brp00590	Arachidonic acid metabolism
+brp00591	Linoleic acid metabolism
+brp00592	alpha-Linolenic acid metabolism
+brp01040	Biosynthesis of unsaturated fatty acids
+brp00230	Purine metabolism
+brp00240	Pyrimidine metabolism
+brp00250	Alanine, aspartate and glutamate metabolism
+brp00260	Glycine, serine and threonine metabolism
+brp00270	Cysteine and methionine metabolism
+brp00280	Valine, leucine and isoleucine degradation
+brp00290	Valine, leucine and isoleucine biosynthesis
+brp00300	Lysine biosynthesis
+brp00310	Lysine degradation
+brp00220	Arginine biosynthesis
+brp00330	Arginine and proline metabolism
+brp00340	Histidine metabolism
+brp00350	Tyrosine metabolism
+brp00360	Phenylalanine metabolism
+brp00380	Tryptophan metabolism
+brp00400	Phenylalanine, tyrosine and tryptophan biosynthesis
+brp00410	beta-Alanine metabolism
+brp00430	Taurine and hypotaurine metabolism
+brp00440	Phosphonate and phosphinate metabolism
+brp00450	Selenocompound metabolism
+brp00460	Cyanoamino acid metabolism
+brp00470	D-Amino acid metabolism
+brp00480	Glutathione metabolism
+brp00520	Amino sugar and nucleotide sugar metabolism
+brp00541	Biosynthesis of various nucleotide sugars
+brp00510	N-Glycan biosynthesis
+brp00513	Various types of N-glycan biosynthesis
+brp00514	Other types of O-glycan biosynthesis
+brp00531	Glycosaminoglycan degradation
+brp00563	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis
+brp00601	Glycosphingolipid biosynthesis
+brp00603	Glycosphingolipid biosynthesis
+brp00604	Glycosphingolipid biosynthesis
+brp00511	Other glycan degradation
+brp00540	Lipopolysaccharide biosynthesis
+brp00543	Exopolysaccharide biosynthesis
+brp00730	Thiamine metabolism
+brp00740	Riboflavin metabolism
+brp00750	Vitamin B6 metabolism
+brp00760	Nicotinate and nicotinamide metabolism
+brp00770	Pantothenate and CoA biosynthesis
+brp00780	Biotin metabolism
+brp00785	Lipoic acid metabolism
+brp00790	Folate biosynthesis
+brp00670	One carbon pool by folate
+brp00860	Porphyrin metabolism
+brp00130	Ubiquinone and other terpenoid-quinone biosynthesis
+brp00900	Terpenoid backbone biosynthesis
+brp00902	Monoterpenoid biosynthesis
+brp00909	Sesquiterpenoid and triterpenoid biosynthesis
+brp00904	Diterpenoid biosynthesis
+brp00906	Carotenoid biosynthesis
+brp00905	Brassinosteroid biosynthesis
+brp00908	Zeatin biosynthesis
+brp00940	Phenylpropanoid biosynthesis
+brp00945	Stilbenoid, diarylheptanoid and gingerol biosynthesis
+brp00941	Flavonoid biosynthesis
+brp00944	Flavone and flavonol biosynthesis
+brp00942	Anthocyanin biosynthesis
+brp00901	Indole alkaloid biosynthesis
+brp00950	Isoquinoline alkaloid biosynthesis
+brp00960	Tropane, piperidine and pyridine alkaloid biosynthesis
+brp00232	Caffeine metabolism
+brp00965	Betalain biosynthesis
+brp00966	Glucosinolate biosynthesis
+brp00261	Monobactam biosynthesis
+brp00999	Biosynthesis of various plant secondary metabolites
+brp03020	RNA polymerase
+brp03022	Basal transcription factors
+brp03040	Spliceosome
+brp03010	Ribosome
+brp00970	Aminoacyl-tRNA biosynthesis
+brp03013	Nucleocytoplasmic transport
+brp03015	mRNA surveillance pathway
+brp03008	Ribosome biogenesis in eukaryotes
+brp03060	Protein export
+brp04141	Protein processing in endoplasmic reticulum
+brp04130	SNARE interactions in vesicular transport
+brp04120	Ubiquitin mediated proteolysis
+brp04122	Sulfur relay system
+brp03050	Proteasome
+brp03018	RNA degradation
+brp03030	DNA replication
+brp03410	Base excision repair
+brp03420	Nucleotide excision repair
+brp03430	Mismatch repair
+brp03440	Homologous recombination
+brp03450	Non-homologous end-joining
+brp03460	Fanconi anemia pathway
+brp03082	ATP-dependent chromatin remodeling
+brp03083	Polycomb repressive complex
+brp03250	Viral life cycle
+brp03272	Virion
+brp02010	ABC transporters
+brp04016	MAPK signaling pathway
+brp04070	Phosphatidylinositol signaling system
+brp04075	Plant hormone signal transduction
+brp04082	Neuroactive ligand signaling
+brp04081	Hormone signaling
+brp04517	IgSF CAM signaling
+brp04518	Integrin signaling
+brp04519	Cadherin signaling
+brp04144	Endocytosis
+brp04145	Phagocytosis
+brp04142	Lysosome biogenesis
+brp04146	Peroxisome
+brp04136	Autophagy
+brp04148	Efferocytosis
+brp04156	Integrated stress response (ISR) signaling pathway
+brp04814	Motor proteins
+brp04820	Cytoskeleton in muscle cells
+brp04620	Toll-like receptor signaling pathway
+brp04977	Vitamin digestion and absorption
+brp04981	Folate transport and metabolism
+brp04382	Cornified envelope formation
+brp04712	Circadian rhythm
+brp04626	Plant-pathogen interaction
+brp05100	Bacterial invasion of epithelial cells

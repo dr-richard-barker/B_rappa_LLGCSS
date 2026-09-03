@@ -1,0 +1,25 @@
+{
+  "generated": "2026-09-03",
+  "source": "https://rest.kegg.jp",
+  "orthologs": {
+    "n_pairs": 18770,
+    "method": "DIAMOND reciprocal best hit vs TAIR10, identity >=50%",
+    "replaces": "a 100-byte file containing a BioMart error"
+  },
+  "kegg_brp": {
+    "organism": "brp (Brassica rapa, field mustard)",
+    "replaced": "bra (Bradyrhizobium sp. ORS 278)",
+    "n_genes": 44411,
+    "n_pathways": 163,
+    "n_links": 23890,
+    "id_space": "NCBI GeneID; joins 0 of this repo's Bra###### counts",
+    "n_genes_with_symbol": 257,
+    "kept_as": "annotation/kegg/brp_*.tsv (reference only)"
+  },
+  "kegg_via_arabidopsis": {
+    "n_links": 10922,
+    "n_brapa_genes": 4400,
+    "n_pathways": 162,
+    "why": "KEGG ath is keyed on AGI codes, which the ortholog map already emits, so Bra###### -> AT#G##### -> pathway joins with no bridging step. KEGG brp is keyed on NCBI GeneID and cannot join to this repo's counts."
+  }
+}

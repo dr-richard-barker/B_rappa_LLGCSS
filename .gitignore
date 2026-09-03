@@ -64,10 +64,14 @@ docs/legacy/
 annotation/brapa_go.tsv
 annotation/brapa_pfam.tsv
 annotation/brapa_ensembl_genes.tsv
-annotation/brapa_to_arabidopsis_orthologs.tsv
 annotation/gene_annotation.tsv
 annotation/id_crosswalk.tsv
 annotation/_attrs.tsv
 annotation/ortho_cache/
+
+# brapa_to_arabidopsis_orthologs.tsv was listed above as a "regenerable pull". It is not
+# one any more: Ensembl Plants has no Arabidopsis-homolog attribute for B. rapa, so the
+# BioMart query that would rebuild it cannot succeed. It is now a DIAMOND reciprocal-best-
+# hit result (690 KB) and is versioned, like any other small deliverable.
 
 annotation/phase3_dose_stats.tsv

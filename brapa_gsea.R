@@ -60,13 +60,25 @@ pathview_dir <- "Brapa_analysis/05-DESeq2_DGE/DGE_plots/pathview"
 
 ## Get the KEGG annotations
 
-# kegg_organism = "bra"
+# "bra" is Bradyrhizobium sp. ORS 278, a soil bacterium -- not Brassica rapa. B. rapa is
+# "brp", but KEGG keys brp on NCBI GeneIDs, which join to none of our Bra###### counts,
+# and brp carries a gene symbol for only 495 of 44,411 genes. The annotation is therefore
+# routed through Arabidopsis orthologs (see annotation/build_annotation.py), and the
+# organism for pathway rendering is "ath". Correct-organism brp reference files are in
+# annotation/kegg/ if they are wanted.
+kegg_organism <- "ath"
 
-# brapa_kegg_pathway_names <- read.delim("brapa_kegg_pathway_names.tsv", header=FALSE, col.names=c("pathway_id", "pathway_name"))
+kegg_dir <- file.path(metadata_dir, "Brapa_analysis", "Metadata")
 
-# brapa_gene_to_kegg <- read.delim("brapa_gene_to_kegg.tsv", header=FALSE, col.names=c("pathway_id", "gene_id"))
+brapa_kegg_pathway_names <- read.delim(file.path(kegg_dir, "brapa_kegg_pathway_names.tsv"),
+                                       header=FALSE, col.names=c("pathway_id", "pathway_name"))
 
-# brapa_symbol_to_kegg_id_map <- read.csv("brapa_symbol_to_kegg_id_map.csv")
+# The file is named brapa_kegg_link.tsv on disk; the old brapa_gene_to_kegg.tsv never
+# existed. Both columns are now Bra-keyed, so TERM2GENE matches the DGE gene ids.
+brapa_gene_to_kegg <- read.delim(file.path(kegg_dir, "brapa_kegg_link.tsv"),
+                                 header=FALSE, col.names=c("pathway_id", "gene_id"))
+
+brapa_symbol_to_kegg_id_map <- read.csv("brapa_symbol_to_kegg_id_map.csv")
 # Check if metadata file exists
 metadata_file <- file.path(metadata_dir,"Brapa_metadata.csv")
 check_file_exists(metadata_file, "Metadata file")
@@ -484,9 +496,11 @@ maxGSSize <- 500
 pvalueCutoff <- 0.05
 
 pAdjustMethod <- "BH"
-brapa_kegg_pathway_names <- read.delim("brapa_kegg_pathway_names.tsv", header=FALSE, col.names=c("pathway_id", "pathway_name"))
+brapa_kegg_pathway_names <- read.delim(file.path(kegg_dir, "brapa_kegg_pathway_names.tsv"),
+                                       header=FALSE, col.names=c("pathway_id", "pathway_name"))
 
-brapa_gene_to_kegg <- read.delim("brapa_gene_to_kegg.tsv", header=FALSE, col.names=c("pathway_id", "gene_id"))
+brapa_gene_to_kegg <- read.delim(file.path(kegg_dir, "brapa_kegg_link.tsv"),
+                                 header=FALSE, col.names=c("pathway_id", "gene_id"))
 
 
 

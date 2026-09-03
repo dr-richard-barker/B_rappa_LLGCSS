@@ -45,13 +45,19 @@ metadata references.
 - **Radiation DEGs are ~95% unannotated.** 40,540 of 42,278 rows are bare `BRA…`
   locus IDs; the only "named" entries are rRNA / ERCC spike-ins. No scent gene is
   visible by symbol in the radiation results.
-- **The ortholog map is partial.** `NewTest/B.rapa_to_Ara_mart_export.txt` maps only
-  **4,847 of 31,864** genes (~15%, a GOSlim subset) to Arabidopsis. Not enough for a
-  genome-wide scent analysis; needs a full rebuild.
-- **The KEGG mapping is built on a wrong-organism file.** `brapa_all_genes.tsv`
-  contains *Bradyrhizobium* genes (`bra:BRADO…`, dnaA/gyrB/recF), not *Brassica rapa*.
-  Anything derived from it (`brapa_symbol_to_kegg_id_map.csv`, `process_genes.py`)
-  needs re-checking against the real KEGG `bra` organism.
+- ~~**The ortholog map is partial.**~~ **RESOLVED.** `NewTest/B.rapa_to_Ara_mart_export.txt`
+  reached ~3,500 genes, and `annotation/brapa_to_arabidopsis_orthologs.tsv` was a 100-byte
+  file holding a BioMart error (Ensembl Plants exposes no Arabidopsis-homolog attribute
+  for *B. rapa*, so that query cannot be made to work). Rebuilt by DIAMOND reciprocal best
+  hit against the TAIR10 proteome: **18,770 one-to-one pairs**, agreeing with Ensembl's own
+  one-way call on 96.6% of genes where both make one. See `annotation/build_annotation.py`.
+- ~~**The KEGG mapping is built on a wrong-organism file.**~~ **RESOLVED.** The code `bra`
+  is *Bradyrhizobium* sp. ORS 278; *B. rapa* is `brp`. Correcting it is necessary but not
+  sufficient: KEGG keys `brp` on NCBI GeneIDs, which join **0** of this repo's `Bra######`
+  counts, and only 495 of 44,411 brp genes carry a symbol. The annotation is therefore
+  routed through Arabidopsis orthologs — KEGG `ath` is keyed on AGI codes and richly
+  symbolled — giving **10,922 pathway links over 4,400 genes** that join to the counts.
+  Correct-organism brp reference files are kept in `annotation/kegg/`.
 - **Git bloat.** `.git` is ~241 MB: genome FASTAs, STAR indexes, and 12–16 MB DEG
   CSVs were committed. No `.gitignore`.
 - **`brapa_gsea.R` is orphaned from its inputs.** It expects `Brapa_metadata.csv`,
@@ -141,13 +147,24 @@ tidy-up ask; phases 1–4 are the new research direction; phase 5 is deposit + w
   (a) leave as-is, (b) `git gc`/BFG to purge blobs from history (rewrites history),
   or (c) start a clean orphan branch for the deposit. **Needs your call** (see §5).
 
-### Phase 1 — Reconcile gene IDs & build a real annotation layer
-- Build a **full** `Bra…` ↔ `BRA…` ↔ Arabidopsis (`AT…`) ortholog table via Ensembl
-  Plants biomaRt (extend `create_mapping.R`), replacing the 15%-coverage GOSlim export.
-- Re-derive KEGG `bra` annotations from the correct organism (discard the
-  *Bradyrhizobium* `brapa_all_genes.tsv`).
-- Deliverable: one tidy `gene_annotation.tsv` keyed by both ID namespaces + AT ortholog
-  + GO + KEGG. This is the join key everything downstream depends on.
+### Phase 1 — Reconcile gene IDs & build a real annotation layer — **DONE**
+- ~~Build a full `Bra…` ↔ Arabidopsis (`AT…`) ortholog table via Ensembl Plants biomaRt~~
+  — biomaRt cannot do this: there is no `athaliana_eg_homolog_ensembl_gene` attribute for
+  *B. rapa*. Built instead by DIAMOND reciprocal best hit against TAIR10 (18,770 pairs).
+- ~~Re-derive KEGG annotations from the correct organism~~ — done; `brp`, not `bra`, and
+  routed via Arabidopsis so the ids join to the counts.
+- Run `python3 annotation/build_annotation.py` to regenerate everything below from source.
+
+| File | What it is | Joins to counts |
+|---|---|---|
+| `annotation/brapa_to_arabidopsis_orthologs.tsv` | 18,770 RBH pairs, `Bra… → AT…` | 18,770 genes |
+| `annotation/brapa_gene_to_kegg_via_arabidopsis.tsv` | pathway ↔ Bra gene ↔ AGI ↔ symbol | 4,400 genes |
+| `Brapa_analysis/Metadata/brapa_kegg_link.tsv` | TERM2GENE for GSEA, Bra-keyed | 4,400 genes |
+| `Brapa_analysis/Metadata/brapa_kegg_pathway_names.tsv` | TERM2NAME, 162 pathways | — |
+| `brapa_symbol_to_kegg_id_map.csv` | `kegg_id, symbol, brapa_gene, arabidopsis_agi` | 18,770 genes |
+| `annotation/kegg/brp_*.tsv` | correct-organism *B. rapa* reference (NCBI GeneID) | 0 — reference only |
+
+- Still open: GO terms are not yet folded into a single `gene_annotation.tsv`.
 
 ### Phase 2 — Define the floral-scent gene set
 - Curate an Arabidopsis/Brassica floral-volatile biosynthesis gene set: terpenoid

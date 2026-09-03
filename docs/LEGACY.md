@@ -11,7 +11,7 @@ repository, run `git add -f docs/legacy/<file>`.
 | `02-RNAseq_analysis_UPDATE_needed.ipynb` | Un-ported predecessor; still the mouse OSD-104 template (`org.Mm.eg.db`, `ENSMUSG…`, FLT vs GC) | `02-RNAseq_analysis_Brapa.ipynb` |
 | `02-RNAseq_analysis_Brapa_executed.ipynb` | Near-identical duplicate of the canonical notebook (no saved outputs either) | `02-RNAseq_analysis_Brapa.ipynb` |
 | `02-RNAseq_analysis_Brapa.ipynb.bak` | Editor backup | `02-RNAseq_analysis_Brapa.ipynb` |
-| `brapa_all_genes.tsv` | **Wrong organism** — contains *Bradyrhizobium* genes (`bra:BRADO…`, dnaA/gyrB/recF), not *Brassica rapa*. Anything derived from it is suspect. | Rebuild from KEGG `bra` / Ensembl Plants (Phase 1 of `README_PLAN.md`) |
+| `brapa_all_genes.tsv` | **Was the wrong organism** — contained *Bradyrhizobium* genes (`bra:BRADO…`, dnaA/gyrB/recF), not *Brassica rapa*. **Fixed:** regenerated from KEGG `brp`, the correct code for *B. rapa* (`bra` is *Bradyrhizobium* sp. ORS 278 — confirm with `curl https://rest.kegg.jp/info/bra`). | `annotation/build_annotation.py` |
 | `test_fixes.py`, `validate_fixes.md` | Jules/AI bug-fix scratch notes from an earlier session | — |
 
 See `README_PLAN.md` for the consolidation plan these moves are part of.

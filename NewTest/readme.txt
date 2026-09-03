@@ -1,3 +1,9 @@
+!! CORRECTION (see annotation/build_annotation.py) !!
+The KEGG organism code used below, `bra`, is Bradyrhizobium sp. ORS 278 -- a bacterium,
+not Brassica rapa. B. rapa is `brp`. The `bra:Brara.A01g000010` style identifiers in the
+examples below are not real KEGG ids in either organism. This file is kept as a record of
+an earlier approach; do not follow its identifier guidance.
+
 Here's a plan from Gemini
 
 
