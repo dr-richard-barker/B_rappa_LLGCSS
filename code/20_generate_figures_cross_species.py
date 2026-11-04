@@ -24,6 +24,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import seaborn as sns
+import textwrap
 
 WORKSPACE_DIR = Path(__file__).resolve().parents[1]
 RESULTS_DIR = WORKSPACE_DIR / "results"
@@ -62,124 +63,249 @@ ddr_summary = pd.read_csv(RESULTS_DIR / "brappa_preservative_and_ddr_summary.csv
 # Figure 1: Conceptual Architecture of Cross-Species Radiation Decoding
 # -------------------------------------------------------------------------
 print("Generating Figure 1: Conceptual Architecture...")
-fig, ax = plt.subplots(figsize=(11, 6.8), dpi=300)
+fig, ax = plt.subplots(figsize=(13.8, 9.6), dpi=300)
 ax.axis("off")
 ax.set_xlim(0, 1)
 ax.set_ylim(0, 1)
 
-# Title
+# Title & Subtitle Banner
 fig.suptitle("Figure 1: Cross-Species Framework for Spaceflight Cosmic Radiation & Redox Decoding",
-             fontsize=13, weight="bold", y=0.97)
+             fontsize=15.5, weight="bold", y=0.978, color="#111827")
 
-# Top 3 Boxes
-top_boxes = [
+ax.text(0.5, 0.948, "Cross-species projection of 40 cGy GCR exposure in Brassica rapa into Arabidopsis latent manifolds resolves operational triage and antioxidant biology",
+        ha="center", va="center", fontsize=9.2, style="italic", color="#4B5563")
+
+# Top Cards
+card_w = 0.268
+card_h = 0.335
+y_top = 0.585
+gap_top = 0.065
+
+top_cards = [
     {
-        "title": "1. Factorial Cohort (Lunar LEAF)",
+        "id": "card1",
+        "badge": "FACTORIAL COHORT", "badge_color": "#1D4ED8",
+        "title": "1. Lunar LEAF Experiment",
+        "subtitle": "Brassica rapa (Wisconsin Fast Plants)",
+        "xy": (0.04, y_top), "w": card_w, "h": card_h,
+        "bg": "#F8FAFC", "border": "#2563EB", "header_bg": "#EFF6FF",
         "items": [
-            "Brassica rapa (Wisconsin Fast Plant)",
-            "• Dose: 0 cGy vs 40 cGy GCR (NSRL)",
-            "• Genotype: WT vs anthocyaninless (anl)",
-            "• Fixative: Deep Space (DRS) vs RNAlater (RL)",
-            "• 39 Factorial RNA-seq Libraries"
-        ],
-        "xy": (0.03, 0.53), "w": 0.29, "h": 0.38,
-        "color": "#E8F0FE", "edge": "#1A73E8"
+            ("Radiation Dose", "0 cGy (Sham) vs 40 cGy GCR (NSRL)"),
+            ("Genotype Contrast", "Wild-Type (WT) vs anthocyaninless (anl)"),
+            ("Fixative Hardware", "Deep Space (DRS) vs RNAlater (RL)"),
+            ("Cohort Scope", "39 factorial RNA-seq sample libraries")
+        ]
     },
     {
-        "title": "2. Orthology Bridge",
+        "id": "card2",
+        "badge": "HOMOLOGY BRIDGE", "badge_color": "#15803D",
+        "title": "2. Orthology Mapping",
+        "subtitle": "DIAMOND Proteome Reciprocal Alignment",
+        "xy": (0.04 + card_w + gap_top, y_top), "w": card_w, "h": card_h,
+        "bg": "#F8FAF8", "border": "#16A34A", "header_bg": "#F0FDF4",
         "items": [
-            "18,770 1:1 Reciprocal Best Hits (RBH)",
-            "• DIAMOND proteome alignment",
-            "• B. rapa (BRA######) → TAIR10 AGI",
-            "• High sequence fidelity across genome",
-            "• Direct projection into ML latent models"
-        ],
-        "xy": (0.355, 0.53), "w": 0.29, "h": 0.38,
-        "color": "#E6F4EA", "edge": "#1E8E3E"
+            ("1:1 RBH Mapping", "18,770 reciprocal best hits (Bra → AGI)"),
+            ("Genome Scope", "Proteome-wide capture across Brassicaceae"),
+            ("Conservation", "High structural & catalytic identity"),
+            ("Zero-Shot Projection", "Direct transfer to Arabidopsis models")
+        ]
     },
     {
-        "title": "3. Diagnostic Decoder Stack",
+        "id": "card3",
+        "badge": "MACHINE LEARNING", "badge_color": "#B45309",
+        "title": "3. Multi-Tier Decoders",
+        "subtitle": "Latent Space Pattern Recognition",
+        "xy": (0.04 + 2 * (card_w + gap_top), y_top), "w": card_w, "h": card_h,
+        "bg": "#FFFDF7", "border": "#D97706", "header_bg": "#FEF3C7",
         "items": [
-            "Multi-Tier Machine Learning Stack",
-            "• Tier 1: DSRS Stress Recognition (27 stressors)",
-            "• Tier 2: 41D Redox CVAE (15 ROS classes)",
-            "• Tier 3: Resilience Index (RRI manifold)",
-            "• Tier 4: Core DDR & Flavonoid Gateway"
-        ],
-        "xy": (0.68, 0.53), "w": 0.29, "h": 0.38,
-        "color": "#FEF7E0", "edge": "#F9AB00"
+            ("Tier 1: DSRS", "27 spaceflight stressors / 123 seed panels"),
+            ("Tier 2: Redox CVAE", "41D latent manifold, 15 ROS classes"),
+            ("Tier 3: RRI Manifold", "Composite physiological resilience index"),
+            ("Tier 4: DDR Network", "Double-strand break repair & flavonoids")
+        ]
     }
 ]
 
-for b in top_boxes:
-    rect = patches.FancyBboxPatch(b["xy"], b["w"], b["h"], boxstyle="round,pad=0.015",
-                                  facecolor=b["color"], edgecolor=b["edge"], linewidth=1.8)
-    ax.add_patch(rect)
-    ax.text(b["xy"][0] + b["w"]/2, b["xy"][1] + b["h"] - 0.045, b["title"],
-            ha="center", va="center", weight="bold", fontsize=10.5, color="#202124")
-    start_y = b["xy"][1] + b["h"] - 0.10
-    line_spacing = 0.055
-    for i, line in enumerate(b["items"]):
-        font_weight = "bold" if i == 0 else "normal"
-        text_color = "#1A1A1A" if i == 0 else "#3C4043"
-        ax.text(b["xy"][0] + 0.02, start_y - i * line_spacing, line,
-                ha="left", va="center", fontsize=8.5, weight=font_weight, color=text_color)
+# Bottom Cards
+y_bot = 0.035
+h_bot = 0.465
+w_bot = 0.44
 
-# Horizontal arrows between top boxes
-arrow_style = dict(facecolor="#5F6368", edgecolor="#5F6368", width=1.5, headwidth=7, headlength=6)
-ax.annotate("", xy=(0.355, 0.72), xytext=(0.32, 0.72), arrowprops=arrow_style)
-ax.annotate("", xy=(0.68, 0.72), xytext=(0.645, 0.72), arrowprops=arrow_style)
-
-# Downward arrow to bottom panel
-ax.annotate("", xy=(0.50, 0.46), xytext=(0.50, 0.53), arrowprops=arrow_style)
-
-# Bottom Box: Biological Discovery & Mechanistic Translation
-bottom_box = {
-    "title": "Biological Discovery & Mechanistic Translation",
-    "xy": (0.03, 0.04), "w": 0.94, "h": 0.42,
-    "color": "#FCE8E6", "edge": "#D93025"
-}
-
-rect_bottom = patches.FancyBboxPatch(bottom_box["xy"], bottom_box["w"], bottom_box["h"],
-                                     boxstyle="round,pad=0.015",
-                                     facecolor=bottom_box["color"], edgecolor=bottom_box["edge"], linewidth=1.8)
-ax.add_patch(rect_bottom)
-
-ax.text(bottom_box["xy"][0] + bottom_box["w"]/2, bottom_box["xy"][1] + bottom_box["h"] - 0.045,
-        bottom_box["title"], ha="center", va="center", weight="bold", fontsize=11, color="#202124")
-
-left_x = bottom_box["xy"][0] + 0.03
-start_y_bot = bottom_box["xy"][1] + bottom_box["h"] - 0.10
-
-ax.text(left_x, start_y_bot, "Operational Diagnostic Layer (Triage)",
-        weight="bold", fontsize=9.5, color="#B31412")
-
-diag_items = [
-    "• Automated spaceflight stress classification across 123 developmental panels",
-    "• Top-ranks cosmic radiation: rad_100Gy_co60 (ρ = 0.255) and gcr_80cGy (ρ = 0.217)",
-    "• Confirms conserved GCR transcriptional programs across Brassicaceae",
-    "• Infers elapsed post-exposure kinetic window (3.84 h, capturing crisis nadir)"
+bottom_cards = [
+    {
+        "id": "card4",
+        "badge": "OPERATIONAL DIAGNOSTIC LAYER (TRIAGE)", "badge_color": "#1D4ED8",
+        "title": "Automated Spaceflight Stress Recognition",
+        "subtitle": "Can ML models rapidly classify radiation exposure without retraining?",
+        "xy": (0.04, y_bot), "w": w_bot, "h": h_bot,
+        "bg": "#F8FAFC", "border": "#2563EB", "header_bg": "#EFF6FF",
+        "bullets": [
+            ("Automated Stress Recognition",
+             "DSRS accurately classifies 40 cGy GCR, top-ranking acute gamma (rad_100Gy_co60, ρ = 0.255) and cosmic rays (gcr_80cGy, ρ = 0.217) across 123 developmental panels."),
+            ("Stressor Family Concordance",
+             "Radiation_GCR (mean ρ = 0.150) and radiation_lowdose (0.132) significantly outperform microgravity (0.084) and hypoxia (0.052), confirming high-fidelity classification."),
+            ("Conserved Core Response",
+             "Evolutionarily conserved GCR transcriptional programs across Brassicaceae enable robust zero-shot transfer from Arabidopsis to agricultural crops."),
+            ("Kinetic Window Inference",
+             "Redox CVAE infers elapsed response time at 3.84 h, isolating the acute post-irradiation crisis nadir.")
+        ]
+    },
+    {
+        "id": "card5",
+        "badge": "MECHANISTIC BIOLOGY LAYER (DISCOVERY)", "badge_color": "#B91C1C",
+        "title": "Antioxidant Biology & Hardware Fidelity",
+        "subtitle": "What specific pathways and hardware determine crop survival off-Earth?",
+        "xy": (0.52, y_bot), "w": w_bot, "h": h_bot,
+        "bg": "#FEF2F2", "border": "#DC2626", "header_bg": "#FEE2E2",
+        "bullets": [
+            ("Antioxidant Shield Deficit",
+             "WT buffers radiation into secondary H₂O₂ (51.1%); anl mutants suffer an unbuffered superoxide O₂•⁻ free-radical burst (24.9% at 2.23 h)."),
+            ("Resilience Index Collapse",
+             "40 cGy triggers significant RRI collapse in WT (0.762 → 0.636; P = 4.2 × 10⁻⁴); anl mutants exhibit severe constitutive baseline depression (RRI = 0.638)."),
+            ("Fixative Hardware Parity",
+             "Ambient Deep Space Preservative (DRS) matches laboratory-standard RNAlater (r = 0.297, P < 10⁻¹⁵) across all 18,770 orthologs, certifying dry-storage return hardware."),
+            ("DDR Activation & Suppression",
+             "Robust induction of double-strand break repair (BRCA1 +2.03, PARP2 +0.86) in WT; negative interaction terms in anl confirm impaired genomic maintenance.")
+        ]
+    }
 ]
-for i, item in enumerate(diag_items):
-    ax.text(left_x, start_y_bot - 0.045 - i * 0.052, item,
-            ha="left", va="center", fontsize=8.2, color="#3C4043")
 
-ax.plot([0.495, 0.495], [0.08, 0.38], color="#E0A09A", linestyle="--", linewidth=1.2)
+# Render Top Cards
+for c in top_cards:
+    x, y, w, h = c["xy"][0], c["xy"][1], c["w"], c["h"]
+    
+    # Outer box
+    box = patches.FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.012,rounding_size=0.018",
+                                facecolor=c["bg"], edgecolor=c["border"], linewidth=1.6)
+    ax.add_patch(box)
+    
+    # Header box
+    header_h = 0.086
+    header_box = patches.FancyBboxPatch((x, y + h - header_h), w, header_h,
+                                       boxstyle="round,pad=0.012,rounding_size=0.018",
+                                       facecolor=c["header_bg"], edgecolor="none")
+    ax.add_patch(header_box)
+    
+    # Category badge
+    ax.text(x + 0.015, y + h - 0.022, c["badge"],
+            ha="left", va="center", fontsize=6.8, weight="bold", color=c["badge_color"])
+    
+    # Title
+    ax.text(x + 0.015, y + h - 0.046, c["title"],
+            ha="left", va="center", weight="bold", fontsize=10.2, color="#111827")
+    
+    # Subtitle
+    ax.text(x + 0.015, y + h - 0.067, c["subtitle"],
+            ha="left", va="center", fontsize=7.8, style="italic", color="#4B5563")
+    
+    # Divider line under header
+    ax.plot([x, x + w], [y + h - header_h, y + h - header_h], color=c["border"], linewidth=0.8, alpha=0.4)
+    
+    # Items
+    start_y = y + h - header_h - 0.028
+    row_spacing = 0.056
+    for i, (k, v) in enumerate(c["items"]):
+        cy = start_y - i * row_spacing
+        ax.text(x + 0.015, cy, f"• {k}:", fontsize=8.2, weight="bold", color="#1F2937")
+        ax.text(x + 0.020, cy - 0.020, v, fontsize=7.6, color="#4B5563")
 
-right_x = 0.52
-ax.text(right_x, start_y_bot, "Mechanistic Biology Layer (Discovery)",
-        weight="bold", fontsize=9.5, color="#137333")
+# Flow connectors: Card 1 -> Badge -> Card 2
+y_mid = y_top + card_h / 2
+x1_end = top_cards[0]["xy"][0] + card_w
+x2_start = top_cards[1]["xy"][0]
+mid1 = (x1_end + x2_start) / 2
 
-mech_items = [
-    "• Antioxidant Shield Deficit: WT buffers to H₂O₂ (51.1%); anl suffers O₂•⁻ burst (24.9% at 2.23 h)",
-    "• Physiological Resilience Collapse: 40 cGy drops WT RRI (0.762 → 0.636; P = 4.2 × 10⁻⁴)",
-    "• Constitutive Depression: sham anl mutants already depressed at baseline (RRI = 0.638)",
-    "• Fixative Parity: Deep Space Preservative (DRS) matches RNAlater (r = 0.297, P < 10⁻¹⁵)",
-    "• DNA Damage Repair: robust BRCA1 (+2.03) & PARP2 (+0.86) induction blunted in anl"
-]
-for i, item in enumerate(mech_items):
-    ax.text(right_x, start_y_bot - 0.045 - i * 0.047, item,
-            ha="left", va="center", fontsize=8.2, color="#3C4043")
+# Draw Badge 1
+t1 = ax.text(mid1, y_mid, "DIAMOND\n1:1 RBH", ha="center", va="center", fontsize=6.8, weight="bold", color="#15803D",
+             bbox=dict(boxstyle="round,pad=0.3", facecolor="#F0FDF4", edgecolor="#16A34A", lw=0.9))
+# Arrow in and out
+ax.annotate("", xy=(mid1 - 0.022, y_mid), xytext=(x1_end + 0.003, y_mid),
+            arrowprops=dict(arrowstyle="->,head_length=0.3,head_width=0.22", lw=1.6, color="#16A34A"))
+ax.annotate("", xy=(x2_start - 0.003, y_mid), xytext=(mid1 + 0.022, y_mid),
+            arrowprops=dict(arrowstyle="->,head_length=0.3,head_width=0.22", lw=1.6, color="#16A34A"))
+
+# Flow connectors: Card 2 -> Badge -> Card 3
+x2_end = top_cards[1]["xy"][0] + card_w
+x3_start = top_cards[2]["xy"][0]
+mid2 = (x2_end + x3_start) / 2
+
+# Draw Badge 2
+t2 = ax.text(mid2, y_mid, "LATENT\nMODELS", ha="center", va="center", fontsize=6.8, weight="bold", color="#B45309",
+             bbox=dict(boxstyle="round,pad=0.3", facecolor="#FEF3C7", edgecolor="#D97706", lw=0.9))
+# Arrow in and out
+ax.annotate("", xy=(mid2 - 0.022, y_mid), xytext=(x2_end + 0.003, y_mid),
+            arrowprops=dict(arrowstyle="->,head_length=0.3,head_width=0.22", lw=1.6, color="#D97706"))
+ax.annotate("", xy=(x3_start - 0.003, y_mid), xytext=(mid2 + 0.022, y_mid),
+            arrowprops=dict(arrowstyle="->,head_length=0.3,head_width=0.22", lw=1.6, color="#D97706"))
+
+# Central Junction Milestone
+junction_x = 0.50
+junction_y = 0.542
+ax.plot([junction_x, junction_x], [y_top, junction_y + 0.016], color="#64748B", lw=1.6, linestyle="--")
+
+# Milestone Pill
+ax.text(junction_x, junction_y, "Cross-Species Latent Manifold Decoding",
+        ha="center", va="center", fontsize=8.2, weight="bold", color="#1E293B",
+        bbox=dict(boxstyle="round,pad=0.32", facecolor="#F8FAFC", edgecolor="#64748B", lw=1.0))
+
+# Branching Pathway Lines (clean vertical drop, clean horizontal turn, clean vertical entry)
+split_y = junction_y - 0.016
+ax.plot([junction_x, junction_x], [junction_y - 0.016, split_y - 0.012], color="#64748B", lw=1.6)
+
+# Left Branch to Card 4 (Diagnostic)
+target_x_left = bottom_cards[0]["xy"][0] + bottom_cards[0]["w"] / 2
+target_y_bot = y_bot + h_bot
+ax.annotate("", xy=(target_x_left, target_y_bot), xytext=(junction_x, split_y - 0.012),
+            arrowprops=dict(arrowstyle="->,head_length=0.4,head_width=0.3", lw=1.8, color="#2563EB",
+                            connectionstyle="angle,angleA=180,angleB=-90,rad=12"))
+
+# Right Branch to Card 5 (Discovery)
+target_x_right = bottom_cards[1]["xy"][0] + bottom_cards[1]["w"] / 2
+ax.annotate("", xy=(target_x_right, target_y_bot), xytext=(junction_x, split_y - 0.012),
+            arrowprops=dict(arrowstyle="->,head_length=0.4,head_width=0.3", lw=1.8, color="#DC2626",
+                            connectionstyle="angle,angleA=0,angleB=-90,rad=12"))
+
+# Render Bottom Cards
+for c in bottom_cards:
+    x, y, w, h = c["xy"][0], c["xy"][1], c["w"], c["h"]
+    
+    # Outer box
+    box = patches.FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.012,rounding_size=0.018",
+                                facecolor=c["bg"], edgecolor=c["border"], linewidth=1.6)
+    ax.add_patch(box)
+    
+    # Header box
+    header_h = 0.090
+    header_box = patches.FancyBboxPatch((x, y + h - header_h), w, header_h,
+                                       boxstyle="round,pad=0.012,rounding_size=0.018",
+                                       facecolor=c["header_bg"], edgecolor="none")
+    ax.add_patch(header_box)
+    
+    # Badge
+    ax.text(x + 0.018, y + h - 0.022, c["badge"],
+            ha="left", va="center", fontsize=7.2, weight="bold", color=c["badge_color"])
+    
+    # Title
+    ax.text(x + 0.018, y + h - 0.046, c["title"],
+            ha="left", va="center", weight="bold", fontsize=10.5, color="#111827")
+    
+    # Subtitle
+    ax.text(x + 0.018, y + h - 0.068, c["subtitle"],
+            ha="left", va="center", fontsize=8.0, style="italic", color="#4B5563")
+    
+    # Divider line under header
+    ax.plot([x, x + w], [y + h - header_h, y + h - header_h], color=c["border"], linewidth=0.8, alpha=0.4)
+    
+    # Bullet points with generous vertical rhythm
+    start_y = y + h - header_h - 0.034
+    bullet_spacing = 0.086
+    for i, (heading, desc) in enumerate(c["bullets"]):
+        cy = start_y - i * bullet_spacing
+        ax.text(x + 0.018, cy, f"▶  {heading}", fontsize=8.8, weight="bold", color=c["border"])
+        
+        wrapped_lines = textwrap.wrap(desc, width=64)
+        for j, line in enumerate(wrapped_lines):
+            ax.text(x + 0.032, cy - 0.019 - j * 0.018, line, fontsize=7.8, color="#374151")
 
 fig.savefig(FIG_DIR / "fig1_conceptual_architecture.png", bbox_inches="tight")
 fig.savefig(FIG_DIR / "fig1_conceptual_architecture.pdf", bbox_inches="tight")
