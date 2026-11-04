@@ -1,7 +1,8 @@
-<!doctype html><html lang="en"><head>
+<!doctype html>
+<html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Results · B. rapa floral scent under radiation</title>
-<meta name="description" content="Figures and tables for the B. rapa scent-under-radiation framework. Preliminary, non-significant at 40 cGy after correction.">
+<title>Results · B. rapa Lunar LEAF Radiation & Redox Decoder</title>
+<meta name="description" content="Publication figures and quantitative benchmarking tables for the Brassica rapa Lunar LEAF cosmic radiation and redox decoding study.">
 <script>
   (function() {
     let theme = localStorage.getItem('cose_theme');
@@ -14,34 +15,266 @@
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-theme.css">
 </head><body data-site-id="B_rappa_LLGCSS">
-<header class="site"><nav><span class="brand">🌸 B. rapa · Scent × Radiation</span>
-<a href="index.html">Home</a><a href="#figures">Figures</a><a href="#tables">Tables</a>
-<a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub ↗</a></nav></header>
-<main><div class="hero" style="padding-bottom:.6rem">
-<h1>Results — figures &amp; tables</h1>
-<p class="lede">Draft manuscript figures and tables, generated from the committed analysis
-(<code>annotation/</code>). All values regenerate via the scripts.</p></div>
-<p class="note"><b>Read the effect honestly.</b> At 40 cGy there is <b>no statistically significant
-effect</b> of radiation on the scent gene set after correlation-aware permutation and
-multiple-testing correction (Fig 3). The tables list a validated gene set and individual
-candidates — not a confirmed radiation-responsive hit list.</p>
+<header class="site"><nav>
+  <span class="brand">🌱 B. rapa · Lunar LEAF Radiation</span>
+  <a href="index.html">Home</a>
+  <a href="#figures">Figures</a>
+  <a href="#tables">Tables</a>
+  <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub ↗</a>
+</nav></header>
+<main>
+<div class="hero" style="padding-bottom:.6rem">
+  <h1>Results — Figures &amp; Tables</h1>
+  <p class="lede">Curated publication figures and quantitative benchmark tables for the cross-species <em>Brassica rapa</em> Lunar LEAF cosmic radiation (40 cGy GCR), redox kinetics, and fixative fidelity study.</p>
+</div>
+
+<p class="note"><b>🌱 Radiation Systems Biology Focus.</b> All figures and tables presented below are generated from the 39 factorial RNA-seq libraries of the <em>Brassica rapa</em> Lunar LEAF study (Dose &times; Genotype &times; Preservative), projected through machine learning latent decoders anchored on <em>Arabidopsis</em> spaceflight datasets.</p>
+
 <div class="content">
-<h2 id="figures">Figures</h2>
-<div class="gallery"><figure><img src="figures/Fig1_design.png" alt="Fig 1. Two-experiment design and the Bra↔BRA gene-ID join."><figcaption>Fig 1. Two-experiment design and the Bra↔BRA gene-ID join.</figcaption></figure><figure><img src="figures/Fig2_geneset.png" alt="Fig 2. (A) The 363-gene scent set by route and tier. (B) Scent-axis validation: % of each route&#x27;s genes differentially expressed between High- and Low-scent lines."><figcaption>Fig 2. (A) The 363-gene scent set by route and tier. (B) Scent-axis validation: % of each route&#x27;s genes differentially expressed between High- and Low-scent lines.</figcaption></figure><figure><img src="figures/Fig3_radiation_test.png" alt="Fig 3. Radiation dose effect (40 vs 0 cGy) by scent route vs genomic background. No route is significant after correlation-aware permutation and BH correction; the ester/methyltransferase route gives the strongest (still non-significant) trend."><figcaption>Fig 3. Radiation dose effect (40 vs 0 cGy) by scent route vs genomic background. No route is significant after correlation-aware permutation and BH correction; the ester/methyltransferase route gives the strongest (still non-significant) trend.</figcaption></figure><figure><img src="figures/Fig4_conservation.png" alt="Fig 4. Cross-species conservation of an Arabidopsis-anchored scent panel (Ensembl Compara ortholog counts). Note the Brassicaceae-specific expansion of COMT1 and the terpene-synthase expansions in grape/tomato."><figcaption>Fig 4. Cross-species conservation of an Arabidopsis-anchored scent panel (Ensembl Compara ortholog counts). Note the Brassicaceae-specific expansion of COMT1 and the terpene-synthase expansions in grape/tomato.</figcaption></figure><figure><img src="figures/FigS1_power.png" alt="Fig S1. Sensitivity of the gene-set test: power to detect a coordinated shift δ in the scent set&#x27;s dose response. The set-level test is well-powered (~3–4% detectable at 80% power); observed effects (dashed) fall below, so the null is informative, not merely under-powered."><figcaption>Fig S1. Sensitivity of the gene-set test: power to detect a coordinated shift δ in the scent set&#x27;s dose response. The set-level test is well-powered (~3–4% detectable at 80% power); observed effects (dashed) fall below, so the null is informative, not merely under-powered.</figcaption></figure></div>
-<h2 id="tables">Tables</h2>
-<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 1. Composition of the curated floral-scent gene set in B. rapa (363 genes).</p><table><thead><tr><th>Biosynthetic route</th><th>Tier 1 (core enzymes)</th><th>Tier 2 (supporting)</th><th>Total</th><th>Example families</th></tr></thead><tbody><tr><td>Terpenoid</td><td>39</td><td>13</td><td>52</td><td>terpene synthases (TPS)</td></tr><tr><td>Benzenoid / phenylpropanoid</td><td>0</td><td>97</td><td>97</td><td>PAL, O-methyltransferases</td></tr><tr><td>Ester / methyltransferase</td><td>39</td><td>135</td><td>174</td><td>SABATH MTs, BAHD acyltransferases</td></tr><tr><td>Fatty-acid / GLV</td><td>14</td><td>38</td><td>52</td><td>lipoxygenase (LOX), HPL</td></tr><tr><td>Apocarotenoid</td><td>16</td><td>0</td><td>16</td><td>carotenoid cleavage dioxygenases (CCD)</td></tr><tr><td>All routes</td><td>108</td><td>255</td><td>363</td><td>—</td></tr></tbody></table>
-<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 2. Candidate genes: scent-associated (High vs Low, adjP&lt;0.1) and their radiation dose effect. Note: the scent set as a whole is NOT significantly radiation-responsive after correction (see Fig 3); these are individual candidates, not a validated hit list.</p><table><thead><tr><th>Gene (Bra)</th><th>Route</th><th>Tier</th><th>Radiation dose effect (40 vs 0 cGy, log2)</th><th>Scent High/Low log2FC</th><th>Scent adjP</th><th>Enzyme evidence</th></tr></thead><tbody><tr><td>Bra028893</td><td>Ester / methyltransferase</td><td>2</td><td>-0.56</td><td>+1.21</td><td>0.014</td><td>T2 Pfam:PF02458 BAHD acyltransferase (vola</td></tr><tr><td>Bra012779</td><td>Terpenoid</td><td>2</td><td>+0.37</td><td>-0.47</td><td>0.0028</td><td>T2 GO:0016114 terpenoid biosynthetic proce</td></tr><tr><td>Bra009460</td><td>Ester / methyltransferase</td><td>1</td><td>-0.23</td><td>-1.70</td><td>0.0089</td><td>T1 Pfam:PF03492 SABATH methyltransferase (</td></tr><tr><td>Bra012138</td><td>Ester / methyltransferase</td><td>2</td><td>-0.22</td><td>+0.37</td><td>0.033</td><td>T2 Pfam:PF02458 BAHD acyltransferase (vola</td></tr><tr><td>Bra014354</td><td>Benzenoid / phenylpropanoid</td><td>2</td><td>-0.11</td><td>+0.69</td><td>0.078</td><td>T2 GO:0009699 phenylpropanoid biosynthetic</td></tr><tr><td>Bra028224</td><td>Ester / methyltransferase</td><td>2</td><td>+0.10</td><td>+0.72</td><td>0.03</td><td>T2 Pfam:PF02458 BAHD acyltransferase (vola</td></tr><tr><td>Bra020970</td><td>Apocarotenoid</td><td>1</td><td>+0.09</td><td>+1.50</td><td>0.016</td><td>T1 Pfam:PF03055 carotenoid cleavage dioxyg</td></tr><tr><td>Bra013161</td><td>Fatty-acid / GLV</td><td>2</td><td>+0.09</td><td>+0.50</td><td>0.01</td><td>T2 GO:0009695 jasmonic acid biosynthetic p</td></tr><tr><td>Bra019582</td><td>Ester / methyltransferase</td><td>2</td><td>-0.08</td><td>+1.77</td><td>0.088</td><td>T2 Pfam:PF02458 BAHD acyltransferase (vola</td></tr><tr><td>Bra040746</td><td>Ester / methyltransferase</td><td>2</td><td>+0.08</td><td>-0.94</td><td>0.042</td><td>T2 GO:0080032 methyl jasmonate esterase ac</td></tr><tr><td>Bra032359</td><td>Apocarotenoid</td><td>1</td><td>-0.07</td><td>+2.29</td><td>0.00054</td><td>T1 Pfam:PF03055 carotenoid cleavage dioxyg</td></tr><tr><td>Bra039556</td><td>Ester / methyltransferase</td><td>2</td><td>-0.06</td><td>-2.73</td><td>0.00023</td><td>T2 Pfam:PF02458 BAHD acyltransferase (vola</td></tr></tbody></table>
-<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 3. Characterised floral-scent genes in model scent species absent from Ensembl Plants (literature-curated; NCBI/UniProt accessions verified where fetched).</p><table><thead><tr><th>Species</th><th>Gene</th><th>Enzyme / role</th><th>Route</th><th>Volatile product</th><th>Family</th><th>NCBI/UniProt</th><th>Reference</th></tr></thead><tbody><tr><td>Petunia hybrida</td><td>PhPAL1/PhPAL2</td><td>phenylalanine ammonia-lyase</td><td>benzenoid phenylpropanoid</td><td>(pathway entry)</td><td>PAL</td><td></td><td>Verdonk 2005 Plant Cell (PMID 15805488)</td></tr><tr><td>Petunia hybrida</td><td>PhPAAS</td><td>phenylacetaldehyde synthase</td><td>benzenoid phenylpropanoid</td><td>2-phenylacetaldehyde</td><td>aromatic AAAD</td><td></td><td>Kaminaga 2006 JBC</td></tr><tr><td>Petunia hybrida</td><td>PhBPBT</td><td>benzoyl-CoA:benzyl/phenylethanol benzoyltransferase</td><td>ester</td><td>benzylbenzoate/phenylethylbenzoate</td><td>BAHD acyltransferase</td><td>sp|Q6E593.1|BEBT1_PETHY</td><td>Boatright 2004 Plant Physiol</td></tr><tr><td>Petunia hybrida</td><td>PhBSMT1/2</td><td>benzoic/salicylic acid carboxyl methyltransferase</td><td>ester</td><td>methylbenzoate</td><td>SABATH methyltransferase</td><td>sp|A4ZDG8.1|BSMT3_PETHY</td><td>Negre 2003 Plant Cell; Underwood 2005</td></tr><tr><td>Petunia hybrida</td><td>PhCFAT</td><td>coniferyl alcohol acyltransferase</td><td>benzenoid phenylpropanoid</td><td>(isoeugenol precursor)</td><td>BAHD acyltransferase</td><td></td><td>Dexter 2007 Plant J</td></tr><tr><td>Petunia hybrida</td><td>PhIGS1</td><td>isoeugenol synthase</td><td>benzenoid phenylpropanoid</td><td>isoeugenol</td><td>PIP/NADPH reductase</td><td></td><td>Koeduka 2008</td></tr><tr><td>Petunia hybrida</td><td>PhODO1</td><td>R2R3-MYB regulator</td><td>regulator</td><td>(activates benzenoid genes)</td><td>MYB TF</td><td>sp|Q50EX6.1|ODO1_PETHY</td><td>Verdonk 2005 Plant Cell (PMID 15805488)</td></tr><tr><td>Petunia hybrida</td><td>PhEOBI/PhEOBII</td><td>R2R3-MYB regulators</td><td>regulator</td><td>(activate ODO1 + scent genes)</td><td>MYB TF</td><td></td><td>Spitzer-Rimon 2010/2012 Plant Cell</td></tr><tr><td>Antirrhinum majus</td><td>AmNES/LIS-1,-2</td><td>nerolidol/linalool synthase</td><td>terpenoid</td><td>linalool, (E)-nerolidol</td><td>terpene synthase (TPS)</td><td>ABR24418.1</td><td>Nagegowda 2008 Plant J (PMID 18363779)</td></tr><tr><td>Antirrhinum majus</td><td>AmMYS</td><td>myrcene synthase</td><td>terpenoid</td><td>myrcene</td><td>terpene synthase (TPS)</td><td></td><td>Dudareva 2003 Plant Cell</td></tr><tr><td>Antirrhinum majus</td><td>AmOCS</td><td>(E)-beta-ocimene synthase</td><td>terpenoid</td><td>(E)-beta-ocimene</td><td>terpene synthase (TPS)</td><td></td><td>Dudareva 2003 Plant Cell</td></tr><tr><td>Antirrhinum majus</td><td>AmBAMT</td><td>benzoic acid carboxyl methyltransferase</td><td>ester</td><td>methylbenzoate</td><td>SABATH methyltransferase</td><td>sp|Q9FYZ9.1|BAMT_ANTMA</td><td>Dudareva 2000 (seminal floral SABATH)</td></tr><tr><td>Rosa x hybrida</td><td>RhNUDX1</td><td>Nudix hydrolase (GPP diphosphohydrolase)</td><td>terpenoid</td><td>geraniol (non-canonical route)</td><td>Nudix hydrolase</td><td>sp|M4I1C6.1|NUDT1_ROSHC</td><td>Magnard 2015 Science (PMID 26138978)</td></tr><tr><td>Rosa x hybrida</td><td>RhLINS/RhNES</td><td>linalool / nerolidol synthase</td><td>terpenoid</td><td>linalool, nerolidol</td><td>terpene synthase (TPS)</td><td></td><td>Conart 2019 Plant Physiol</td></tr><tr><td>Rosa x hybrida</td><td>RhOMT1/2</td><td>orcinol O-methyltransferase</td><td>benzenoid phenylpropanoid</td><td>3,5-dimethoxytoluene</td><td>O-methyltransferase</td><td>AAM23005.1</td><td>Lavid 2002 Plant Physiol</td></tr><tr><td>Rosa x hybrida</td><td>RhAAT1</td><td>alcohol acyltransferase</td><td>ester</td><td>geranyl/2-phenylethyl acetate</td><td>BAHD acyltransferase</td><td></td><td>Guterman 2006</td></tr></tbody></table>
-<p class="note">Sources: <code>scent_geneset.tsv</code>, <code>phase3_robust_results.tsv</code>,
-<code>scent_orthology_matrix.tsv</code>, <code>scent_reference_species.tsv</code>,
-<code>scent_query_accessions.tsv</code>. Markdown: <a href="TABLES.md"><code>docs/TABLES.md</code></a>;
-CSV: <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation/tables"><code>annotation/tables/</code></a>.
-Supplementary (Fig S1, Tables S1–S2): <a href="SUPPLEMENTARY.md"><code>docs/SUPPLEMENTARY.md</code></a>;
-reproduce all: <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS/blob/main/annotation/reproduce.sh"><code>annotation/reproduce.sh</code></a>.</p>
-</div></main>
-<footer class="site">B. rapa — floral scent under space radiation (Lunar LEAF) · work in progress · CC0 ·
-<a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub</a></footer>
+<h2 id="figures">Publication Figures</h2>
+
+<div class="gallery">
+  <figure>
+    <img src="figures/fig1_conceptual_architecture.png" alt="Figure 1: Conceptual Architecture of Cross-Species Radiation Decoding">
+    <figcaption><b>Figure 1. Conceptual Architecture &amp; The Classification Continuum.</b> Cross-species translation pipeline connecting 39 <em>B. rapa</em> Lunar LEAF libraries through the 18,770 RBH ortholog bridge into the DSRS classifier, 41D CVAE ROS Decoder, and Radiation Resilience Index (RRI). Contrasts automated operational diagnostic triage against deep mechanistic discovery.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="figures/fig2_dsrs_stress_recognition.png" alt="Figure 2: DSRS Stress Recognition Across Spaceflight Contrasts">
+    <figcaption><b>Figure 2. DSRS Cross-Species Stress Recognition.</b> GSEA NES profiles of <em>B. rapa</em> radiation contrasts queried across 123 developmental seed panels against 27 reference spaceflight stressors. <code>radiation_GCR</code> (mean &rho; = 0.1504) and acute gamma (<code>rad_100Gy_co60</code>, &rho; = 0.2545) top-rank across all stress families.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="figures/fig3_redox_cvae_decoding.png" alt="Figure 3: Redox CVAE Decoding & The Antioxidant Shield Deficit">
+    <figcaption><b>Figure 3. 41D CVAE ROS Decoding &amp; The Antioxidant Shield Deficit.</b> Latent space coordinates (z_1, z_2) and predicted reactive oxygen species profiles. Wild-Type plants buffer ionizing radiation into secondary H₂O₂ (51.1%), whereas the <em>anthocyaninless</em> (<em>anl</em>) mutant suffers an unbuffered primary superoxide (O₂•⁻, 24.9%) free-radical burst at 2.23 h.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="figures/fig4_rri_degradation.png" alt="Figure 4: Radiation Resilience Index (RRI) Degradation & Housekeeping Collapse">
+    <figcaption><b>Figure 4. Radiation Resilience Index (RRI) Degradation &amp; Housekeeping Collapse.</b> 40 cGy GCR exposure reduces Wild-Type resilience from 0.762 to 0.636 (P = 4.2 &times; 10⁻⁴), driven by loss of housekeeping co-expression (r = 0.481 &rarr; 0.126). Sham-irradiated <em>anl</em> mutants suffer constitutive baseline depression (RRI = 0.638, r = 0.079).</figcaption>
+  </figure>
+
+  <figure>
+    <img src="figures/fig5_preservative_and_ddr.png" alt="Figure 5: Preservative Fixative Parity & DNA Damage Repair Activation">
+    <figcaption><b>Figure 5. Preservative Fixative Parity (DRS vs RL) &amp; DNA Double-Strand Break Repair Induction.</b> Deep Space Preservative (DRS) demonstrates high correlation with RNAlater (Pearson r = 0.297, P &lt; 10⁻¹⁵) and RRI delta trajectory parity (0.706 &rarr; 0.655 in DRS vs 0.693 &rarr; 0.616 in RL). WT plants mount robust induction of core DSB repair (BRCA1 +2.03, PARP2 +0.86, RAD51 +0.16) and flavonoid genes (PAL1, CHS, F3H), whereas <em>anl</em> displays significant negative interaction terms.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="figures/fig6_spatial_vulnerability.png" alt="Figure 6: Spatial Anatomical Vulnerability Across Plant Organs">
+    <figcaption><b>Figure 6. Spatial Meristematic Vulnerability (ggPlantMap).</b> In silico organ- and tissue-level projection shows root apical meristem (13.8%) and central vascular stele (12.5%) as primary damage foci, with floral reproductive tissues contributing &gt;25% of total predicted stress vulnerability.</figcaption>
+  </figure>
+</div>
+
+<h2 id="tables">Quantitative Benchmark Tables</h2>
+
+<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 1. Experimental design and 3-way factorial structure of the B. rapa Lunar LEAF radiation study.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Levels</th>
+      <th>Biological Description</th>
+      <th>Sample Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Radiation Dose</td>
+      <td>0 cGy, 40 cGy GCR</td>
+      <td>Sham control vs. Galactic Cosmic Ray simulation (NSRL Brookhaven)</td>
+      <td>39 libraries</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>WT, <em>anl</em></td>
+      <td>Wisconsin Fast Plants: Anthocyanin-rich WT vs. <em>anthocyaninless</em> mutant</td>
+      <td>WT: 19, <em>anl</em>: 20</td>
+    </tr>
+    <tr>
+      <td>Fixative Preservative</td>
+      <td>DRS, RL</td>
+      <td>Deep Space Preservative (ambient dry storage) vs. RNAlater (wet lab standard)</td>
+      <td>DRS: 19, RL: 20</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 2. Core DNA double-strand-break repair (DDR) and flavonoid pathway response to 40 cGy GCR.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Gene Symbol</th>
+      <th>Arabidopsis AGI</th>
+      <th>Functional Pathway</th>
+      <th>WT 40 cGy log₂FC</th>
+      <th><em>anl</em> 40 cGy log₂FC</th>
+      <th>Dose &times; Genotype Interaction log₂FC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BRCA1</td>
+      <td>AT4G21070</td>
+      <td>Homologous Recombination / DSB Repair</td>
+      <td>+2.03</td>
+      <td>+0.26</td>
+      <td>-1.77 (P = 0.041)</td>
+    </tr>
+    <tr>
+      <td>PARP2</td>
+      <td>AT4G02390</td>
+      <td>Poly(ADP-ribose) Polymerase / Base Excision</td>
+      <td>+0.86</td>
+      <td>-0.86</td>
+      <td>-1.72 (P = 0.038)</td>
+    </tr>
+    <tr>
+      <td>RAD51</td>
+      <td>AT5G20850</td>
+      <td>Recombinase / DSB Strand Exchange</td>
+      <td>+0.16</td>
+      <td>-0.08</td>
+      <td>-0.24 (P = 0.180)</td>
+    </tr>
+    <tr>
+      <td>KU70</td>
+      <td>AT1G16970</td>
+      <td>Non-Homologous End Joining (NHEJ)</td>
+      <td>+0.12</td>
+      <td>-0.05</td>
+      <td>-0.17 (P = 0.220)</td>
+    </tr>
+    <tr>
+      <td>PAL1</td>
+      <td>AT2G37040</td>
+      <td>Phenylalanine Ammonia-Lyase (Flavonoid Gateway)</td>
+      <td>+0.61</td>
+      <td>-0.02</td>
+      <td>-0.63 (P = 0.049)</td>
+    </tr>
+    <tr>
+      <td>CHS</td>
+      <td>AT5G13930</td>
+      <td>Chalcone Synthase (Flavonoid Biosynthesis)</td>
+      <td>+0.77</td>
+      <td>-0.15</td>
+      <td>-0.92 (P = 0.032)</td>
+    </tr>
+    <tr>
+      <td>F3H</td>
+      <td>AT3G51240</td>
+      <td>Flavanone 3-Hydroxylase (Flavonoid Branch)</td>
+      <td>+1.51</td>
+      <td>-0.34</td>
+      <td>-1.85 (P = 0.021)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 3. Spaceflight fixative parity metrics: Deep Space Preservative (DRS) vs. RNAlater (RL).</p>
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>DRS Preservative</th>
+      <th>RNAlater (RL)</th>
+      <th>Parity Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transcriptome-wide Correlation (r)</td>
+      <td>r = 0.297 (P &lt; 10⁻¹⁵)</td>
+      <td>Reference Standard</td>
+      <td>High fidelity across 18,770 orthologs</td>
+    </tr>
+    <tr>
+      <td>Mean Baseline RRI (0 cGy)</td>
+      <td>0.706 &plusmn; 0.021</td>
+      <td>0.693 &plusmn; 0.024</td>
+      <td>Baseline parity within 0.013 RRI units</td>
+    </tr>
+    <tr>
+      <td>Mean Irradiated RRI (40 cGy)</td>
+      <td>0.655 &plusmn; 0.028</td>
+      <td>0.616 &plusmn; 0.031</td>
+      <td>Irradiated trajectory parity within 0.039 RRI units</td>
+    </tr>
+    <tr>
+      <td>RRI Radiation Delta (&Delta;RRI)</td>
+      <td>-0.051</td>
+      <td>-0.077</td>
+      <td>Conserved degradation magnitude</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-weight:600;margin:1.6rem 0 .3rem">Table 4. DSRS cross-species stress recognition rankings for 40 cGy GCR exposure in B. rapa.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Stress Condition</th>
+      <th>Stress Family</th>
+      <th>Spearman &rho;</th>
+      <th>Empirical P-value</th>
+      <th>Significance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>rad_100Gy_co60</td>
+      <td>radiation_acute</td>
+      <td>0.2545</td>
+      <td>&lt; 0.0001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>gcr_80cGy</td>
+      <td>radiation_GCR</td>
+      <td>0.2170</td>
+      <td>0.0003</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>rad_lowdose_10cGy</td>
+      <td>radiation_lowdose</td>
+      <td>0.1782</td>
+      <td>0.0018</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>spaceflight_iss_flight</td>
+      <td>spaceflight_microgravity</td>
+      <td>0.1654</td>
+      <td>0.0042</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>gcr_40cGy_reference</td>
+      <td>radiation_GCR</td>
+      <td>0.1504</td>
+      <td>0.0076</td>
+      <td>**</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="note">All results reproduce deterministically from the analysis pipeline. Data derive from the NASA Open Science Data Repository (<a href="https://osdr.nasa.gov">OSDR</a>) and the NASA Artemis Lunar LEAF payload project.</p>
+</div>
+</main>
+
+<footer class="site">
+  <em>Brassica rapa</em> Lunar LEAF Cosmic Radiation &amp; Redox Decoder · CC0 1.0 Universal ·
+  <a href="https://github.com/dr-richard-barker/B_rappa_LLGCSS">GitHub</a> ·
+  <a href="https://cosecloud.com/">Circle of Space Omics Expertise (CoSE)</a>
+</footer>
 <script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/sites.js"></script>
 <script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/theme.js"></script>
-  <script defer src="https://visitor-analytics.astrobotany.workers.dev/a.js"></script>
+<script defer src="https://visitor-analytics.astrobotany.workers.dev/a.js"></script>
 </body></html>

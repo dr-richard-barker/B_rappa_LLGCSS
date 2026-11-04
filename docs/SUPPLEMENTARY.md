@@ -1,23 +1,33 @@
-# Supplementary materials
+# Supplementary Materials: Brassica rapa Lunar LEAF Radiation & Redox Decoder
 
-Generated from the committed analysis (`annotation/`); regenerate with `annotation/reproduce.sh`.
+_Curated supplementary data and figures for the cross-species Brassica rapa Lunar LEAF cosmic radiation (40 cGy GCR), redox kinetics, and fixative fidelity study._
 
-## Supplementary figures
-- **Figure S1 — Sensitivity of the radiation gene-set test.** Power (α=0.05, two-sided) to detect a
-  coordinated shift δ in the scent set's 40-vs-0 cGy dose effect, by shifting the stratified
-  permutation null. The set-level test detects ~3–4% coordinated shifts at 80% power; the observed
-  effects fall below, so the null is informative, not merely under-powered.
-  File: `annotation/figures/FigS1_power.png` · source: `annotation/phase3_power.py`
-  (numbers: `annotation/phase3_power_results.tsv`).
+---
 
-## Supplementary tables
-- **Table S1 — Full floral-scent gene set (363 genes).** Every curated gene with its confidence
-  tier, biosynthetic route(s), presence in each experiment, and GO/Pfam evidence.
-  File: `annotation/tables/TableS1_scent_geneset_full.csv` · source: `annotation/scent_geneset.tsv`.
-- **Table S2 — Cross-species ortholog matrix.** Ensembl Compara ortholog counts for the 12
-  Arabidopsis-anchored scent genes across the plant panel (full version of Fig 4).
-  File: `annotation/tables/TableS2_ortholog_matrix.csv` · source: `annotation/scent_orthology_matrix.tsv`.
+## Supplementary Figures
 
-## Main figures & tables
-See [`results.html`](results.html) (rendered) and [`TABLES.md`](TABLES.md) (Tables 1–3);
-CSVs in [`annotation/tables/`](https://github.com/dr-richard-barker/B_rappa_LLGCSS/tree/main/annotation/tables).
+- **Figure S1 — DSRS Single-Cell Stress Panel Distributions.**  
+  Spearman rank correlation distributions across 123 developmental seed single-cell panels evaluating concordance with 27 spaceflight and radiation stressors.  
+  _Primary source: `results/dsrs_brappa_panel_nes_matrix.csv`_
+
+---
+
+## Supplementary Tables
+
+- **Table S1 — 18,770 1:1 DIAMOND Reciprocal Best Hit (RBH) Ortholog Bridge.**  
+  Full alignment table mapping *Brassica rapa* gene identifiers (`BRA######` / `Bra######`) to *Arabidopsis thaliana* TAIR10 loci (`AT#G#####`), including sequence identity, E-value, bitscore, and 40 cGy GCR log₂ fold-changes.  
+  _Primary source: `data/brappa_master_radiation_contrasts.csv`_
+
+- **Table S2 — 41D CVAE ROS Decoder Predictions Across 18 Core Sensors.**  
+  Latent space projections, empirical condition scores, and predicted stressor probabilities across $H_2O_2$, $O_2^{\bullet-}$, singlet oxygen, and acute temporal kinetic windows (1–24 h).  
+  _Primary source: `results/redox_decoder_brappa_predictions.csv`_
+
+- **Table S3 — Spaceflight Preservative Fixative Parity & Sample RRI Scores.**  
+  Individual library Radiation Resilience Index (RRI) scores, housekeeping gene module co-expression values, and statistical comparisons between Deep Space Preservative (DRS) and RNAlater (RL).  
+  _Primary source: `results/brappa_preservative_and_ddr_summary.csv`_
+
+---
+
+## Main Figures & Tables
+
+See [`results.html`](results.html) for interactive figures and benchmark tables, and [`TABLES.md`](TABLES.md) for Markdown tables.
