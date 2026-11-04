@@ -58,9 +58,9 @@ By establishing a reciprocal best hit (RBH) proteome alignment using DIAMOND aga
 We queried the DeepSpace Stress-Recognition System (DSRS) using the orthology-projected *B. rapa* 40 cGy GCR signatures against a reference matrix of 27 spaceflight and physical stressor contrasts evaluated across 123 single-cell developmental seed panels (**Figure 2**).
 
 Evaluating the radiation × genotype interaction contrast (`I:condition_40_CGY.genotype_ANTHO_LESS`) confirmed that spaceflight and ionizing radiation dominate the matching classes:
-- **Top Individual Stressors**: Acute gamma radiation (`rad_100Gy_co60_90m_a`, $\rho = 0.2545$) and galactic cosmic rays (`gcr_80cGy`, $\rho = 0.2170$).
-- **Top Stressor Families**: The `radiation_GCR` family (mean $\rho = 0.1504$) and `radiation_lowdose` (mean $\rho = 0.1321$) significantly outperformed all non-radiation physical stressors (hypergravity $\rho = 0.1011$, microgravity $\rho = 0.0842$, hypoxia $\rho = 0.0520$).
-- For wild-type plants exposed to 40 cGy GCR, top matches included microgravity (`ug_root_light`, $\rho = 0.2590$) and UV-B radiation ($\rho = 0.1971$), capturing the shared systemic oxidative stress signature of spaceflight environments.
+- **Top Individual Stressors**: Acute gamma radiation (`rad_100Gy_co60_90m_a`, ρ = 0.2545) and galactic cosmic rays (`gcr_80cGy`, ρ = 0.2170).
+- **Top Stressor Families**: The `radiation_GCR` family (mean ρ = 0.1504) and `radiation_lowdose` (mean ρ = 0.1321) significantly outperformed all non-radiation physical stressors (hypergravity ρ = 0.1011, microgravity ρ = 0.0842, hypoxia ρ = 0.0520).
+- For wild-type plants exposed to 40 cGy GCR, top matches included microgravity (`ug_root_light`, ρ = 0.2590) and UV-B radiation (ρ = 0.1971), capturing the shared systemic oxidative stress signature of spaceflight environments.
 
 This confirms that the single-cell developmental fingerprint of cosmic radiation response is evolutionarily conserved between *Arabidopsis* and *Brassica rapa*, allowing a model trained strictly on *Arabidopsis* to recognize GCR exposure in an agricultural crop.
 
