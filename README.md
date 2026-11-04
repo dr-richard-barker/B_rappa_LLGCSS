@@ -17,11 +17,11 @@ RNA-seq analysis code and data for the *Brassica rapa* (Wisconsin Fast Plant) pr
 
 > ***"Perhaps it's just a classification exercise?"***
 
-- **Diagnostic Layer (Classification):** Automated classification tools (DeepSpace Stress-Recognition System and 41D CVAE ROS Decoders) rapidly triage spaceflight stress ($\rho = 0.255$, $P < 10^{-4}$) and accurately infer acute post-exposure kinetics ($3.84\text{ h}$ nadir).
+- **Diagnostic Layer (Classification):** Automated classification tools (DeepSpace Stress-Recognition System and 41D CVAE ROS Decoders) rapidly triage spaceflight stress (ρ = 0.255, P &lt; 10⁻⁴) and accurately infer acute post-exposure kinetics (3.84 h nadir).
 - **Biological Layer (Mechanistic Systems Biology):** Latent projections uncover fundamental biology that classification alone obscures:
-  1. **The "Antioxidant Shield Deficit":** Wild-Type plants buffer ionizing radiation into secondary $H_2O_2$ ($51.1\%$), whereas the *anthocyaninless* (*anl*) mutant suffers an unbuffered primary superoxide free-radical burst ($O_2^{\bullet-}$, $24.9\%$, $2.23\text{ h}$) and constitutive baseline resilience depression ($\text{RRI} = 0.638$).
-  2. **Preservative Fixative Parity (DRS vs RL):** Deep Space Preservative demonstrates high correlation ($r = 0.297$, $P < 10^{-15}$) and RRI delta trajectory parity ($0.706 \to 0.655$ in DRS vs $0.693 \to 0.616$ in RL) with laboratory-standard RNAlater, validating dry-storage hardware for lunar sample return.
-  3. **Core DNA Damage Repair Induction:** Wild-Type plants mount robust induction of core double-strand break repair (BRCA1 $+2.03$, PARP2 $+0.86$, RAD51 $+0.16$) and the flavonoid gateway (PAL1, CHS, F3H), whereas *anl* mutants display negative interaction terms across these protective loci.
+  1. **The "Antioxidant Shield Deficit":** Wild-Type plants buffer ionizing radiation into secondary H₂O₂ (51.1%), whereas the *anthocyaninless* (*anl*) mutant suffers an unbuffered primary superoxide free-radical burst (O₂•⁻, 24.9%, 2.23 h) and constitutive baseline resilience depression (RRI = 0.638).
+  2. **Preservative Fixative Parity (DRS vs RL):** Deep Space Preservative demonstrates high correlation (r = 0.297, P &lt; 10⁻¹⁵) and RRI delta trajectory parity (0.706 → 0.655 in DRS vs 0.693 → 0.616 in RL) with laboratory-standard RNAlater, validating dry-storage hardware for lunar sample return.
+  3. **Core DNA Damage Repair Induction:** Wild-Type plants mount robust induction of core double-strand break repair (BRCA1 +2.03, PARP2 +0.86, RAD51 +0.16) and the flavonoid gateway (PAL1, CHS, F3H), whereas *anl* mutants display negative interaction terms across these protective loci.
 
 ---
 

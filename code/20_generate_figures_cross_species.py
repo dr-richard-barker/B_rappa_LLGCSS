@@ -62,34 +62,127 @@ ddr_summary = pd.read_csv(RESULTS_DIR / "brappa_preservative_and_ddr_summary.csv
 # Figure 1: Conceptual Architecture of Cross-Species Radiation Decoding
 # -------------------------------------------------------------------------
 print("Generating Figure 1: Conceptual Architecture...")
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(11, 6.8), dpi=300)
 ax.axis("off")
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
 
-boxes = [
-    {"title": "1. Factorial Cohort (Lunar LEAF)", "text": "Brassica rapa (Wisconsin Fast Plant)\n• Dose: 0 cGy vs 40 cGy GCR\n• Genotype: WT vs anthocyaninless (anl)\n• Fixative: Deep Space (DRS) vs RNAlater (RL)", "xy": (0.05, 0.65), "w": 0.26, "h": 0.28, "color": "#E8F0FE", "edge": "#1A73E8"},
-    {"title": "2. Orthology Bridge", "text": "18,770 1:1 Reciprocal Best Hits\n(DIAMOND proteome alignment)\nBra###### / BRA###### → TAIR10 AGI", "xy": (0.37, 0.65), "w": 0.26, "h": 0.28, "color": "#E6F4EA", "edge": "#1E8E3E"},
-    {"title": "3. Diagnostic Decoder Stack", "text": "Tier 1: DSRS Stress Recognition (27 stressors)\nTier 2: Redox CVAE Disentanglement (15 ROS classes)\nTier 3: GP-AE Latent & Resilience Index (RRI)\nTier 4: DDR Core & Flavonoid Protective Shunt", "xy": (0.69, 0.65), "w": 0.28, "h": 0.28, "color": "#FEF7E0", "edge": "#F9AB00"},
-    {"title": "Biological Discovery & Mechanistic Translation", "text": "Deconstructing 'Is it just a classification exercise?':\n• Operational Diagnostic: Automated stress fingerprinting and kinetic window prediction (<1h, 1-4h).\n• Mechanistic Discovery: Proof that anthocyanin loss unmasks primary superoxide collapse ($O_2^{\\bullet-}$);\n  proof that Deep Space Preservative (DRS) achieves transcriptomic parity with RNAlater for deep space.", "xy": (0.15, 0.12), "w": 0.70, "h": 0.38, "color": "#FCE8E6", "edge": "#D93025"}
+# Title
+fig.suptitle("Figure 1: Cross-Species Framework for Spaceflight Cosmic Radiation & Redox Decoding",
+             fontsize=13, weight="bold", y=0.97)
+
+# Top 3 Boxes
+top_boxes = [
+    {
+        "title": "1. Factorial Cohort (Lunar LEAF)",
+        "items": [
+            "Brassica rapa (Wisconsin Fast Plant)",
+            "• Dose: 0 cGy vs 40 cGy GCR (NSRL)",
+            "• Genotype: WT vs anthocyaninless (anl)",
+            "• Fixative: Deep Space (DRS) vs RNAlater (RL)",
+            "• 39 Factorial RNA-seq Libraries"
+        ],
+        "xy": (0.03, 0.53), "w": 0.29, "h": 0.38,
+        "color": "#E8F0FE", "edge": "#1A73E8"
+    },
+    {
+        "title": "2. Orthology Bridge",
+        "items": [
+            "18,770 1:1 Reciprocal Best Hits (RBH)",
+            "• DIAMOND proteome alignment",
+            "• B. rapa (BRA######) → TAIR10 AGI",
+            "• High sequence fidelity across genome",
+            "• Direct projection into ML latent models"
+        ],
+        "xy": (0.355, 0.53), "w": 0.29, "h": 0.38,
+        "color": "#E6F4EA", "edge": "#1E8E3E"
+    },
+    {
+        "title": "3. Diagnostic Decoder Stack",
+        "items": [
+            "Multi-Tier Machine Learning Stack",
+            "• Tier 1: DSRS Stress Recognition (27 stressors)",
+            "• Tier 2: 41D Redox CVAE (15 ROS classes)",
+            "• Tier 3: Resilience Index (RRI manifold)",
+            "• Tier 4: Core DDR & Flavonoid Gateway"
+        ],
+        "xy": (0.68, 0.53), "w": 0.29, "h": 0.38,
+        "color": "#FEF7E0", "edge": "#F9AB00"
+    }
 ]
 
-for b in boxes:
-    rect = patches.FancyBboxPatch(b["xy"], b["w"], b["h"], boxstyle="round,pad=0.02",
-                                  facecolor=b["color"], edgecolor=b["edge"], linewidth=2)
+for b in top_boxes:
+    rect = patches.FancyBboxPatch(b["xy"], b["w"], b["h"], boxstyle="round,pad=0.015",
+                                  facecolor=b["color"], edgecolor=b["edge"], linewidth=1.8)
     ax.add_patch(rect)
-    ax.text(b["xy"][0] + b["w"]/2, b["xy"][1] + b["h"] - 0.05, b["title"],
-            ha="center", va="center", weight="bold", fontsize=11, color="#202124")
-    ax.text(b["xy"][0] + b["w"]/2, b["xy"][1] + b["h"]/2 - 0.03, b["text"],
-            ha="center", va="center", fontsize=9, color="#3C4043")
+    ax.text(b["xy"][0] + b["w"]/2, b["xy"][1] + b["h"] - 0.045, b["title"],
+            ha="center", va="center", weight="bold", fontsize=10.5, color="#202124")
+    start_y = b["xy"][1] + b["h"] - 0.10
+    line_spacing = 0.055
+    for i, line in enumerate(b["items"]):
+        font_weight = "bold" if i == 0 else "normal"
+        text_color = "#1A1A1A" if i == 0 else "#3C4043"
+        ax.text(b["xy"][0] + 0.02, start_y - i * line_spacing, line,
+                ha="left", va="center", fontsize=8.5, weight=font_weight, color=text_color)
 
-arrow_style = dict(facecolor="#5F6368", edgecolor="#5F6368", width=1.5, headwidth=8)
-ax.annotate("", xy=(0.37, 0.79), xytext=(0.31, 0.79), arrowprops=arrow_style)
-ax.annotate("", xy=(0.69, 0.79), xytext=(0.63, 0.79), arrowprops=arrow_style)
-ax.annotate("", xy=(0.50, 0.50), xytext=(0.50, 0.65), arrowprops=arrow_style)
+# Horizontal arrows between top boxes
+arrow_style = dict(facecolor="#5F6368", edgecolor="#5F6368", width=1.5, headwidth=7, headlength=6)
+ax.annotate("", xy=(0.355, 0.72), xytext=(0.32, 0.72), arrowprops=arrow_style)
+ax.annotate("", xy=(0.68, 0.72), xytext=(0.645, 0.72), arrowprops=arrow_style)
 
-fig.suptitle("Figure 1: Cross-Species Framework for Spaceflight Cosmic Radiation & Redox Decoding", fontsize=13, weight="bold", y=0.98)
-plt.tight_layout()
-fig.savefig(FIG_DIR / "fig1_conceptual_architecture.png")
-fig.savefig(FIG_DIR / "fig1_conceptual_architecture.pdf")
+# Downward arrow to bottom panel
+ax.annotate("", xy=(0.50, 0.46), xytext=(0.50, 0.53), arrowprops=arrow_style)
+
+# Bottom Box: Biological Discovery & Mechanistic Translation
+bottom_box = {
+    "title": "Biological Discovery & Mechanistic Translation",
+    "xy": (0.03, 0.04), "w": 0.94, "h": 0.42,
+    "color": "#FCE8E6", "edge": "#D93025"
+}
+
+rect_bottom = patches.FancyBboxPatch(bottom_box["xy"], bottom_box["w"], bottom_box["h"],
+                                     boxstyle="round,pad=0.015",
+                                     facecolor=bottom_box["color"], edgecolor=bottom_box["edge"], linewidth=1.8)
+ax.add_patch(rect_bottom)
+
+ax.text(bottom_box["xy"][0] + bottom_box["w"]/2, bottom_box["xy"][1] + bottom_box["h"] - 0.045,
+        bottom_box["title"], ha="center", va="center", weight="bold", fontsize=11, color="#202124")
+
+left_x = bottom_box["xy"][0] + 0.03
+start_y_bot = bottom_box["xy"][1] + bottom_box["h"] - 0.10
+
+ax.text(left_x, start_y_bot, "Operational Diagnostic Layer (Triage)",
+        weight="bold", fontsize=9.5, color="#B31412")
+
+diag_items = [
+    "• Automated spaceflight stress classification across 123 developmental panels",
+    "• Top-ranks cosmic radiation: rad_100Gy_co60 (ρ = 0.255) and gcr_80cGy (ρ = 0.217)",
+    "• Confirms conserved GCR transcriptional programs across Brassicaceae",
+    "• Infers elapsed post-exposure kinetic window (3.84 h, capturing crisis nadir)"
+]
+for i, item in enumerate(diag_items):
+    ax.text(left_x, start_y_bot - 0.045 - i * 0.052, item,
+            ha="left", va="center", fontsize=8.2, color="#3C4043")
+
+ax.plot([0.495, 0.495], [0.08, 0.38], color="#E0A09A", linestyle="--", linewidth=1.2)
+
+right_x = 0.52
+ax.text(right_x, start_y_bot, "Mechanistic Biology Layer (Discovery)",
+        weight="bold", fontsize=9.5, color="#137333")
+
+mech_items = [
+    "• Antioxidant Shield Deficit: WT buffers to H₂O₂ (51.1%); anl suffers O₂•⁻ burst (24.9% at 2.23 h)",
+    "• Physiological Resilience Collapse: 40 cGy drops WT RRI (0.762 → 0.636; P = 4.2 × 10⁻⁴)",
+    "• Constitutive Depression: sham anl mutants already depressed at baseline (RRI = 0.638)",
+    "• Fixative Parity: Deep Space Preservative (DRS) matches RNAlater (r = 0.297, P < 10⁻¹⁵)",
+    "• DNA Damage Repair: robust BRCA1 (+2.03) & PARP2 (+0.86) induction blunted in anl"
+]
+for i, item in enumerate(mech_items):
+    ax.text(right_x, start_y_bot - 0.045 - i * 0.047, item,
+            ha="left", va="center", fontsize=8.2, color="#3C4043")
+
+fig.savefig(FIG_DIR / "fig1_conceptual_architecture.png", bbox_inches="tight")
+fig.savefig(FIG_DIR / "fig1_conceptual_architecture.pdf", bbox_inches="tight")
 plt.close(fig)
 
 # -------------------------------------------------------------------------

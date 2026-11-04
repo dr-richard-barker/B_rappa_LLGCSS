@@ -14,12 +14,12 @@ This report documents the computational benchmark and technical implementation e
 ### Benchmark Matrix
 | Decoder / Tool | Training Reference | Target Evaluated in B. rapa | Key Result / Metric | Output File |
 |---|---|---|---|---|
-| **DSRS** (Stress Recognition) | 27 spaceflight / physical stressors across 123 seed single-cell panels | WT 40cGy, AnthoLess 40cGy, Dose × Genotype, Dose × Preservative | Top match: `rad_100Gy_co60` ($\rho = 0.255$), `gcr_80cGy` ($\rho = 0.217$); Top family: `radiation_GCR` | `results/dsrs_brappa_stressor_rankings.csv` |
-| **Redox CVAE Decoder** | 4,332 GEO samples across 15 redox classes + Salk ADA single-cell atlas | WT 40cGy vs AnthoLess 40cGy | WT: $H_2O_2$ (51.1%, 3.84 h); AnthoLess: Paraquat/$O_2^{\bullet-}$ (24.9%, 2.23 h) | `results/redox_decoder_brappa_predictions.csv` |
-| **Radiation Resilience Index (RRI)** | 299 OSDR samples across 5 radiation qualities (GP-AE continuous space) | 31 RNA-seq sample libraries | WT drops from $0.762$ to $0.636$ (nadir); AnthoLess baseline collapsed ($0.637$) | `results/brappa_rri_sample_scores.csv` |
-| **Preservative Parity (DRS vs RL)** | 39 RNA-seq libraries (DRS vs RNAlater) | Fixative fidelity across expressed transcriptome | Pearson $r = 0.297$ ($P < 10^{-15}$); RRI parity within $0.03$ | `results/brappa_preservative_and_ddr_summary.csv` |
+| **DSRS** (Stress Recognition) | 27 spaceflight / physical stressors across 123 seed single-cell panels | WT 40cGy, AnthoLess 40cGy, Dose × Genotype, Dose × Preservative | Top match: `rad_100Gy_co60` (ρ = 0.255), `gcr_80cGy` (ρ = 0.217); Top family: `radiation_GCR` | `results/dsrs_brappa_stressor_rankings.csv` |
+| **Redox CVAE Decoder** | 4,332 GEO samples across 15 redox classes + Salk ADA single-cell atlas | WT 40cGy vs AnthoLess 40cGy | WT: H₂O₂ (51.1%, 3.84 h); AnthoLess: Paraquat/O₂•⁻ (24.9%, 2.23 h) | `results/redox_decoder_brappa_predictions.csv` |
+| **Radiation Resilience Index (RRI)** | 299 OSDR samples across 5 radiation qualities (GP-AE continuous space) | 31 RNA-seq sample libraries | WT drops from 0.762 to 0.636 (nadir); AnthoLess baseline collapsed (0.637) | `results/brappa_rri_sample_scores.csv` |
+| **Preservative Parity (DRS vs RL)** | 39 RNA-seq libraries (DRS vs RNAlater) | Fixative fidelity across expressed transcriptome | Pearson r = 0.297 (P < 10⁻¹⁵); RRI parity within 0.03 units | `results/brappa_preservative_and_ddr_summary.csv` |
 | **DDR & Flavonoid Core** | Conserved double-strand-break repair and flavonoid pathway orthologs | Expression fold-changes under 40 cGy GCR | BRCA1 (+2.03), PARP2 (+0.86), PAL1 (+0.61), F3H (+1.51) induced in WT; blunted in *anl* | `results/brappa_preservative_and_ddr_summary.csv` |
-| **Spatial ggPlantMap** | 5 synchronized anatomical organ diagrams (11 cell types) | Spatial vulnerability across vegetative & floral organs | Meristem ($13.8\%$), Vascular Stele ($12.5\%$), Floral Whorls ($25.4\%$) | `results/redox_decoder_organ_cell_scores.csv` |
+| **Spatial ggPlantMap** | 5 synchronized anatomical organ diagrams (11 cell types) | Spatial vulnerability across vegetative & floral organs | Meristem (13.8%), Vascular Stele (12.5%), Floral Whorls (25.4%) | `results/redox_decoder_organ_cell_scores.csv` |
 
 ---
 
@@ -126,7 +126,7 @@ DRS          40_cGy       0.6551         0.034          0.7541          0.1228
 RL           0_cGy        0.6932         0.039          0.7521          0.2772
 RL           40_cGy       0.6156         0.043          0.6851          0.1035
 ```
-Genome-wide fold-change correlation: $r = 0.2968$ ($P < 10^{-15}$).
+Genome-wide fold-change correlation: r = 0.2968 (P < 10⁻¹⁵).
 
 ---
 
